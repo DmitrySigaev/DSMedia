@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{429B33C9-7AD7-4D7E-BFBD-7258B3C35AD4}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Obj/W32Deb\</OutDir>
+    <IntDir>.\Obj/W32Deb\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Obj/W32Rel\</OutDir>
+    <IntDir>.\Obj/W32Rel\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../Include;./Tools;./OD;./IETF;./MP4;./SceneGraph;./BIFS;./ESM;../extra_lib/include/js;../extra_lib/include/zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;M4_USE_SPIDERMONKEY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/W32Deb\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Obj/W32Deb\M4Systems.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader />
+      <ObjectFileName>.\Obj/W32Deb\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/W32Deb\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/W32Deb\M4Systems.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/W32Deb\M4Systems.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../Include;./Tools;./OD;./IETF;./MP4;./SceneGraph;./BIFS;./ESM;../extra_lib/include/js;../extra_lib/include/zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;M4_USE_SPIDERMONKEY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/W32Rel\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Obj/W32Rel\M4Systems.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Obj/W32Rel\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/W32Rel\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/W32Rel\M4Systems.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/W32Rel\M4Systems.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="authoring\avilib.c" />
+    <ClCompile Include="authoring\AVParsers.c" />
+    <ClCompile Include="authoring\gpac_ogg.c" />
+    <ClCompile Include="authoring\ISMA.c" />
+    <ClCompile Include="authoring\LoadBT.c" />
+    <ClCompile Include="authoring\LoadMP4.c" />
+    <ClCompile Include="authoring\LoadXMTA.c" />
+    <ClCompile Include="authoring\M4TrackHinter.c" />
+    <ClCompile Include="authoring\MediaExport.c" />
+    <ClCompile Include="authoring\MediaImport.c" />
+    <ClCompile Include="authoring\mpeg2_ps.c" />
+    <ClCompile Include="authoring\RTPPacketizer.c" />
+    <ClCompile Include="authoring\RTPPck3GPP.c" />
+    <ClCompile Include="authoring\RTPPckMPEG12.c" />
+    <ClCompile Include="authoring\RTPPckMPEG4.c" />
+    <ClCompile Include="authoring\SceneDump.c" />
+    <ClCompile Include="authoring\SceneManager.c" />
+    <ClCompile Include="authoring\SceneStats.c" />
+    <ClCompile Include="authoring\SWFParse.c" />
+    <ClCompile Include="authoring\SWFShape.c" />
+    <ClCompile Include="authoring\TextImport.c" />
+    <ClCompile Include="authoring\TrackTools.c" />
+    <ClCompile Include="authoring\xml_parser.c" />
+    <ClCompile Include="BIFS\AADecoder.c" />
+    <ClCompile Include="BIFS\BIFSComDec.c" />
+    <ClCompile Include="BIFS\BIFSComEnc.c" />
+    <ClCompile Include="BIFS\BIFSDec.c" />
+    <ClCompile Include="BIFS\BIFSEnc.c" />
+    <ClCompile Include="BIFS\BIFSMemDec.c" />
+    <ClCompile Include="BIFS\bifs_node_tables.c" />
+    <ClCompile Include="BIFS\Conditional.c" />
+    <ClCompile Include="BIFS\FieldDec.c" />
+    <ClCompile Include="BIFS\FieldEnc.c" />
+    <ClCompile Include="BIFS\PredictiveMFField.c" />
+    <ClCompile Include="BIFS\Quantize.c" />
+    <ClCompile Include="BIFS\SFScriptDec.c" />
+    <ClCompile Include="BIFS\SFScriptEnc.c" />
+    <ClCompile Include="BIFS\Unquantize.c" />
+    <ClCompile Include="ESM\channel.c" />
+    <ClCompile Include="ESM\clock.c" />
+    <ClCompile Include="ESM\decoder.c" />
+    <ClCompile Include="ESM\InlineScene.c" />
+    <ClCompile Include="ESM\InputSensor.c" />
+    <ClCompile Include="ESM\M4NodeInit.c" />
+    <ClCompile Include="ESM\M4Term.c" />
+    <ClCompile Include="ESM\MediaControl.c" />
+    <ClCompile Include="ESM\MediaManager.c" />
+    <ClCompile Include="ESM\MediaMemory.c" />
+    <ClCompile Include="ESM\MediaObject.c" />
+    <ClCompile Include="ESM\MediaSensor.c" />
+    <ClCompile Include="ESM\NetService.c" />
+    <ClCompile Include="ESM\ODBrowser.c" />
+    <ClCompile Include="ESM\ODManager.c" />
+    <ClCompile Include="IETF\RTCP.c" />
+    <ClCompile Include="IETF\RTP.c" />
+    <ClCompile Include="IETF\RTPReorder.c" />
+    <ClCompile Include="IETF\RTSP_command.c" />
+    <ClCompile Include="IETF\RTSP_common.c" />
+    <ClCompile Include="IETF\RTSP_http.c" />
+    <ClCompile Include="IETF\RTSP_response.c" />
+    <ClCompile Include="IETF\RTSP_server.c" />
+    <ClCompile Include="IETF\RTSP_session.c" />
+    <ClCompile Include="IETF\SDP.c" />
+    <ClCompile Include="LASeR\LASeRCodec.c" />
+    <ClCompile Include="LASeR\LASERDec.c" />
+    <ClCompile Include="LASeR\LASeRNodes.c" />
+    <ClCompile Include="LASeR\LASeRParse.c" />
+    <ClCompile Include="LASeR\LASeRSceneGraph.c" />
+    <ClCompile Include="LASeR\xmldump.c" />
+    <ClCompile Include="MP4\3GPP_atoms_code.c" />
+    <ClCompile Include="MP4\Atom.c" />
+    <ClCompile Include="MP4\AtomPriv.c" />
+    <ClCompile Include="MP4\atoms_code.c" />
+    <ClCompile Include="MP4\AVC.c" />
+    <ClCompile Include="MP4\base_sample_desc.c" />
+    <ClCompile Include="MP4\DTE.c" />
+    <ClCompile Include="MP4\ghnt.c" />
+    <ClCompile Include="MP4\HintPacket.c" />
+    <ClCompile Include="MP4\HintSample.c" />
+    <ClCompile Include="MP4\M4_3GPP.c" />
+    <ClCompile Include="MP4\M4_dataMap.c" />
+    <ClCompile Include="MP4\M4_Dump.c" />
+    <ClCompile Include="MP4\M4_FileDataMap.c" />
+    <ClCompile Include="MP4\M4_FileMapping.c" />
+    <ClCompile Include="MP4\M4_Fragments.c" />
+    <ClCompile Include="MP4\M4_HintTrack.c" />
+    <ClCompile Include="MP4\M4_Media.c" />
+    <ClCompile Include="MP4\M4_Media_od.c" />
+    <ClCompile Include="MP4\M4_MovieIntern.c" />
+    <ClCompile Include="MP4\M4_Movie_read.c" />
+    <ClCompile Include="MP4\M4_Movie_write.c" />
+    <ClCompile Include="MP4\M4_packing.c" />
+    <ClCompile Include="MP4\M4_Publish.c" />
+    <ClCompile Include="MP4\M4_RTPHint.c" />
+    <ClCompile Include="MP4\M4_stbl_read.c" />
+    <ClCompile Include="MP4\M4_stbl_write.c" />
+    <ClCompile Include="MP4\M4_store.c" />
+    <ClCompile Include="MP4\M4_Track.c" />
+    <ClCompile Include="MP4\RTPPacket.c" />
+    <ClCompile Include="MP4\TimedText.c" />
+    <ClCompile Include="OD\comPrivate.c" />
+    <ClCompile Include="OD\descPrivate.c" />
+    <ClCompile Include="OD\descriptors.c" />
+    <ClCompile Include="OD\ESDescriptor.c" />
+    <ClCompile Include="OD\InitialObjectDescriptor.c" />
+    <ClCompile Include="OD\M4F_InitialObjectDescriptor.c" />
+    <ClCompile Include="OD\M4F_ObjectDescriptor.c" />
+    <ClCompile Include="OD\ObjectDescriptor.c" />
+    <ClCompile Include="OD\OCICodec.c" />
+    <ClCompile Include="OD\ODCoDec.c" />
+    <ClCompile Include="OD\ODCommand.c" />
+    <ClCompile Include="OD\od_code.c" />
+    <ClCompile Include="OD\OD_Dump.c" />
+    <ClCompile Include="OD\OD_Parse.c" />
+    <ClCompile Include="OD\QoSDescriptor.c" />
+    <ClCompile Include="OD\SLConfigDescriptor.c" />
+    <ClCompile Include="OD\SyncLayer.c" />
+    <ClCompile Include="render\audio_input.c" />
+    <ClCompile Include="render\audio_mixer.c" />
+    <ClCompile Include="render\audio_render.c" />
+    <ClCompile Include="render\audio_stacks.c" />
+    <ClCompile Include="render\base_textures.c" />
+    <ClCompile Include="render\common_stacks.c" />
+    <ClCompile Include="render\path2D.c" />
+    <ClCompile Include="render\path2D_outline.c" />
+    <ClCompile Include="render\renderer.c" />
+    <ClCompile Include="render\render_tools.c" />
+    <ClCompile Include="render\texturing.c" />
+    <ClCompile Include="render\yuv_to_rgb.c" />
+    <ClCompile Include="SceneGraph\base_scenegraph.c" />
+    <ClCompile Include="SceneGraph\mpeg4_animators.c" />
+    <ClCompile Include="SceneGraph\mpeg4_commands.c" />
+    <ClCompile Include="SceneGraph\mpeg4_nodes.c" />
+    <ClCompile Include="SceneGraph\mpeg4_valuator.c" />
+    <ClCompile Include="SceneGraph\svg_nodes.c" />
+    <ClCompile Include="SceneGraph\svg_tools.c" />
+    <ClCompile Include="SceneGraph\vrml_interpolators.c" />
+    <ClCompile Include="SceneGraph\vrml_proto.c" />
+    <ClCompile Include="SceneGraph\vrml_route.c" />
+    <ClCompile Include="SceneGraph\vrml_script.c" />
+    <ClCompile Include="SceneGraph\vrml_SpiderMonkey.c" />
+    <ClCompile Include="SceneGraph\vrml_tools.c" />
+    <ClCompile Include="SceneGraph\x3d_nodes.c" />
+    <ClCompile Include="Tools\base_encoding.c" />
+    <ClCompile Include="Tools\BitStream.c" />
+    <ClCompile Include="Tools\Chain.c" />
+    <ClCompile Include="Tools\error.c" />
+    <ClCompile Include="Tools\IniFile.c" />
+    <ClCompile Include="Tools\plugin.c" />
+    <ClCompile Include="Tools\StringParser.c" />
+    <ClCompile Include="Tools\URL.c" />
+    <ClCompile Include="Tools\UTF8.c" />
+    <ClCompile Include="Tools\w32\os_divers.c" />
+    <ClCompile Include="Tools\w32\os_net.c" />
+    <ClCompile Include="Tools\w32\os_plug.c" />
+    <ClCompile Include="Tools\w32\os_thread.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gpac\intern\avilib.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_author_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_bifs_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_bifs_tables.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_esm_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_ietf_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_isomedia_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_od_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_render_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_render_tools.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_scenegraph_dev.h" />
+    <ClInclude Include="..\include\gpac\intern\m4_swf_dev.h" />
+    <ClInclude Include="..\include\gpac\m4_author.h" />
+    <ClInclude Include="..\include\gpac\m4_avhw.h" />
+    <ClInclude Include="..\include\gpac\m4_bifs.h" />
+    <ClInclude Include="..\include\gpac\m4_config.h" />
+    <ClInclude Include="..\include\gpac\m4_decoder.h" />
+    <ClInclude Include="..\include\gpac\m4_descriptors.h" />
+    <ClInclude Include="..\include\gpac\m4_graphics.h" />
+    <ClInclude Include="..\include\gpac\m4_ietf.h" />
+    <ClInclude Include="..\include\gpac\m4_isomedia.h" />
+    <ClInclude Include="..\include\gpac\m4_mpeg4_nodes.h" />
+    <ClInclude Include="..\include\gpac\m4_network.h" />
+    <ClInclude Include="..\include\gpac\m4_ogg.h" />
+    <ClInclude Include="..\include\gpac\m4_render.h" />
+    <ClInclude Include="..\include\gpac\m4_scenegraph.h" />
+    <ClInclude Include="..\include\gpac\m4_scenegraph_svg.h" />
+    <ClInclude Include="..\include\gpac\m4_scenegraph_vrml.h" />
+    <ClInclude Include="..\include\gpac\m4_svg_nodes.h" />
+    <ClInclude Include="..\include\gpac\m4_terminal.h" />
+    <ClInclude Include="..\include\gpac\m4_tools.h" />
+    <ClInclude Include="..\include\gpac\m4_user.h" />
+    <ClInclude Include="..\include\gpac\m4_x3d_nodes.h" />
+    <ClInclude Include="authoring\mpeg2_ps.h" />
+    <ClInclude Include="BIFS\Quantize.h" />
+    <ClInclude Include="BIFS\SFScript.h" />
+    <ClInclude Include="ESM\InputSensor.h" />
+    <ClInclude Include="ESM\MediaControl.h" />
+    <ClInclude Include="ESM\MediaMemory.h" />
+    <ClInclude Include="LASeR\LASeRCodec.h" />
+    <ClInclude Include="LASeR\laser_types.h" />
+    <ClInclude Include="LASeR\m4_laser_dev.h" />
+    <ClInclude Include="render\common_stacks.h" />
+    <ClInclude Include="Tools\plugin.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

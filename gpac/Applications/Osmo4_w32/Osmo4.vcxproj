@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{B0282678-36DF-4BB7-8CE0-3A53729A3910}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Obj/Debug\</OutDir>
+    <IntDir>.\Obj/Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Obj/Release\</OutDir>
+    <IntDir>.\Obj/Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../M4Systems/SceneGraph;C:\wxWidgets\include;C:\wxWidgets\contrib\include;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Obj/Debug\Osmo4.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader />
+      <ObjectFileName>.\Obj/Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Obj/Debug\Osmo4.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>C:\wxWidgets\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/Debug\Osmo4.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../../bin/Debug/Osmo4.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>C:\wxWidgets\lib\mswd;../../../gpac_extra_libs/libxml2_w32/include;E:\GPAC\gpac_extra_libs\libxml2_w32\include;../../M4Systems/SceneGraph;C:\wxWidgets\include;C:\wxWidgets\contrib\include;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Obj/Release\Osmo4.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader />
+      <ObjectFileName>.\Obj/Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Obj/Release\Osmo4.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>C:\wxWidgets\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/Release\Osmo4.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../../bin/Release/Osmo4.exe</OutputFile>
+      <AdditionalLibraryDirectories>E:\GPAC\gpac_extra_libs\libxml2_w32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <StackReserveSize>8388608</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddressBar.cpp" />
+    <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="FileProps.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="OpenUrl.cpp" />
+    <ClCompile Include="OptAudio.cpp" />
+    <ClCompile Include="OptDecoder.cpp" />
+    <ClCompile Include="OptFont.cpp" />
+    <ClCompile Include="OptGen.cpp" />
+    <ClCompile Include="OptHTTP.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="OptRender.cpp" />
+    <ClCompile Include="OptRender2D.cpp" />
+    <ClCompile Include="OptRender3D.cpp" />
+    <ClCompile Include="OptStream.cpp" />
+    <ClCompile Include="OptSystems.cpp" />
+    <ClCompile Include="OptVideo.cpp" />
+    <ClCompile Include="Osmo4.cpp" />
+    <ClCompile Include="Playlist.cpp" />
+    <ClCompile Include="Sliders.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Osmo4.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddressBar.h" />
+    <ClInclude Include="ChildView.h" />
+    <ClInclude Include="FileProps.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="OpenUrl.h" />
+    <ClInclude Include="OptAudio.h" />
+    <ClInclude Include="OptDecoder.h" />
+    <ClInclude Include="OptFont.h" />
+    <ClInclude Include="OptGen.h" />
+    <ClInclude Include="OptHTTP.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OptRender.h" />
+    <ClInclude Include="OptRender2D.h" />
+    <ClInclude Include="OptRender3D.h" />
+    <ClInclude Include="OptStream.h" />
+    <ClInclude Include="OptSystems.h" />
+    <ClInclude Include="OptVideo.h" />
+    <ClInclude Include="Osmo4.h" />
+    <ClInclude Include="Playlist.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Sliders.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\error.ico" />
+    <Image Include="res\maintool.bmp" />
+    <Image Include="res\message.ico" />
+    <Image Include="res\Osmo4.ico" />
+    <Image Include="res\pause.ico" />
+    <Image Include="res\play.ico" />
+    <Image Include="res\playlist.bmp" />
+    <Image Include="res\stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Osmo4.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\M4SYSTEMS\M4Systems_dll.vcxproj">
+      <Project>{c7bd68b0-59d9-4549-87fd-88aaa3365f13}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\aac_in\aac_in.vcxproj">
+      <Project>{31d683de-cc3b-468e-8f98-03653e507db8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\amr_dec\amr_dec.vcxproj">
+      <Project>{3743eaf7-5854-4851-871f-b1760c931e09}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\bifs_dec\bifs_dec.vcxproj">
+      <Project>{998669bd-c084-4331-99fb-2c5e6f8435ac}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\ctx_load\ctx_load.vcxproj">
+      <Project>{df083e04-1af0-4220-bfb4-26083ad802c3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\dummy_in\bt_in.vcxproj">
+      <Project>{7fb9e79b-4501-4039-a86e-25e9b2d2d0e7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\dx_hw\dx_hw.vcxproj">
+      <Project>{1c302472-9ecb-471c-a0b6-2589c890863a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\ffmpeg_in\ffmpeg_in.vcxproj">
+      <Project>{21207511-b555-4289-8dd4-df7d4b2724c0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\file_dnload\file_dnload.vcxproj">
+      <Project>{954f82ac-eadd-4c06-9eac-67ecbee4316f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\ft_font\ft_font.vcxproj">
+      <Project>{db4bb6c0-cb8f-455a-a7fa-76d57f73a262}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\gdip_rend\gdip_rend.vcxproj">
+      <Project>{4556ea74-ca6b-4c4e-ade5-4122e3f4808e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\img_in\img_in.vcxproj">
+      <Project>{bd91c232-1d47-4c8b-91d0-a9227344f7fd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\m4_rend\m4_rend.vcxproj">
+      <Project>{0492a1fc-479e-4a04-a97a-cf451d7ed0d8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\mp3_in\mp3_in.vcxproj">
+      <Project>{27bb647e-1ba9-4b89-b1f8-9734be43acdf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\mp4_io\mp4_io.vcxproj">
+      <Project>{edbe0af4-32f4-4b4f-97e4-2bbb6605e151}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\od_dec\od_dec.vcxproj">
+      <Project>{b2cff1f2-d5d5-41ed-8dad-a03362c2a415}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\ogg\ogg.vcxproj">
+      <Project>{694b1d51-0630-4140-b35a-f21aa3e41668}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\render2d\render2d.vcxproj">
+      <Project>{fbadc4cb-056c-4642-8565-4a944fc71691}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\rtp_in\rtp_in.vcxproj">
+      <Project>{980c181b-b6c0-41ab-b0d9-8cdedad7cfed}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\timedtext\timedtext.vcxproj">
+      <Project>{6523421b-e9c5-4588-82f1-b968ee29c50b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\wav_audio\wav_audio.vcxproj">
+      <Project>{fb249829-439b-4b7a-9056-765060aecf51}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\xvid_dec\xvid_dec.vcxproj">
+      <Project>{de572e5e-2b60-4b01-babd-cc4d57ede973}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

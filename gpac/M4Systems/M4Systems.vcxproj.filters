@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{9469a5bc-e879-48fa-bf61-395028576fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IETF">
+      <UniqueIdentifier>{a88f01b3-339e-4d91-8cce-a90046064864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OD">
+      <UniqueIdentifier>{295abaf9-7349-437a-b670-5788fffb3340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MP4">
+      <UniqueIdentifier>{93330390-a38e-4333-9ed5-a9c2c57d9a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneGraph">
+      <UniqueIdentifier>{4c240b02-c968-48ed-9a6c-e8ad37672b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring">
+      <UniqueIdentifier>{ed13262e-307e-445e-9dc6-cdd0d2c8ef33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BIFS">
+      <UniqueIdentifier>{918b5c66-a734-4b63-85bb-d671e2f9fe98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ESM">
+      <UniqueIdentifier>{1de7fe99-1959-4c97-9ef8-37043d183edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{79222dd7-1317-4c0d-b37d-1facd6e198d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LASeR">
+      <UniqueIdentifier>{660b0e68-687b-4de4-8c07-dde4d17f5b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{a96b018e-011a-40e4-a40f-578388dcb3a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tools\base_encoding.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\BitStream.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Chain.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\error.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\IniFile.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\w32\os_divers.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\w32\os_net.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\w32\os_plug.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\w32\os_thread.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\plugin.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\StringParser.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\URL.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\UTF8.c">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTCP.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTP.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTPReorder.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTSP_command.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTSP_common.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTSP_http.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTSP_response.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTSP_server.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\RTSP_session.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="IETF\SDP.c">
+      <Filter>IETF</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\comPrivate.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\descPrivate.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\descriptors.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\ESDescriptor.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\InitialObjectDescriptor.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\M4F_InitialObjectDescriptor.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\M4F_ObjectDescriptor.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\ObjectDescriptor.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\OCICodec.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\od_code.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\OD_Dump.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\OD_Parse.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\ODCoDec.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\ODCommand.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\QoSDescriptor.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\SLConfigDescriptor.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="OD\SyncLayer.c">
+      <Filter>OD</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\3GPP_atoms_code.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\Atom.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\AtomPriv.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\atoms_code.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\AVC.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\base_sample_desc.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\DTE.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\ghnt.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\HintPacket.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\HintSample.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_3GPP.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_dataMap.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Dump.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_FileDataMap.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_FileMapping.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Fragments.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_HintTrack.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Media.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Media_od.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Movie_read.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Movie_write.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_MovieIntern.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_packing.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Publish.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_RTPHint.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_stbl_read.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_stbl_write.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_store.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\M4_Track.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\RTPPacket.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4\TimedText.c">
+      <Filter>MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\base_scenegraph.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\mpeg4_animators.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\mpeg4_commands.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\mpeg4_nodes.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\mpeg4_valuator.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\svg_nodes.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\svg_tools.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\vrml_interpolators.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\vrml_proto.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\vrml_route.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\vrml_script.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\vrml_SpiderMonkey.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\vrml_tools.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\x3d_nodes.c">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\avilib.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\AVParsers.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\gpac_ogg.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\ISMA.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\LoadBT.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\LoadMP4.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\LoadXMTA.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\M4TrackHinter.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\MediaExport.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\MediaImport.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\mpeg2_ps.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\RTPPacketizer.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\RTPPck3GPP.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\RTPPckMPEG12.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\RTPPckMPEG4.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\SceneDump.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\SceneManager.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\SceneStats.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\SWFParse.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\SWFShape.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\TextImport.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\TrackTools.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="authoring\xml_parser.c">
+      <Filter>Authoring</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\AADecoder.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\bifs_node_tables.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\BIFSComDec.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\BIFSComEnc.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\BIFSDec.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\BIFSEnc.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\BIFSMemDec.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\Conditional.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\FieldDec.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\FieldEnc.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\PredictiveMFField.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\Quantize.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\SFScriptDec.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\SFScriptEnc.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BIFS\Unquantize.c">
+      <Filter>BIFS</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\channel.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\clock.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\decoder.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\InlineScene.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\InputSensor.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\M4NodeInit.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\M4Term.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\MediaControl.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\MediaManager.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\MediaMemory.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\MediaObject.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\MediaSensor.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\NetService.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\ODBrowser.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="ESM\ODManager.c">
+      <Filter>ESM</Filter>
+    </ClCompile>
+    <ClCompile Include="render\audio_input.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\audio_mixer.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\audio_render.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\audio_stacks.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\base_textures.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\common_stacks.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\path2D.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\path2D_outline.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\render_tools.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\renderer.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\texturing.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\yuv_to_rgb.c">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="LASeR\LASeRCodec.c">
+      <Filter>LASeR</Filter>
+    </ClCompile>
+    <ClCompile Include="LASeR\LASERDec.c">
+      <Filter>LASeR</Filter>
+    </ClCompile>
+    <ClCompile Include="LASeR\LASeRNodes.c">
+      <Filter>LASeR</Filter>
+    </ClCompile>
+    <ClCompile Include="LASeR\LASeRParse.c">
+      <Filter>LASeR</Filter>
+    </ClCompile>
+    <ClCompile Include="LASeR\LASeRSceneGraph.c">
+      <Filter>LASeR</Filter>
+    </ClCompile>
+    <ClCompile Include="LASeR\xmldump.c">
+      <Filter>LASeR</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tools\plugin.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_ietf_dev.h">
+      <Filter>IETF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_od_dev.h">
+      <Filter>OD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_isomedia_dev.h">
+      <Filter>MP4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_scenegraph_dev.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\avilib.h">
+      <Filter>Authoring</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_author_dev.h">
+      <Filter>Authoring</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_swf_dev.h">
+      <Filter>Authoring</Filter>
+    </ClInclude>
+    <ClInclude Include="authoring\mpeg2_ps.h">
+      <Filter>Authoring</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_bifs_dev.h">
+      <Filter>BIFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_bifs_tables.h">
+      <Filter>BIFS</Filter>
+    </ClInclude>
+    <ClInclude Include="BIFS\Quantize.h">
+      <Filter>BIFS</Filter>
+    </ClInclude>
+    <ClInclude Include="BIFS\SFScript.h">
+      <Filter>BIFS</Filter>
+    </ClInclude>
+    <ClInclude Include="ESM\InputSensor.h">
+      <Filter>ESM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_esm_dev.h">
+      <Filter>ESM</Filter>
+    </ClInclude>
+    <ClInclude Include="ESM\MediaControl.h">
+      <Filter>ESM</Filter>
+    </ClInclude>
+    <ClInclude Include="ESM\MediaMemory.h">
+      <Filter>ESM</Filter>
+    </ClInclude>
+    <ClInclude Include="render\common_stacks.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_render_dev.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\intern\m4_render_tools.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="LASeR\laser_types.h">
+      <Filter>LASeR</Filter>
+    </ClInclude>
+    <ClInclude Include="LASeR\LASeRCodec.h">
+      <Filter>LASeR</Filter>
+    </ClInclude>
+    <ClInclude Include="LASeR\m4_laser_dev.h">
+      <Filter>LASeR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_author.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_avhw.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_bifs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_config.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_decoder.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_descriptors.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_graphics.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_ietf.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_isomedia.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_mpeg4_nodes.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_network.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_ogg.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_render.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_scenegraph.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_scenegraph_svg.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_scenegraph_vrml.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_svg_nodes.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_terminal.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_tools.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_user.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gpac\m4_x3d_nodes.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

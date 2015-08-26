@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{813596df-11e4-47d3-bd6b-624abcfcf1ae}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9f4a8420-596a-4c86-a779-bac222f25a32}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rtp_in.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_payloads.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_signaling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdp_fetch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdp_load.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rtp_in.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="rtp_in.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

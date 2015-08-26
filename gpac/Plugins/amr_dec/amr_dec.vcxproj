@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{3743EAF7-5854-4851-871F-B1760C931E09}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Obj/W32Rel\</OutDir>
+    <IntDir>.\Obj/W32Rel\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Obj/W32Deb\</OutDir>
+    <IntDir>.\Obj/W32Deb\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;__MSDOS__;MMS_IO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/W32Rel\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Obj/W32Rel\amr_dec.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Obj/W32Rel\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/W32Rel\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Obj/W32Rel\amr_dec.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/W32Rel\amr_dec.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>../../bin/Release/amr_dec.dll</OutputFile>
+      <ImportLibrary>.\Obj/W32Rel\amr_dec.lib</ImportLibrary>
+      <StackReserveSize>8388608</StackReserveSize>
+      <ModuleDefinitionFile>.\amr_dec.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;__MSDOS__;MMS_IO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/W32Deb\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Obj/W32Deb\amr_dec.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Obj/W32Deb\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/W32Deb\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Obj/W32Deb\amr_dec.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/W32Deb\amr_dec.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>../../bin/Debug/amr_dec.dll</OutputFile>
+      <ImportLibrary>.\Obj/W32Deb\amr_dec.lib</ImportLibrary>
+      <ModuleDefinitionFile>.\amr_dec.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="amr_dec.c" />
+    <ClCompile Include="amr_in.c" />
+    <ClCompile Include="AMR_NB\agc.c" />
+    <ClCompile Include="AMR_NB\autocorr.c" />
+    <ClCompile Include="AMR_NB\az_lsp.c" />
+    <ClCompile Include="AMR_NB\a_refl.c" />
+    <ClCompile Include="AMR_NB\basicop2.c" />
+    <ClCompile Include="AMR_NB\bgnscd.c" />
+    <ClCompile Include="AMR_NB\bits2prm.c" />
+    <ClCompile Include="AMR_NB\b_cn_cod.c" />
+    <ClCompile Include="AMR_NB\c1035pf.c" />
+    <ClCompile Include="AMR_NB\c2_11pf.c" />
+    <ClCompile Include="AMR_NB\c2_9pf.c" />
+    <ClCompile Include="AMR_NB\c3_14pf.c" />
+    <ClCompile Include="AMR_NB\c4_17pf.c" />
+    <ClCompile Include="AMR_NB\c8_31pf.c" />
+    <ClCompile Include="AMR_NB\calc_cor.c" />
+    <ClCompile Include="AMR_NB\calc_en.c" />
+    <ClCompile Include="AMR_NB\cbsearch.c" />
+    <ClCompile Include="AMR_NB\cl_ltp.c" />
+    <ClCompile Include="AMR_NB\cod_amr.c" />
+    <ClCompile Include="AMR_NB\convolve.c" />
+    <ClCompile Include="AMR_NB\copy.c" />
+    <ClCompile Include="AMR_NB\cor_h.c" />
+    <ClCompile Include="AMR_NB\count.c" />
+    <ClCompile Include="AMR_NB\c_g_aver.c" />
+    <ClCompile Include="AMR_NB\d1035pf.c" />
+    <ClCompile Include="AMR_NB\d2_11pf.c" />
+    <ClCompile Include="AMR_NB\d2_9pf.c" />
+    <ClCompile Include="AMR_NB\d3_14pf.c" />
+    <ClCompile Include="AMR_NB\d4_17pf.c" />
+    <ClCompile Include="AMR_NB\d8_31pf.c" />
+    <ClCompile Include="AMR_NB\dec_amr.c" />
+    <ClCompile Include="AMR_NB\dec_gain.c" />
+    <ClCompile Include="AMR_NB\dec_lag3.c" />
+    <ClCompile Include="AMR_NB\dec_lag6.c" />
+    <ClCompile Include="AMR_NB\dtx_dec.c" />
+    <ClCompile Include="AMR_NB\dtx_enc.c" />
+    <ClCompile Include="AMR_NB\d_gain_c.c" />
+    <ClCompile Include="AMR_NB\d_gain_p.c" />
+    <ClCompile Include="AMR_NB\d_homing.c" />
+    <ClCompile Include="AMR_NB\d_plsf.c" />
+    <ClCompile Include="AMR_NB\d_plsf_3.c" />
+    <ClCompile Include="AMR_NB\d_plsf_5.c" />
+    <ClCompile Include="AMR_NB\ec_gains.c" />
+    <ClCompile Include="AMR_NB\enc_lag3.c" />
+    <ClCompile Include="AMR_NB\enc_lag6.c" />
+    <ClCompile Include="AMR_NB\ex_ctrl.c" />
+    <ClCompile Include="AMR_NB\e_homing.c" />
+    <ClCompile Include="AMR_NB\gain_q.c" />
+    <ClCompile Include="AMR_NB\gc_pred.c" />
+    <ClCompile Include="AMR_NB\gmed_n.c" />
+    <ClCompile Include="AMR_NB\g_adapt.c" />
+    <ClCompile Include="AMR_NB\g_code.c" />
+    <ClCompile Include="AMR_NB\g_pitch.c" />
+    <ClCompile Include="AMR_NB\hp_max.c" />
+    <ClCompile Include="AMR_NB\inter_36.c" />
+    <ClCompile Include="AMR_NB\int_lpc.c" />
+    <ClCompile Include="AMR_NB\int_lsf.c" />
+    <ClCompile Include="AMR_NB\inv_sqrt.c" />
+    <ClCompile Include="AMR_NB\lag_wind.c" />
+    <ClCompile Include="AMR_NB\levinson.c" />
+    <ClCompile Include="AMR_NB\lflg_upd.c" />
+    <ClCompile Include="AMR_NB\log2.c" />
+    <ClCompile Include="AMR_NB\lpc.c" />
+    <ClCompile Include="AMR_NB\lsfwt.c" />
+    <ClCompile Include="AMR_NB\lsp.c" />
+    <ClCompile Include="AMR_NB\lsp_avg.c" />
+    <ClCompile Include="AMR_NB\lsp_az.c" />
+    <ClCompile Include="AMR_NB\lsp_lsf.c" />
+    <ClCompile Include="AMR_NB\mac_32.c" />
+    <ClCompile Include="AMR_NB\n_proc.c" />
+    <ClCompile Include="AMR_NB\ol_ltp.c" />
+    <ClCompile Include="AMR_NB\oper_32b.c" />
+    <ClCompile Include="AMR_NB\ph_disp.c" />
+    <ClCompile Include="AMR_NB\pitch_fr.c" />
+    <ClCompile Include="AMR_NB\pitch_ol.c" />
+    <ClCompile Include="AMR_NB\post_pro.c" />
+    <ClCompile Include="AMR_NB\pow2.c" />
+    <ClCompile Include="AMR_NB\pred_lt.c" />
+    <ClCompile Include="AMR_NB\preemph.c" />
+    <ClCompile Include="AMR_NB\pre_big.c" />
+    <ClCompile Include="AMR_NB\pre_proc.c" />
+    <ClCompile Include="AMR_NB\prm2bits.c" />
+    <ClCompile Include="AMR_NB\pstfilt.c" />
+    <ClCompile Include="AMR_NB\p_ol_wgh.c" />
+    <ClCompile Include="AMR_NB\qgain475.c" />
+    <ClCompile Include="AMR_NB\qgain795.c" />
+    <ClCompile Include="AMR_NB\qua_gain.c" />
+    <ClCompile Include="AMR_NB\q_gain_c.c" />
+    <ClCompile Include="AMR_NB\q_gain_p.c" />
+    <ClCompile Include="AMR_NB\q_plsf.c" />
+    <ClCompile Include="AMR_NB\q_plsf_3.c" />
+    <ClCompile Include="AMR_NB\q_plsf_5.c" />
+    <ClCompile Include="AMR_NB\reorder.c" />
+    <ClCompile Include="AMR_NB\residu.c" />
+    <ClCompile Include="AMR_NB\r_fft.c" />
+    <ClCompile Include="AMR_NB\s10_8pf.c" />
+    <ClCompile Include="AMR_NB\set_sign.c" />
+    <ClCompile Include="AMR_NB\set_zero.c" />
+    <ClCompile Include="AMR_NB\sid_sync.c" />
+    <ClCompile Include="AMR_NB\spreproc.c" />
+    <ClCompile Include="AMR_NB\spstproc.c" />
+    <ClCompile Include="AMR_NB\sp_dec.c" />
+    <ClCompile Include="AMR_NB\sp_enc.c" />
+    <ClCompile Include="AMR_NB\sqrt_l.c" />
+    <ClCompile Include="AMR_NB\strfunc.c" />
+    <ClCompile Include="AMR_NB\syn_filt.c" />
+    <ClCompile Include="AMR_NB\ton_stab.c" />
+    <ClCompile Include="AMR_NB\vad1.c" />
+    <ClCompile Include="AMR_NB\vad2.c" />
+    <ClCompile Include="AMR_NB\vadname.c" />
+    <ClCompile Include="AMR_NB\weight_a.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="amr_dec.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\gpac\m4_decoder.h" />
+    <ClInclude Include="..\..\include\gpac\m4_tools.h" />
+    <ClInclude Include="amr_dec.h" />
+    <ClInclude Include="AMR_NB\agc.h" />
+    <ClInclude Include="AMR_NB\autocorr.h" />
+    <ClInclude Include="AMR_NB\az_lsp.h" />
+    <ClInclude Include="AMR_NB\a_refl.h" />
+    <ClInclude Include="AMR_NB\basic_op.h" />
+    <ClInclude Include="AMR_NB\bgnscd.h" />
+    <ClInclude Include="AMR_NB\bits2prm.h" />
+    <ClInclude Include="AMR_NB\b_cn_cod.h" />
+    <ClInclude Include="AMR_NB\c1035pf.h" />
+    <ClInclude Include="AMR_NB\c2_11pf.h" />
+    <ClInclude Include="AMR_NB\c2_9pf.h" />
+    <ClInclude Include="AMR_NB\c3_14pf.h" />
+    <ClInclude Include="AMR_NB\c4_17pf.h" />
+    <ClInclude Include="AMR_NB\c8_31pf.h" />
+    <ClInclude Include="AMR_NB\calc_cor.h" />
+    <ClInclude Include="AMR_NB\calc_en.h" />
+    <ClInclude Include="AMR_NB\cbsearch.h" />
+    <ClInclude Include="AMR_NB\cl_ltp.h" />
+    <ClInclude Include="AMR_NB\cnst.h" />
+    <ClInclude Include="AMR_NB\cnst_vad.h" />
+    <ClInclude Include="AMR_NB\cod_amr.h" />
+    <ClInclude Include="AMR_NB\convolve.h" />
+    <ClInclude Include="AMR_NB\copy.h" />
+    <ClInclude Include="AMR_NB\cor_h.h" />
+    <ClInclude Include="AMR_NB\count.h" />
+    <ClInclude Include="AMR_NB\c_g_aver.h" />
+    <ClInclude Include="AMR_NB\d1035pf.h" />
+    <ClInclude Include="AMR_NB\d2_11pf.h" />
+    <ClInclude Include="AMR_NB\d2_9pf.h" />
+    <ClInclude Include="AMR_NB\d3_14pf.h" />
+    <ClInclude Include="AMR_NB\d4_17pf.h" />
+    <ClInclude Include="AMR_NB\d8_31pf.h" />
+    <ClInclude Include="AMR_NB\dec_amr.h" />
+    <ClInclude Include="AMR_NB\dec_gain.h" />
+    <ClInclude Include="AMR_NB\dec_lag3.h" />
+    <ClInclude Include="AMR_NB\dec_lag6.h" />
+    <ClInclude Include="AMR_NB\dtx_dec.h" />
+    <ClInclude Include="AMR_NB\dtx_enc.h" />
+    <ClInclude Include="AMR_NB\d_gain_c.h" />
+    <ClInclude Include="AMR_NB\d_gain_p.h" />
+    <ClInclude Include="AMR_NB\d_homing.h" />
+    <ClInclude Include="AMR_NB\d_plsf.h" />
+    <ClInclude Include="AMR_NB\ec_gains.h" />
+    <ClInclude Include="AMR_NB\enc_lag3.h" />
+    <ClInclude Include="AMR_NB\enc_lag6.h" />
+    <ClInclude Include="AMR_NB\ex_ctrl.h" />
+    <ClInclude Include="AMR_NB\e_homing.h" />
+    <ClInclude Include="AMR_NB\frame.h" />
+    <ClInclude Include="AMR_NB\gain_q.h" />
+    <ClInclude Include="AMR_NB\gc_pred.h" />
+    <ClInclude Include="AMR_NB\gmed_n.h" />
+    <ClInclude Include="AMR_NB\g_adapt.h" />
+    <ClInclude Include="AMR_NB\g_code.h" />
+    <ClInclude Include="AMR_NB\g_pitch.h" />
+    <ClInclude Include="AMR_NB\hp_max.h" />
+    <ClInclude Include="AMR_NB\inter_36.h" />
+    <ClInclude Include="AMR_NB\int_lpc.h" />
+    <ClInclude Include="AMR_NB\int_lsf.h" />
+    <ClInclude Include="AMR_NB\inv_sqrt.h" />
+    <ClInclude Include="AMR_NB\lag_wind.h" />
+    <ClInclude Include="AMR_NB\levinson.h" />
+    <ClInclude Include="AMR_NB\log2.h" />
+    <ClInclude Include="AMR_NB\lpc.h" />
+    <ClInclude Include="AMR_NB\lsfwt.h" />
+    <ClInclude Include="AMR_NB\lsp.h" />
+    <ClInclude Include="AMR_NB\lsp_avg.h" />
+    <ClInclude Include="AMR_NB\lsp_az.h" />
+    <ClInclude Include="AMR_NB\lsp_lsf.h" />
+    <ClInclude Include="AMR_NB\mac_32.h" />
+    <ClInclude Include="AMR_NB\mode.h" />
+    <ClInclude Include="AMR_NB\n_proc.h" />
+    <ClInclude Include="AMR_NB\ol_ltp.h" />
+    <ClInclude Include="AMR_NB\oper_32b.h" />
+    <ClInclude Include="AMR_NB\ph_disp.h" />
+    <ClInclude Include="AMR_NB\pitch_fr.h" />
+    <ClInclude Include="AMR_NB\pitch_ol.h" />
+    <ClInclude Include="AMR_NB\post_pro.h" />
+    <ClInclude Include="AMR_NB\pow2.h" />
+    <ClInclude Include="AMR_NB\pred_lt.h" />
+    <ClInclude Include="AMR_NB\preemph.h" />
+    <ClInclude Include="AMR_NB\pre_big.h" />
+    <ClInclude Include="AMR_NB\pre_proc.h" />
+    <ClInclude Include="AMR_NB\prm2bits.h" />
+    <ClInclude Include="AMR_NB\pstfilt.h" />
+    <ClInclude Include="AMR_NB\p_ol_wgh.h" />
+    <ClInclude Include="AMR_NB\qgain475.h" />
+    <ClInclude Include="AMR_NB\qgain795.h" />
+    <ClInclude Include="AMR_NB\qua_gain.h" />
+    <ClInclude Include="AMR_NB\q_gain_c.h" />
+    <ClInclude Include="AMR_NB\q_gain_p.h" />
+    <ClInclude Include="AMR_NB\q_plsf.h" />
+    <ClInclude Include="AMR_NB\reorder.h" />
+    <ClInclude Include="AMR_NB\residu.h" />
+    <ClInclude Include="AMR_NB\s10_8pf.h" />
+    <ClInclude Include="AMR_NB\set_sign.h" />
+    <ClInclude Include="AMR_NB\set_zero.h" />
+    <ClInclude Include="AMR_NB\sid_sync.h" />
+    <ClInclude Include="AMR_NB\spreproc.h" />
+    <ClInclude Include="AMR_NB\spstproc.h" />
+    <ClInclude Include="AMR_NB\sp_dec.h" />
+    <ClInclude Include="AMR_NB\sp_enc.h" />
+    <ClInclude Include="AMR_NB\sqrt_l.h" />
+    <ClInclude Include="AMR_NB\strfunc.h" />
+    <ClInclude Include="AMR_NB\syn_filt.h" />
+    <ClInclude Include="AMR_NB\ton_stab.h" />
+    <ClInclude Include="AMR_NB\typedef.h" />
+    <ClInclude Include="AMR_NB\typedefs.h" />
+    <ClInclude Include="AMR_NB\vad.h" />
+    <ClInclude Include="AMR_NB\vad1.h" />
+    <ClInclude Include="AMR_NB\vad2.h" />
+    <ClInclude Include="AMR_NB\vadname.h" />
+    <ClInclude Include="AMR_NB\weight_a.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\M4SYSTEMS\M4Systems_dll.vcxproj">
+      <Project>{c7bd68b0-59d9-4549-87fd-88aaa3365f13}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f443fb96-5901-4f97-954e-ba4bb5d62d60}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\LASeR">
+      <UniqueIdentifier>{6a72af7b-d242-4063-bfae-835b4e6c7148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SVG">
+      <UniqueIdentifier>{fff4db6d-2b8b-49ec-b718-b7dad8489242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SMIL">
+      <UniqueIdentifier>{17f7bd23-6dc4-407e-b770-021d9964c5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0ddf4649-adb7-402f-8cf9-5b49d2dc7a98}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8f4f43a7-c5b7-4f28-adae-8b8877bdc247}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LASeR\laser_animate.c">
+      <Filter>Source Files\LASeR</Filter>
+    </ClCompile>
+    <ClCompile Include="LASeR\render_laser_nodes.c">
+      <Filter>Source Files\LASeR</Filter>
+    </ClCompile>
+    <ClCompile Include="SVG\render_svg_nodes.c">
+      <Filter>Source Files\SVG</Filter>
+    </ClCompile>
+    <ClCompile Include="SVG\render_svg_text.c">
+      <Filter>Source Files\SVG</Filter>
+    </ClCompile>
+    <ClCompile Include="SVG\svg_animation.c">
+      <Filter>Source Files\SVG</Filter>
+    </ClCompile>
+    <ClCompile Include="SVG\svg_media.c">
+      <Filter>Source Files\SVG</Filter>
+    </ClCompile>
+    <ClCompile Include="SMIL\smil_animation.c">
+      <Filter>Source Files\SMIL</Filter>
+    </ClCompile>
+    <ClCompile Include="background2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="copy_pixels.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drawable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flashshape_proto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="form.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry_stacks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grouping.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grouping_stacks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ifs2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ils2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="path_layout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render2d_nodes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sensor_stacks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture_stacks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="viewport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visualsurface2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visualsurface2d_draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LASeR\laser_stacks.h">
+      <Filter>Source Files\LASeR</Filter>
+    </ClInclude>
+    <ClInclude Include="SVG\svg_stacks.h">
+      <Filter>Source Files\SVG</Filter>
+    </ClInclude>
+    <ClInclude Include="SMIL\smil_stacks.h">
+      <Filter>Source Files\SMIL</Filter>
+    </ClInclude>
+    <ClInclude Include="drawable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grouping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stacks2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="visualsurface2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="render2d.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
