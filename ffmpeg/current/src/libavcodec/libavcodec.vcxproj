@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{66866648-77EC-45F0-B3BF-8C61AE36814F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\../../build/vc6.0/Debug/libavcodec\</OutDir>
+    <IntDir>.\../../build/vc6.0/Debug/libavcodec\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\../../build/vc6.0/Release/libavcodec\</OutDir>
+    <IntDir>.\../../build/vc6.0/Release/libavcodec\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\libavcodec;..\libavcodec\libac3 ..\libav;..\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_AV_CONFIG_H;EMULATE_FAST_INT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\../../build/vc6.0/Debug/libavcodec\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\../../build/vc6.0/Debug/libavcodec\libavcodec.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\../../build/vc6.0/Debug/libavcodec\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../build/vc6.0/Debug/libavcodec\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\../../build/vc6.0/Debug/libavcodec\libavcodec.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>../../build/vc6.0/Debug/libavcodec\avcodec.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\libavcodec;..\libavcodec\libac3 ..\libav;..\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;HAVE_AV_CONFIG_H;EMULATE_FAST_INT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\../../build/vc6.0/Release/libavcodec\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\../../build/vc6.0/Release/libavcodec\libavcodec.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\../../build/vc6.0/Release/libavcodec\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../build/vc6.0/Release/libavcodec\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\../../build/vc6.0/Release/libavcodec\libavcodec.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\../../build/vc6.0/Release/libavcodec\libavcodec.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="4xm.c" />
+    <ClCompile Include="8bps.c" />
+    <ClCompile Include="a52dec.c" />
+    <ClCompile Include="ac3enc.c" />
+    <ClCompile Include="adpcm.c" />
+    <ClCompile Include="adx.c" />
+    <ClCompile Include="allcodecs.c" />
+    <ClCompile Include="asv1.c" />
+    <ClCompile Include="cabac.c" />
+    <ClCompile Include="cinepak.c" />
+    <ClCompile Include="cljr.c" />
+    <ClCompile Include="common.c" />
+    <ClCompile Include="cyuv.c" />
+    <ClCompile Include="dpcm.c" />
+    <ClCompile Include="dsputil.c" />
+    <ClCompile Include="dv.c" />
+    <ClCompile Include="error_resilience.c" />
+    <ClCompile Include="eval.c" />
+    <ClCompile Include="faandct.c" />
+    <ClCompile Include="fft.c" />
+    <ClCompile Include="ffv1.c" />
+    <ClCompile Include="flac.c" />
+    <ClCompile Include="flicvideo.c" />
+    <ClCompile Include="g726.c" />
+    <ClCompile Include="golomb.c" />
+    <ClCompile Include="h261.c" />
+    <ClCompile Include="h263.c" />
+    <ClCompile Include="h263dec.c" />
+    <ClCompile Include="h264.c" />
+    <ClCompile Include="huffyuv.c" />
+    <ClCompile Include="idcinvideo.c" />
+    <ClCompile Include="imgconvert.c" />
+    <ClCompile Include="imgresample.c" />
+    <ClCompile Include="integer.c" />
+    <ClCompile Include="interplayvideo.c" />
+    <ClCompile Include="jfdctfst.c" />
+    <ClCompile Include="jfdctint.c" />
+    <ClCompile Include="jrevdct.c" />
+    <ClCompile Include="lcl.c" />
+    <ClCompile Include="liba52\bitstream.c" />
+    <ClCompile Include="liba52\bit_allocate.c" />
+    <ClCompile Include="liba52\downmix.c" />
+    <ClCompile Include="liba52\imdct.c" />
+    <ClCompile Include="liba52\parse.c" />
+    <ClCompile Include="mace.c" />
+    <ClCompile Include="mdct.c" />
+    <ClCompile Include="mem.c" />
+    <ClCompile Include="mjpeg.c" />
+    <ClCompile Include="motion_est.c" />
+    <ClCompile Include="mpeg12.c" />
+    <ClCompile Include="mpegaudio.c" />
+    <ClCompile Include="mpegaudiodec.c" />
+    <ClCompile Include="mpegvideo.c" />
+    <ClCompile Include="msmpeg4.c" />
+    <ClCompile Include="msrle.c" />
+    <ClCompile Include="msvideo1.c" />
+    <ClCompile Include="opts.c" />
+    <ClCompile Include="parser.c" />
+    <ClCompile Include="pcm.c" />
+    <ClCompile Include="qtrle.c" />
+    <ClCompile Include="ra144.c" />
+    <ClCompile Include="ra288.c" />
+    <ClCompile Include="ratecontrol.c" />
+    <ClCompile Include="rational.c" />
+    <ClCompile Include="raw.c" />
+    <ClCompile Include="resample.c" />
+    <ClCompile Include="resample2.c" />
+    <ClCompile Include="roqvideo.c" />
+    <ClCompile Include="rpza.c" />
+    <ClCompile Include="rv10.c" />
+    <ClCompile Include="simple_idct.c" />
+    <ClCompile Include="smc.c" />
+    <ClCompile Include="truemotion1.c" />
+    <ClCompile Include="utils.c" />
+    <ClCompile Include="vcr1.c" />
+    <ClCompile Include="vmdav.c" />
+    <ClCompile Include="vp3.c" />
+    <ClCompile Include="vp3dsp.c" />
+    <ClCompile Include="vqavideo.c" />
+    <ClCompile Include="xan.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

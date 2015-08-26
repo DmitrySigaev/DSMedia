@@ -1,4 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffmpeg", "..\..\src\ffmpeg.vcproj", "{8361E55D-2EBA-4C08-A580-F14A3864808F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{7829756A-3812-466C-A7E0-7961A7B5C8D1} = {7829756A-3812-466C-A7E0-7961A7B5C8D1}
@@ -6,34 +9,29 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffmpeg", "..\..\src\ffmpeg.
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libavcodec", "..\..\src\libavcodec\libavcodec.vcproj", "{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libavformat", "..\..\src\libavformat\libavformat.vcproj", "{7829756A-3812-466C-A7E0-7961A7B5C8D1}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Debug.ActiveCfg = Debug|Win32
-		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Debug.Build.0 = Debug|Win32
-		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Release.ActiveCfg = Release|Win32
-		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Release.Build.0 = Release|Win32
-		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Debug.ActiveCfg = Debug|Win32
-		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Debug.Build.0 = Debug|Win32
-		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Release.ActiveCfg = Release|Win32
-		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Release.Build.0 = Release|Win32
-		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Debug.ActiveCfg = Debug|Win32
-		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Debug.Build.0 = Debug|Win32
-		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Release.ActiveCfg = Release|Win32
-		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Release.Build.0 = Release|Win32
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Debug|Default.ActiveCfg = Debug|Win32
+		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Debug|Default.Build.0 = Debug|Win32
+		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Release|Default.ActiveCfg = Release|Win32
+		{8361E55D-2EBA-4C08-A580-F14A3864808F}.Release|Default.Build.0 = Release|Win32
+		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Debug|Default.ActiveCfg = Debug|Win32
+		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Debug|Default.Build.0 = Debug|Win32
+		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Release|Default.ActiveCfg = Release|Win32
+		{7AA62D73-AAB7-406C-9AD2-790CE2CE5014}.Release|Default.Build.0 = Release|Win32
+		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Debug|Default.ActiveCfg = Debug|Win32
+		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Debug|Default.Build.0 = Debug|Win32
+		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Release|Default.ActiveCfg = Release|Win32
+		{7829756A-3812-466C-A7E0-7961A7B5C8D1}.Release|Default.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

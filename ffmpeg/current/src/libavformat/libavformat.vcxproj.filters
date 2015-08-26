@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1cc2cb42-edf2-41ee-b68e-dce1c6667a6a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{adfb3cbe-b9a7-443a-a91b-dca0ee29e2b1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="4xm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="allformats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asf-enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="au.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avidec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avienc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aviobuf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ffm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flvdec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flvenc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framehook.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gifdec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idcin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idroq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="img.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ipmovie.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="matroska.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mov.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="movenc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpegts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpegtsenc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nut.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os_support.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pnm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="psxstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="segafilm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sgi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sierravmd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wc3movie.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="westwood.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yuv4mpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="avformat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
