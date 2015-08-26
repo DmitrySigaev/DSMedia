@@ -1,0 +1,3716 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LibJPG - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE4.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"Obj/Release/" /Fd"Obj/Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\libjpg\cdjpeg.c"
+"E:\GPAC\gpac_extra_libs\libjpg\ckconfig.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcapimin.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcapistd.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jccoefct.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jccolor.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcdctmgr.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jchuff.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcinit.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcmainct.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcmarker.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcmaster.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcomapi.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcparam.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcphuff.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcprepct.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jcsample.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jctrans.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdapimin.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdapistd.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdatadst.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdatasrc.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdcoefct.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdcolor.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jddctmgr.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdhuff.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdinput.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdmainct.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdmarker.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdmaster.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdmerge.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdphuff.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdpostct.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdsample.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jdtrans.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jerror.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jfdctflt.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jfdctfst.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jfdctint.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jidctflt.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jidctfst.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jidctint.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jidctred.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jmemansi.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jmemmgr.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jquant1.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jquant2.c"
+"E:\GPAC\gpac_extra_libs\libjpg\jutils.c"
+"E:\GPAC\gpac_extra_libs\libjpg\rdbmp.c"
+"E:\GPAC\gpac_extra_libs\libjpg\rdcolmap.c"
+"E:\GPAC\gpac_extra_libs\libjpg\rdgif.c"
+"E:\GPAC\gpac_extra_libs\libjpg\rdppm.c"
+"E:\GPAC\gpac_extra_libs\libjpg\rdrle.c"
+"E:\GPAC\gpac_extra_libs\libjpg\rdswitch.c"
+"E:\GPAC\gpac_extra_libs\libjpg\rdtarga.c"
+"E:\GPAC\gpac_extra_libs\libjpg\transupp.c"
+"E:\GPAC\gpac_extra_libs\libjpg\wrbmp.c"
+"E:\GPAC\gpac_extra_libs\libjpg\wrgif.c"
+"E:\GPAC\gpac_extra_libs\libjpg\wrppm.c"
+"E:\GPAC\gpac_extra_libs\libjpg\wrrle.c"
+"E:\GPAC\gpac_extra_libs\libjpg\wrtarga.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE4.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE5.tmp" with contents
+[
+/nologo /out:"../lib/w32_release/libjpeg.lib" 
+.\Obj\Release\cdjpeg.obj
+.\Obj\Release\ckconfig.obj
+.\Obj\Release\jcapimin.obj
+.\Obj\Release\jcapistd.obj
+.\Obj\Release\jccoefct.obj
+.\Obj\Release\jccolor.obj
+.\Obj\Release\jcdctmgr.obj
+.\Obj\Release\jchuff.obj
+.\Obj\Release\jcinit.obj
+.\Obj\Release\jcmainct.obj
+.\Obj\Release\jcmarker.obj
+.\Obj\Release\jcmaster.obj
+.\Obj\Release\jcomapi.obj
+.\Obj\Release\jcparam.obj
+.\Obj\Release\jcphuff.obj
+.\Obj\Release\jcprepct.obj
+.\Obj\Release\jcsample.obj
+.\Obj\Release\jctrans.obj
+.\Obj\Release\jdapimin.obj
+.\Obj\Release\jdapistd.obj
+.\Obj\Release\jdatadst.obj
+.\Obj\Release\jdatasrc.obj
+.\Obj\Release\jdcoefct.obj
+.\Obj\Release\jdcolor.obj
+.\Obj\Release\jddctmgr.obj
+.\Obj\Release\jdhuff.obj
+.\Obj\Release\jdinput.obj
+.\Obj\Release\jdmainct.obj
+.\Obj\Release\jdmarker.obj
+.\Obj\Release\jdmaster.obj
+.\Obj\Release\jdmerge.obj
+.\Obj\Release\jdphuff.obj
+.\Obj\Release\jdpostct.obj
+.\Obj\Release\jdsample.obj
+.\Obj\Release\jdtrans.obj
+.\Obj\Release\jerror.obj
+.\Obj\Release\jfdctflt.obj
+.\Obj\Release\jfdctfst.obj
+.\Obj\Release\jfdctint.obj
+.\Obj\Release\jidctflt.obj
+.\Obj\Release\jidctfst.obj
+.\Obj\Release\jidctint.obj
+.\Obj\Release\jidctred.obj
+.\Obj\Release\jmemansi.obj
+.\Obj\Release\jmemmgr.obj
+.\Obj\Release\jquant1.obj
+.\Obj\Release\jquant2.obj
+.\Obj\Release\jutils.obj
+.\Obj\Release\rdbmp.obj
+.\Obj\Release\rdcolmap.obj
+.\Obj\Release\rdgif.obj
+.\Obj\Release\rdppm.obj
+.\Obj\Release\rdrle.obj
+.\Obj\Release\rdswitch.obj
+.\Obj\Release\rdtarga.obj
+.\Obj\Release\transupp.obj
+.\Obj\Release\wrbmp.obj
+.\Obj\Release\wrgif.obj
+.\Obj\Release\wrppm.obj
+.\Obj\Release\wrrle.obj
+.\Obj\Release\wrtarga.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE5.tmp"
+<h3>Output Window</h3>
+Compiling...
+cdjpeg.c
+Generating Code...
+Compiling...
+ckconfig.c
+Generating Code...
+Compiling...
+jcapimin.c
+Generating Code...
+Compiling...
+jcapistd.c
+Generating Code...
+Compiling...
+jccoefct.c
+Generating Code...
+Compiling...
+jccolor.c
+Generating Code...
+Compiling...
+jcdctmgr.c
+Generating Code...
+Compiling...
+jchuff.c
+Generating Code...
+Compiling...
+jcinit.c
+Generating Code...
+Compiling...
+jcmainct.c
+Generating Code...
+Compiling...
+jcmarker.c
+Generating Code...
+Compiling...
+jcmaster.c
+Generating Code...
+Compiling...
+jcomapi.c
+Generating Code...
+Compiling...
+jcparam.c
+Generating Code...
+Compiling...
+jcphuff.c
+Generating Code...
+Compiling...
+jcprepct.c
+Generating Code...
+Compiling...
+jcsample.c
+Generating Code...
+Compiling...
+jctrans.c
+Generating Code...
+Compiling...
+jdapimin.c
+Generating Code...
+Compiling...
+jdapistd.c
+Generating Code...
+Compiling...
+jdatadst.c
+Generating Code...
+Compiling...
+jdatasrc.c
+Generating Code...
+Compiling...
+jdcoefct.c
+Generating Code...
+Compiling...
+jdcolor.c
+Generating Code...
+Compiling...
+jddctmgr.c
+Generating Code...
+Compiling...
+jdhuff.c
+Generating Code...
+Compiling...
+jdinput.c
+Generating Code...
+Compiling...
+jdmainct.c
+Generating Code...
+Compiling...
+jdmarker.c
+Generating Code...
+Compiling...
+jdmaster.c
+Generating Code...
+Compiling...
+jdmerge.c
+Generating Code...
+Compiling...
+jdphuff.c
+Generating Code...
+Compiling...
+jdpostct.c
+Generating Code...
+Compiling...
+jdsample.c
+Generating Code...
+Compiling...
+jdtrans.c
+Generating Code...
+Compiling...
+jerror.c
+Generating Code...
+Compiling...
+jfdctflt.c
+Generating Code...
+Compiling...
+jfdctfst.c
+Generating Code...
+Compiling...
+jfdctint.c
+Generating Code...
+Compiling...
+jidctflt.c
+Generating Code...
+Compiling...
+jidctfst.c
+Generating Code...
+Compiling...
+jidctint.c
+Generating Code...
+Compiling...
+jidctred.c
+Generating Code...
+Compiling...
+jmemansi.c
+Generating Code...
+Compiling...
+jmemmgr.c
+Generating Code...
+Compiling...
+jquant1.c
+Generating Code...
+Compiling...
+jquant2.c
+Generating Code...
+Compiling...
+jutils.c
+Generating Code...
+Compiling...
+rdbmp.c
+Generating Code...
+Compiling...
+rdcolmap.c
+Generating Code...
+Compiling...
+rdgif.c
+Generating Code...
+Compiling...
+rdppm.c
+Generating Code...
+Compiling...
+rdrle.c
+Generating Code...
+Compiling...
+rdswitch.c
+Generating Code...
+Compiling...
+rdtarga.c
+Generating Code...
+Compiling...
+transupp.c
+Generating Code...
+Compiling...
+wrbmp.c
+Generating Code...
+Compiling...
+wrgif.c
+Generating Code...
+Compiling...
+wrppm.c
+Generating Code...
+Compiling...
+wrrle.c
+Generating Code...
+Compiling...
+wrtarga.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+libjpeg.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LibJPG - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+libjpeg.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: fdlibm - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_IEEE_LIBM" /Fp"Obj/Release/fdlibm.pch" /YX /Fo"Obj/Release/" /Fd"Obj/Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\js\fdlibm\e_atan2.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\e_pow.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\e_sqrt.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\k_standard.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_atan.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_copysign.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_fabs.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_finite.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_isnan.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_matherr.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_rint.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_scalbn.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\w_atan2.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\w_pow.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\w_sqrt.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE6.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE7.tmp" with contents
+[
+/nologo /out:"Obj/Release\fdlibm.lib" 
+.\Obj\Release\e_atan2.obj
+.\Obj\Release\e_pow.obj
+.\Obj\Release\e_sqrt.obj
+.\Obj\Release\k_standard.obj
+.\Obj\Release\s_atan.obj
+.\Obj\Release\s_copysign.obj
+.\Obj\Release\s_fabs.obj
+.\Obj\Release\s_finite.obj
+.\Obj\Release\s_isnan.obj
+.\Obj\Release\s_matherr.obj
+.\Obj\Release\s_rint.obj
+.\Obj\Release\s_scalbn.obj
+.\Obj\Release\w_atan2.obj
+.\Obj\Release\w_pow.obj
+.\Obj\Release\w_sqrt.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE7.tmp"
+<h3>Output Window</h3>
+Compiling...
+e_atan2.c
+e_pow.c
+e_sqrt.c
+E:\GPAC\gpac_extra_libs\js\fdlibm\e_pow.c(212) : warning C4723: potential divide by 0
+E:\GPAC\gpac_extra_libs\js\fdlibm\e_pow.c(228) : warning C4723: potential divide by 0
+k_standard.c
+E:\GPAC\gpac_extra_libs\js\fdlibm\e_sqrt.c(150) : warning C4723: potential divide by 0
+s_atan.c
+s_copysign.c
+s_fabs.c
+s_finite.c
+s_isnan.c
+s_matherr.c
+s_rint.c
+s_scalbn.c
+w_atan2.c
+w_pow.c
+w_sqrt.c
+Creating library...
+
+
+
+<h3>Results</h3>
+fdlibm.lib - 0 error(s), 3 warning(s)
+<h3>
+--------------------Configuration: fdlibm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE8.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Z7 /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_IEEE_LIBM" /Fp"Obj/Debug/fdlibm.pch" /YX /Fo"Obj/Debug/" /Fd"Obj/Debug/" /FD /c 
+"E:\GPAC\gpac_extra_libs\js\fdlibm\e_atan2.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\e_pow.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\e_sqrt.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\k_standard.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_atan.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_copysign.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_fabs.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_finite.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_isnan.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_matherr.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_rint.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\s_scalbn.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\w_atan2.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\w_pow.c"
+"E:\GPAC\gpac_extra_libs\js\fdlibm\w_sqrt.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE8.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE9.tmp" with contents
+[
+/nologo /out:"Obj/Debug\fdlibm.lib" 
+.\Obj\Debug\e_atan2.obj
+.\Obj\Debug\e_pow.obj
+.\Obj\Debug\e_sqrt.obj
+.\Obj\Debug\k_standard.obj
+.\Obj\Debug\s_atan.obj
+.\Obj\Debug\s_copysign.obj
+.\Obj\Debug\s_fabs.obj
+.\Obj\Debug\s_finite.obj
+.\Obj\Debug\s_isnan.obj
+.\Obj\Debug\s_matherr.obj
+.\Obj\Debug\s_rint.obj
+.\Obj\Debug\s_scalbn.obj
+.\Obj\Debug\w_atan2.obj
+.\Obj\Debug\w_pow.obj
+.\Obj\Debug\w_sqrt.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE9.tmp"
+<h3>Output Window</h3>
+Compiling...
+e_atan2.c
+e_pow.c
+e_sqrt.c
+k_standard.c
+s_atan.c
+s_copysign.c
+s_fabs.c
+s_finite.c
+s_isnan.c
+s_matherr.c
+s_rint.c
+s_scalbn.c
+w_atan2.c
+w_pow.c
+w_sqrt.c
+Creating library...
+
+
+
+<h3>Results</h3>
+fdlibm.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: freetype - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEA.tmp" with contents
+[
+/MD /Za /W4 /GX /Zi /O2 /I "..\..\..\include" /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /Fo"..\..\..\objs\release/" /Fd"..\..\..\objs\release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\freetype\src\autohint\autohint.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\bdf\bdf.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\cff\cff.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftbase.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\cache\ftcache.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftglyph.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\gzip\ftgzip.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftinit.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftsystem.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\pcf\pcf.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\pfr\pfr.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\psaux\psaux.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\pshinter\pshinter.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\psnames\psmodule.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\raster\raster.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfnt.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\smooth\smooth.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\truetype\truetype.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\type1\type1.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\cid\type1cid.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\type42\type42.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\winfonts\winfnt.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEA.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEB.tmp" with contents
+[
+/MD /Ze /W4 /GX /Zi /O2 /I "..\..\..\include" /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /Fo"..\..\..\objs\release/" /Fd"..\..\..\objs\release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\freetype\builds\win32\ftdebug.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEB.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEC.tmp" with contents
+[
+/nologo /out:"..\..\..\..\lib\w32_release\freetype.lib" 
+\GPAC\gpac_extra_libs\freetype\objs\release\autohint.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\bdf.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\cff.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftbase.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftcache.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftdebug.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftglyph.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftgzip.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftinit.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftmm.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\ftsystem.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\pcf.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\pfr.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\psaux.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\pshinter.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\psmodule.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\raster.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\sfnt.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\smooth.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\truetype.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\type1.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\type1cid.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\type42.obj
+\GPAC\gpac_extra_libs\freetype\objs\release\winfnt.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEC.tmp"
+<h3>Output Window</h3>
+Compiling...
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8804 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+cl /MD /Za /W4 /GX /Zi /O2 /I "..\..\..\include" /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /Fo"..\..\..\objs\release/" /Fd"..\..\..\objs\release/" /FD /c 
+   "E:\GPAC\gpac_extra_libs\freetype\src\autohint\autohint.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\bdf\bdf.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\cff\cff.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftbase.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\cache\ftcache.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftglyph.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\gzip\ftgzip.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftinit.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftsystem.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\pcf\pcf.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\pfr\pfr.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\psaux\psaux.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\pshinter\pshinter.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\psnames\psmodule.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\raster\raster.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfnt.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\smooth\smooth.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\truetype\truetype.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\type1\type1.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\cid\type1cid.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\type42\type42.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\winfonts\winfnt.c"
+
+autohint.c
+Generating Code...
+Compiling...
+bdf.c
+Generating Code...
+Compiling...
+cff.c
+Generating Code...
+Compiling...
+ftbase.c
+Generating Code...
+Compiling...
+ftcache.c
+Generating Code...
+Compiling...
+ftglyph.c
+Generating Code...
+Compiling...
+ftgzip.c
+Generating Code...
+Compiling...
+ftinit.c
+Generating Code...
+Compiling...
+ftmm.c
+E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c(53) : warning C4127: conditional expression is constant
+E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c(53) : warning C4127: conditional expression is constant
+Generating Code...
+Compiling...
+ftsystem.c
+Generating Code...
+Compiling...
+pcf.c
+Generating Code...
+Compiling...
+pfr.c
+Generating Code...
+Compiling...
+psaux.c
+Generating Code...
+Compiling...
+pshinter.c
+Generating Code...
+Compiling...
+psmodule.c
+Generating Code...
+Compiling...
+raster.c
+Generating Code...
+Compiling...
+sfnt.c
+E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfdriver.c(289) : warning C4054: 'type cast' : from function pointer 'void *(*)(struct TT_FaceRec_ *,int )' to data pointer 'void *'
+E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfdriver.c(292) : warning C4054: 'type cast' : from function pointer 'int (*)(struct TT_FaceRec_ *,unsigned long ,long ,unsigned char *,unsigned long *)' to data pointer 'void *'
+Generating Code...
+Compiling...
+smooth.c
+Generating Code...
+Compiling...
+truetype.c
+Generating Code...
+Compiling...
+type1.c
+Generating Code...
+Compiling...
+type1cid.c
+Generating Code...
+Compiling...
+type42.c
+Generating Code...
+Compiling...
+winfnt.c
+Generating Code...
+Compiling...
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8804 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+cl /MD /Ze /W4 /GX /Zi /O2 /I "..\..\..\include" /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /Fo"..\..\..\objs\release/" /Fd"..\..\..\objs\release/" /FD /c 
+   "E:\GPAC\gpac_extra_libs\freetype\builds\win32\ftdebug.c"
+
+ftdebug.c
+Creating library...
+
+
+
+<h3>Results</h3>
+freetype.lib - 0 error(s), 4 warning(s)
+<h3>
+--------------------Configuration: freetype - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPED.tmp" with contents
+[
+/MDd /Za /W4 /GX /Zi /Od /I "..\..\..\include" /D "_DEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "FT_DEBUG_LEVEL_ERROR" /D "FT_DEBUG_LEVEL_TRACE" /Fo"..\..\..\objs\debug/" /Fd"..\..\..\objs\debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\freetype\src\autohint\autohint.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\bdf\bdf.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\cff\cff.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftbase.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\cache\ftcache.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftglyph.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\gzip\ftgzip.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftinit.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\base\ftsystem.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\pcf\pcf.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\pfr\pfr.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\psaux\psaux.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\pshinter\pshinter.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\psnames\psmodule.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\raster\raster.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfnt.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\smooth\smooth.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\truetype\truetype.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\type1\type1.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\cid\type1cid.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\type42\type42.c"
+"E:\GPAC\gpac_extra_libs\freetype\src\winfonts\winfnt.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPED.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEE.tmp" with contents
+[
+/MDd /Ze /W4 /GX /Zi /Od /I "..\..\..\include" /D "_DEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "FT_DEBUG_LEVEL_ERROR" /D "FT_DEBUG_LEVEL_TRACE" /Fo"..\..\..\objs\debug/" /Fd"..\..\..\objs\debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\freetype\builds\win32\ftdebug.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEE.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEF.tmp" with contents
+[
+/nologo /out:"..\..\..\..\lib\w32_debug\freetype.lib" 
+\GPAC\gpac_extra_libs\freetype\objs\debug\autohint.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\bdf.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\cff.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftbase.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftcache.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftdebug.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftglyph.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftgzip.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftinit.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftmm.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\ftsystem.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\pcf.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\pfr.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\psaux.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\pshinter.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\psmodule.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\raster.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\sfnt.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\smooth.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\truetype.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\type1.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\type1cid.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\type42.obj
+\GPAC\gpac_extra_libs\freetype\objs\debug\winfnt.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPEF.tmp"
+<h3>Output Window</h3>
+Compiling...
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8804 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+cl /MDd /Za /W4 /GX /Zi /Od /I "..\..\..\include" /D "_DEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "FT_DEBUG_LEVEL_ERROR" /D "FT_DEBUG_LEVEL_TRACE" /Fo"..\..\..\objs\debug/" /Fd"..\..\..\objs\debug/" /FD /GZ /c 
+   "E:\GPAC\gpac_extra_libs\freetype\src\autohint\autohint.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\bdf\bdf.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\cff\cff.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftbase.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\cache\ftcache.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftglyph.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\gzip\ftgzip.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftinit.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\base\ftsystem.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\pcf\pcf.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\pfr\pfr.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\psaux\psaux.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\pshinter\pshinter.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\psnames\psmodule.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\raster\raster.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfnt.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\smooth\smooth.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\truetype\truetype.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\type1\type1.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\cid\type1cid.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\type42\type42.c"
+   "E:\GPAC\gpac_extra_libs\freetype\src\winfonts\winfnt.c"
+
+autohint.c
+Generating Code...
+Compiling...
+bdf.c
+Generating Code...
+Compiling...
+cff.c
+Generating Code...
+Compiling...
+ftbase.c
+Generating Code...
+Compiling...
+ftcache.c
+Generating Code...
+Compiling...
+ftglyph.c
+Generating Code...
+Compiling...
+ftgzip.c
+Generating Code...
+Compiling...
+ftinit.c
+Generating Code...
+Compiling...
+ftmm.c
+E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c(53) : warning C4127: conditional expression is constant
+E:\GPAC\gpac_extra_libs\freetype\src\base\ftmm.c(53) : warning C4127: conditional expression is constant
+Generating Code...
+Compiling...
+ftsystem.c
+Generating Code...
+Compiling...
+pcf.c
+Generating Code...
+Compiling...
+pfr.c
+Generating Code...
+Compiling...
+psaux.c
+Generating Code...
+Compiling...
+pshinter.c
+Generating Code...
+Compiling...
+psmodule.c
+Generating Code...
+Compiling...
+raster.c
+Generating Code...
+Compiling...
+sfnt.c
+E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfdriver.c(289) : warning C4054: 'type cast' : from function pointer 'void *(*)(struct TT_FaceRec_ *,int )' to data pointer 'void *'
+E:\GPAC\gpac_extra_libs\freetype\src\sfnt\sfdriver.c(292) : warning C4054: 'type cast' : from function pointer 'int (*)(struct TT_FaceRec_ *,unsigned long ,long ,unsigned char *,unsigned long *)' to data pointer 'void *'
+Generating Code...
+Compiling...
+smooth.c
+Generating Code...
+Compiling...
+truetype.c
+Generating Code...
+Compiling...
+type1.c
+Generating Code...
+Compiling...
+type1cid.c
+Generating Code...
+Compiling...
+type42.c
+Generating Code...
+Compiling...
+winfnt.c
+Generating Code...
+Compiling...
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8804 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+cl /MDd /Ze /W4 /GX /Zi /Od /I "..\..\..\include" /D "_DEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "FT_DEBUG_LEVEL_ERROR" /D "FT_DEBUG_LEVEL_TRACE" /Fo"..\..\..\objs\debug/" /Fd"..\..\..\objs\debug/" /FD /GZ /c 
+   "E:\GPAC\gpac_extra_libs\freetype\builds\win32\ftdebug.c"
+
+ftdebug.c
+F:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\rpcasync.h(45) : warning C4115: '_RPC_ASYNC_STATE' : named type definition in parentheses
+Creating library...
+
+
+
+<h3>Results</h3>
+freetype.lib - 0 error(s), 5 warning(s)
+<h3>
+--------------------Configuration: js - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF0.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "XP_PC" /D "JSFILE" /D "EXPORT_JS_API" /Fp"Obj/Release/js.pch" /YX /Fo"Obj/Release/" /Fd"Obj/Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\js\jsapi.c"
+"E:\GPAC\gpac_extra_libs\js\jsarena.c"
+"E:\GPAC\gpac_extra_libs\js\jsarray.c"
+"E:\GPAC\gpac_extra_libs\js\jsatom.c"
+"E:\GPAC\gpac_extra_libs\js\jsbool.c"
+"E:\GPAC\gpac_extra_libs\js\jscntxt.c"
+"E:\GPAC\gpac_extra_libs\js\jsdate.c"
+"E:\GPAC\gpac_extra_libs\js\jsdbgapi.c"
+"E:\GPAC\gpac_extra_libs\js\jsdhash.c"
+"E:\GPAC\gpac_extra_libs\js\jsdtoa.c"
+"E:\GPAC\gpac_extra_libs\js\jsemit.c"
+"E:\GPAC\gpac_extra_libs\js\jsexn.c"
+"E:\GPAC\gpac_extra_libs\js\jsfun.c"
+"E:\GPAC\gpac_extra_libs\js\jsgc.c"
+"E:\GPAC\gpac_extra_libs\js\jshash.c"
+"E:\GPAC\gpac_extra_libs\js\jsinterp.c"
+"E:\GPAC\gpac_extra_libs\js\jslock.c"
+"E:\GPAC\gpac_extra_libs\js\jslog2.c"
+"E:\GPAC\gpac_extra_libs\js\jslong.c"
+"E:\GPAC\gpac_extra_libs\js\jsmath.c"
+"E:\GPAC\gpac_extra_libs\js\jsnum.c"
+"E:\GPAC\gpac_extra_libs\js\jsobj.c"
+"E:\GPAC\gpac_extra_libs\js\jsopcode.c"
+"E:\GPAC\gpac_extra_libs\js\jsparse.c"
+"E:\GPAC\gpac_extra_libs\js\jsprf.c"
+"E:\GPAC\gpac_extra_libs\js\jsregexp.c"
+"E:\GPAC\gpac_extra_libs\js\jsscan.c"
+"E:\GPAC\gpac_extra_libs\js\jsscope.c"
+"E:\GPAC\gpac_extra_libs\js\jsscript.c"
+"E:\GPAC\gpac_extra_libs\js\jsstr.c"
+"E:\GPAC\gpac_extra_libs\js\jsutil.c"
+"E:\GPAC\gpac_extra_libs\js\jsxdrapi.c"
+"E:\GPAC\gpac_extra_libs\js\prmjtime.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF0.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF1.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Obj/Release/js32.pdb" /machine:I386 /out:"Obj/Release\js32.dll" /implib:"Obj/Release/js32.lib" 
+.\Obj\Release\jsapi.obj
+.\Obj\Release\jsarena.obj
+.\Obj\Release\jsarray.obj
+.\Obj\Release\jsatom.obj
+.\Obj\Release\jsbool.obj
+.\Obj\Release\jscntxt.obj
+.\Obj\Release\jsdate.obj
+.\Obj\Release\jsdbgapi.obj
+.\Obj\Release\jsdhash.obj
+.\Obj\Release\jsdtoa.obj
+.\Obj\Release\jsemit.obj
+.\Obj\Release\jsexn.obj
+.\Obj\Release\jsfun.obj
+.\Obj\Release\jsgc.obj
+.\Obj\Release\jshash.obj
+.\Obj\Release\jsinterp.obj
+.\Obj\Release\jslock.obj
+.\Obj\Release\jslog2.obj
+.\Obj\Release\jslong.obj
+.\Obj\Release\jsmath.obj
+.\Obj\Release\jsnum.obj
+.\Obj\Release\jsobj.obj
+.\Obj\Release\jsopcode.obj
+.\Obj\Release\jsparse.obj
+.\Obj\Release\jsprf.obj
+.\Obj\Release\jsregexp.obj
+.\Obj\Release\jsscan.obj
+.\Obj\Release\jsscope.obj
+.\Obj\Release\jsscript.obj
+.\Obj\Release\jsstr.obj
+.\Obj\Release\jsutil.obj
+.\Obj\Release\jsxdrapi.obj
+.\Obj\Release\prmjtime.obj
+.\Obj\Release\fdlibm.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF1.tmp"
+<h3>Output Window</h3>
+Compiling...
+jsapi.c
+jsarena.c
+jsarray.c
+jsatom.c
+jsbool.c
+jscntxt.c
+jsdate.c
+jsdbgapi.c
+jsdhash.c
+jsdtoa.c
+jsemit.c
+jsexn.c
+jsfun.c
+jsgc.c
+jshash.c
+jsinterp.c
+jslock.c
+jslog2.c
+jslong.c
+jsmath.c
+jsnum.c
+jsobj.c
+jsopcode.c
+jsparse.c
+jsprf.c
+jsregexp.c
+jsscan.c
+jsscope.c
+jsscript.c
+jsstr.c
+jsutil.c
+jsxdrapi.c
+prmjtime.c
+Linking...
+   Creating library Obj/Release/js32.lib and object Obj/Release/js32.exp
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF5.bat" with contents
+[
+@echo off
+copy Obj\Release\js32.dll ..\lib\w32_release
+copy Obj\Release\js32.lib ..\lib\w32_release
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF5.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+js32.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: js - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF6.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "DEBUG" /D "_WINDOWS" /D "WIN32" /D "XP_PC" /D "JSFILE" /D "EXPORT_JS_API" /Fp"Obj/Debug/js.pch" /YX /Fo"Obj/Debug/" /Fd"Obj/Debug/" /FD /c 
+"E:\GPAC\gpac_extra_libs\js\jsapi.c"
+"E:\GPAC\gpac_extra_libs\js\jsarena.c"
+"E:\GPAC\gpac_extra_libs\js\jsarray.c"
+"E:\GPAC\gpac_extra_libs\js\jsatom.c"
+"E:\GPAC\gpac_extra_libs\js\jsbool.c"
+"E:\GPAC\gpac_extra_libs\js\jscntxt.c"
+"E:\GPAC\gpac_extra_libs\js\jsdate.c"
+"E:\GPAC\gpac_extra_libs\js\jsdbgapi.c"
+"E:\GPAC\gpac_extra_libs\js\jsdhash.c"
+"E:\GPAC\gpac_extra_libs\js\jsdtoa.c"
+"E:\GPAC\gpac_extra_libs\js\jsemit.c"
+"E:\GPAC\gpac_extra_libs\js\jsexn.c"
+"E:\GPAC\gpac_extra_libs\js\jsfun.c"
+"E:\GPAC\gpac_extra_libs\js\jsgc.c"
+"E:\GPAC\gpac_extra_libs\js\jshash.c"
+"E:\GPAC\gpac_extra_libs\js\jsinterp.c"
+"E:\GPAC\gpac_extra_libs\js\jslock.c"
+"E:\GPAC\gpac_extra_libs\js\jslog2.c"
+"E:\GPAC\gpac_extra_libs\js\jslong.c"
+"E:\GPAC\gpac_extra_libs\js\jsmath.c"
+"E:\GPAC\gpac_extra_libs\js\jsnum.c"
+"E:\GPAC\gpac_extra_libs\js\jsobj.c"
+"E:\GPAC\gpac_extra_libs\js\jsopcode.c"
+"E:\GPAC\gpac_extra_libs\js\jsparse.c"
+"E:\GPAC\gpac_extra_libs\js\jsprf.c"
+"E:\GPAC\gpac_extra_libs\js\jsregexp.c"
+"E:\GPAC\gpac_extra_libs\js\jsscan.c"
+"E:\GPAC\gpac_extra_libs\js\jsscope.c"
+"E:\GPAC\gpac_extra_libs\js\jsscript.c"
+"E:\GPAC\gpac_extra_libs\js\jsstr.c"
+"E:\GPAC\gpac_extra_libs\js\jsutil.c"
+"E:\GPAC\gpac_extra_libs\js\jsxdrapi.c"
+"E:\GPAC\gpac_extra_libs\js\prmjtime.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF6.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Obj/Debug/js32.pdb" /debug /machine:I386 /out:"Obj/Debug/js32.dll" /implib:"Obj/Debug/js32.lib" 
+.\Obj\Debug\jsapi.obj
+.\Obj\Debug\jsarena.obj
+.\Obj\Debug\jsarray.obj
+.\Obj\Debug\jsatom.obj
+.\Obj\Debug\jsbool.obj
+.\Obj\Debug\jscntxt.obj
+.\Obj\Debug\jsdate.obj
+.\Obj\Debug\jsdbgapi.obj
+.\Obj\Debug\jsdhash.obj
+.\Obj\Debug\jsdtoa.obj
+.\Obj\Debug\jsemit.obj
+.\Obj\Debug\jsexn.obj
+.\Obj\Debug\jsfun.obj
+.\Obj\Debug\jsgc.obj
+.\Obj\Debug\jshash.obj
+.\Obj\Debug\jsinterp.obj
+.\Obj\Debug\jslock.obj
+.\Obj\Debug\jslog2.obj
+.\Obj\Debug\jslong.obj
+.\Obj\Debug\jsmath.obj
+.\Obj\Debug\jsnum.obj
+.\Obj\Debug\jsobj.obj
+.\Obj\Debug\jsopcode.obj
+.\Obj\Debug\jsparse.obj
+.\Obj\Debug\jsprf.obj
+.\Obj\Debug\jsregexp.obj
+.\Obj\Debug\jsscan.obj
+.\Obj\Debug\jsscope.obj
+.\Obj\Debug\jsscript.obj
+.\Obj\Debug\jsstr.obj
+.\Obj\Debug\jsutil.obj
+.\Obj\Debug\jsxdrapi.obj
+.\Obj\Debug\prmjtime.obj
+.\Obj\Debug\fdlibm.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPF7.tmp"
+<h3>Output Window</h3>
+Compiling...
+jsapi.c
+jsarena.c
+jsarray.c
+jsatom.c
+jsbool.c
+jscntxt.c
+jsdate.c
+jsdbgapi.c
+jsdhash.c
+jsdtoa.c
+jsemit.c
+jsexn.c
+jsfun.c
+jsgc.c
+jshash.c
+jsinterp.c
+jslock.c
+jslog2.c
+jslong.c
+jsmath.c
+jsnum.c
+jsobj.c
+jsopcode.c
+jsparse.c
+jsprf.c
+jsregexp.c
+jsscan.c
+jsscope.c
+jsscript.c
+jsstr.c
+jsutil.c
+jsxdrapi.c
+prmjtime.c
+Linking...
+   Creating library Obj/Debug/js32.lib and object Obj/Debug/js32.exp
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFB.bat" with contents
+[
+@echo off
+copy Obj\Debug\js32.lib ..\lib\w32_debug
+copy Obj\Debug\js32.dll ..\lib\w32_debug
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFB.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+js32.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libfaad - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFC.tmp" with contents
+[
+/nologo /G6 /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /Fp"Release/libfaad.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\bits.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\cfft.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\common.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\decoder.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\drc.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\error.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\hcr.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\huffman.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ic_predict.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\is.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\lt_predict.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\mdct.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\mp4.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ms.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\output.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\pns.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ps_dec.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ps_syntax.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\pulse.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\rvlc.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dct.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dec.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_e_nf.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_fbt.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_hfadj.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_hfgen.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_huff.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_qmf.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_syntax.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_tf_grid.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\specrec.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ssr.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ssr_fb.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ssr_ipqf.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\syntax.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFC.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFD.tmp" with contents
+[
+/nologo /out:"../../lib/w32_release/libfaad.lib" 
+.\Release\bits.obj
+.\Release\cfft.obj
+.\Release\common.obj
+.\Release\decoder.obj
+.\Release\drc.obj
+.\Release\error.obj
+.\Release\filtbank.obj
+.\Release\hcr.obj
+.\Release\huffman.obj
+.\Release\ic_predict.obj
+.\Release\is.obj
+.\Release\lt_predict.obj
+.\Release\mdct.obj
+.\Release\mp4.obj
+.\Release\ms.obj
+.\Release\output.obj
+.\Release\pns.obj
+.\Release\ps_dec.obj
+.\Release\ps_syntax.obj
+.\Release\pulse.obj
+.\Release\rvlc.obj
+.\Release\sbr_dct.obj
+.\Release\sbr_dec.obj
+.\Release\sbr_e_nf.obj
+.\Release\sbr_fbt.obj
+.\Release\sbr_hfadj.obj
+.\Release\sbr_hfgen.obj
+.\Release\sbr_huff.obj
+.\Release\sbr_qmf.obj
+.\Release\sbr_syntax.obj
+.\Release\sbr_tf_grid.obj
+.\Release\specrec.obj
+.\Release\ssr.obj
+.\Release\ssr_fb.obj
+.\Release\ssr_ipqf.obj
+.\Release\syntax.obj
+.\Release\tns.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFD.tmp"
+<h3>Output Window</h3>
+Compiling...
+bits.c
+cfft.c
+common.c
+decoder.c
+drc.c
+error.c
+filtbank.c
+hcr.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(58) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(59) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(62) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(237) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(255) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(305) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(695) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(707) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c(719) : warning C4761: integral size mismatch in argument; conversion supplied
+huffman.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\hcr.c(276) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\hcr.c(280) : warning C4761: integral size mismatch in argument; conversion supplied
+ic_predict.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\huffman.c(390) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\huffman.c(422) : warning C4761: integral size mismatch in argument; conversion supplied
+is.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\ic_predict.c(249) : warning C4761: integral size mismatch in argument; conversion supplied
+lt_predict.c
+mdct.c
+mp4.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\mdct.c(193) : warning C4761: integral size mismatch in argument; conversion supplied
+ms.c
+output.c
+pns.c
+ps_dec.c
+ps_syntax.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\ps_dec.c(1012) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\ps_dec.c(1012) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\ps_dec.c(1018) : warning C4761: integral size mismatch in argument; conversion supplied
+pulse.c
+rvlc.c
+sbr_dct.c
+sbr_dec.c
+sbr_e_nf.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dec.c(101) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dec.c(102) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dec.c(120) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dec.c(467) : warning C4761: integral size mismatch in argument; conversion supplied
+sbr_fbt.c
+sbr_hfadj.c
+sbr_hfgen.c
+sbr_huff.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_hfgen.c(379) : warning C4761: integral size mismatch in argument; conversion supplied
+sbr_qmf.c
+sbr_syntax.c
+sbr_tf_grid.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_syntax.c(551) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_syntax.c(578) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_syntax.c(616) : warning C4761: integral size mismatch in argument; conversion supplied
+specrec.c
+ssr.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\specrec.c(1080) : warning C4761: integral size mismatch in argument; conversion supplied
+ssr_fb.c
+ssr_ipqf.c
+syntax.c
+tns.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(105) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(107) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(107) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(111) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(111) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(159) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(161) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(161) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(165) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(165) : warning C4761: integral size mismatch in argument; conversion supplied
+Creating library...
+
+
+
+<h3>Results</h3>
+libfaad.lib - 0 error(s), 37 warning(s)
+<h3>
+--------------------Configuration: libfaad - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /D "_DEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /Fp"Debug/libfaad.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\bits.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\cfft.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\common.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\decoder.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\drc.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\error.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\filtbank.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\hcr.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\huffman.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ic_predict.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\is.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\lt_predict.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\mdct.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\mp4.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ms.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\output.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\pns.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ps_dec.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ps_syntax.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\pulse.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\rvlc.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dct.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_dec.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_e_nf.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_fbt.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_hfadj.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_hfgen.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_huff.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_qmf.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_syntax.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\sbr_tf_grid.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\specrec.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ssr.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ssr_fb.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\ssr_ipqf.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\syntax.c"
+"E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFE.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFF.tmp" with contents
+[
+/nologo /out:"../../lib/w32_debug/libfaad.lib" 
+.\Debug\bits.obj
+.\Debug\cfft.obj
+.\Debug\common.obj
+.\Debug\decoder.obj
+.\Debug\drc.obj
+.\Debug\error.obj
+.\Debug\filtbank.obj
+.\Debug\hcr.obj
+.\Debug\huffman.obj
+.\Debug\ic_predict.obj
+.\Debug\is.obj
+.\Debug\lt_predict.obj
+.\Debug\mdct.obj
+.\Debug\mp4.obj
+.\Debug\ms.obj
+.\Debug\output.obj
+.\Debug\pns.obj
+.\Debug\ps_dec.obj
+.\Debug\ps_syntax.obj
+.\Debug\pulse.obj
+.\Debug\rvlc.obj
+.\Debug\sbr_dct.obj
+.\Debug\sbr_dec.obj
+.\Debug\sbr_e_nf.obj
+.\Debug\sbr_fbt.obj
+.\Debug\sbr_hfadj.obj
+.\Debug\sbr_hfgen.obj
+.\Debug\sbr_huff.obj
+.\Debug\sbr_qmf.obj
+.\Debug\sbr_syntax.obj
+.\Debug\sbr_tf_grid.obj
+.\Debug\specrec.obj
+.\Debug\ssr.obj
+.\Debug\ssr_fb.obj
+.\Debug\ssr_ipqf.obj
+.\Debug\syntax.obj
+.\Debug\tns.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPFF.tmp"
+<h3>Output Window</h3>
+Compiling...
+bits.c
+cfft.c
+common.c
+decoder.c
+drc.c
+error.c
+filtbank.c
+hcr.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(58) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(59) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(62) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(237) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(255) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(305) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(695) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(707) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\filtbank.c(719) : warning C4761: integral size mismatch in argument; conversion supplied
+huffman.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\hcr.c(276) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\hcr.c(280) : warning C4761: integral size mismatch in argument; conversion supplied
+ic_predict.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\huffman.c(390) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\huffman.c(422) : warning C4761: integral size mismatch in argument; conversion supplied
+is.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\ic_predict.c(249) : warning C4761: integral size mismatch in argument; conversion supplied
+lt_predict.c
+mdct.c
+mp4.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\mdct.c(193) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\mp4.c(145) : warning C4013: 'memset' undefined; assuming extern returning int
+ms.c
+output.c
+pns.c
+ps_dec.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\ps_dec.c(591) : warning C4013: 'memset' undefined; assuming extern returning int
+e:\gpac\gpac_extra_libs\faad2\libfaad\ps_dec.c(760) : warning C4013: 'memcpy' undefined; assuming extern returning int
+ps_syntax.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\ps_dec.c(1012) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\ps_dec.c(1012) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\ps_dec.c(1018) : warning C4761: integral size mismatch in argument; conversion supplied
+pulse.c
+rvlc.c
+sbr_dct.c
+sbr_dec.c
+sbr_e_nf.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_dec.c(101) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_dec.c(102) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_dec.c(120) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_dec.c(467) : warning C4761: integral size mismatch in argument; conversion supplied
+sbr_fbt.c
+sbr_hfadj.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_hfadj.c(1058) : warning C4013: 'memcpy' undefined; assuming extern returning int
+sbr_hfgen.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_hfgen.c(75) : warning C4013: 'memset' undefined; assuming extern returning int
+sbr_huff.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_hfgen.c(379) : warning C4761: integral size mismatch in argument; conversion supplied
+sbr_qmf.c
+sbr_syntax.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_syntax.c(333) : warning C4013: 'memset' undefined; assuming extern returning int
+sbr_tf_grid.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_syntax.c(551) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_syntax.c(578) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\faad2\libfaad\sbr_syntax.c(616) : warning C4761: integral size mismatch in argument; conversion supplied
+specrec.c
+ssr.c
+e:\gpac\gpac_extra_libs\faad2\libfaad\specrec.c(1080) : warning C4761: integral size mismatch in argument; conversion supplied
+ssr_fb.c
+ssr_ipqf.c
+syntax.c
+tns.c
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(105) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(107) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(107) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(111) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(111) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(159) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(161) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(161) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(165) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\faad2\libfaad\tns.c(165) : warning C4761: integral size mismatch in argument; conversion supplied
+Creating library...
+
+
+
+<h3>Results</h3>
+libfaad.lib - 0 error(s), 43 warning(s)
+<h3>
+--------------------Configuration: libmad - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP100.tmp" with contents
+[
+/nologo /MD /GX /O2 /I "." /D "NDEBUG" /D "FPM_INTEL" /D "WIN32" /D "_MBCS" /D "_LIB" /D "HAVE_CONFIG_H" /D "ASO_ZEROCHECK" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\libmad\bit.c"
+"E:\GPAC\gpac_extra_libs\libmad\decoder.c"
+"E:\GPAC\gpac_extra_libs\libmad\fixed.c"
+"E:\GPAC\gpac_extra_libs\libmad\frame.c"
+"E:\GPAC\gpac_extra_libs\libmad\huffman.c"
+"E:\GPAC\gpac_extra_libs\libmad\layer12.c"
+"E:\GPAC\gpac_extra_libs\libmad\layer3.c"
+"E:\GPAC\gpac_extra_libs\libmad\stream.c"
+"E:\GPAC\gpac_extra_libs\libmad\synth.c"
+"E:\GPAC\gpac_extra_libs\libmad\timer.c"
+"E:\GPAC\gpac_extra_libs\libmad\version.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP100.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP101.tmp" with contents
+[
+/nologo /out:"../../lib/w32_release/libmad.lib" 
+".\Release\bit.obj"
+".\Release\decoder.obj"
+".\Release\fixed.obj"
+".\Release\frame.obj"
+".\Release\huffman.obj"
+".\Release\layer12.obj"
+".\Release\layer3.obj"
+".\Release\stream.obj"
+".\Release\synth.obj"
+".\Release\timer.obj"
+".\Release\version.obj"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP101.tmp"
+<h3>Output Window</h3>
+Compiling...
+bit.c
+Generating Code...
+Compiling...
+decoder.c
+Generating Code...
+Compiling...
+fixed.c
+Generating Code...
+Compiling...
+frame.c
+Generating Code...
+Compiling...
+huffman.c
+Generating Code...
+Compiling...
+layer12.c
+Generating Code...
+Compiling...
+layer3.c
+Generating Code...
+Compiling...
+stream.c
+Generating Code...
+Compiling...
+synth.c
+Generating Code...
+Compiling...
+timer.c
+Generating Code...
+Compiling...
+version.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+libmad.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libmad - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP102.tmp" with contents
+[
+/nologo /MDd /Gm /GX /ZI /Od /I "." /D "FPM_DEFAULT" /D "_LIB" /D "HAVE_CONFIG_H" /D "ASO_ZEROCHECK" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "DEBUG" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\libmad\bit.c"
+"E:\GPAC\gpac_extra_libs\libmad\decoder.c"
+"E:\GPAC\gpac_extra_libs\libmad\fixed.c"
+"E:\GPAC\gpac_extra_libs\libmad\frame.c"
+"E:\GPAC\gpac_extra_libs\libmad\huffman.c"
+"E:\GPAC\gpac_extra_libs\libmad\layer12.c"
+"E:\GPAC\gpac_extra_libs\libmad\layer3.c"
+"E:\GPAC\gpac_extra_libs\libmad\stream.c"
+"E:\GPAC\gpac_extra_libs\libmad\synth.c"
+"E:\GPAC\gpac_extra_libs\libmad\timer.c"
+"E:\GPAC\gpac_extra_libs\libmad\version.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP102.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP103.tmp" with contents
+[
+/nologo /out:"../../lib/w32_debug/libmad.lib" 
+".\Debug\bit.obj"
+".\Debug\decoder.obj"
+".\Debug\fixed.obj"
+".\Debug\frame.obj"
+".\Debug\huffman.obj"
+".\Debug\layer12.obj"
+".\Debug\layer3.obj"
+".\Debug\stream.obj"
+".\Debug\synth.obj"
+".\Debug\timer.obj"
+".\Debug\version.obj"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP103.tmp"
+<h3>Output Window</h3>
+Compiling...
+bit.c
+Generating Code...
+Compiling...
+decoder.c
+Generating Code...
+Compiling...
+fixed.c
+Generating Code...
+Compiling...
+frame.c
+Generating Code...
+Compiling...
+huffman.c
+Generating Code...
+Compiling...
+layer12.c
+Generating Code...
+Compiling...
+layer3.c
+Generating Code...
+Compiling...
+stream.c
+Generating Code...
+Compiling...
+synth.c
+Generating Code...
+Compiling...
+timer.c
+Generating Code...
+Compiling...
+version.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+libmad.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: zlib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP104.tmp" with contents
+[
+/nologo /MD /W3 /O2 /D "WIN32" /D "NDEBUG" /Fo".\win32\zlib\lib/" /Fd".\win32\zlib\lib/" /FD /c 
+"E:\GPAC\gpac_extra_libs\zlib\adler32.c"
+"E:\GPAC\gpac_extra_libs\zlib\compress.c"
+"E:\GPAC\gpac_extra_libs\zlib\crc32.c"
+"E:\GPAC\gpac_extra_libs\zlib\deflate.c"
+"E:\GPAC\gpac_extra_libs\zlib\gzio.c"
+"E:\GPAC\gpac_extra_libs\zlib\infblock.c"
+"E:\GPAC\gpac_extra_libs\zlib\infcodes.c"
+"E:\GPAC\gpac_extra_libs\zlib\inffast.c"
+"E:\GPAC\gpac_extra_libs\zlib\inflate.c"
+"E:\GPAC\gpac_extra_libs\zlib\inftrees.c"
+"E:\GPAC\gpac_extra_libs\zlib\infutil.c"
+"E:\GPAC\gpac_extra_libs\zlib\maketree.c"
+"E:\GPAC\gpac_extra_libs\zlib\trees.c"
+"E:\GPAC\gpac_extra_libs\zlib\uncompr.c"
+"E:\GPAC\gpac_extra_libs\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP104.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP105.tmp" with contents
+[
+/nologo /out:"../../lib/w32_release/zlib.lib" 
+.\win32\zlib\lib\adler32.obj
+.\win32\zlib\lib\compress.obj
+.\win32\zlib\lib\crc32.obj
+.\win32\zlib\lib\deflate.obj
+.\win32\zlib\lib\gzio.obj
+.\win32\zlib\lib\infblock.obj
+.\win32\zlib\lib\infcodes.obj
+.\win32\zlib\lib\inffast.obj
+.\win32\zlib\lib\inflate.obj
+.\win32\zlib\lib\inftrees.obj
+.\win32\zlib\lib\infutil.obj
+.\win32\zlib\lib\maketree.obj
+.\win32\zlib\lib\trees.obj
+.\win32\zlib\lib\uncompr.obj
+.\win32\zlib\lib\zutil.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP105.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+Generating Code...
+Compiling...
+compress.c
+Generating Code...
+Compiling...
+crc32.c
+Generating Code...
+Compiling...
+deflate.c
+Generating Code...
+Compiling...
+gzio.c
+Generating Code...
+Compiling...
+infblock.c
+Generating Code...
+Compiling...
+infcodes.c
+Generating Code...
+Compiling...
+inffast.c
+Generating Code...
+Compiling...
+inflate.c
+Generating Code...
+Compiling...
+inftrees.c
+Generating Code...
+Compiling...
+infutil.c
+Generating Code...
+Compiling...
+maketree.c
+Generating Code...
+Compiling...
+trees.c
+Generating Code...
+Compiling...
+uncompr.c
+Generating Code...
+Compiling...
+zutil.c
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: libpng - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP106.tmp" with contents
+[
+/nologo /MD /W3 /O2 /I "..\.." /I "..\..\..\zlib" /D "WIN32" /D "NDEBUG" /Fo".\win32\libpng\lib/" /Fd".\win32\libpng\lib/" /FD /c 
+"E:\GPAC\gpac_extra_libs\libpng\png.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP106.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP107.tmp" with contents
+[
+/nologo /MD /W3 /O2 /I "..\.." /I "..\..\..\zlib" /D "WIN32" /D "NDEBUG" /Fp".\win32\libpng\lib/libpng.pch" /Yu"png.h" /Fo".\win32\libpng\lib/" /Fd".\win32\libpng\lib/" /FD /c 
+"E:\GPAC\gpac_extra_libs\libpng\pngget.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngmem.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngpread.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngread.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngrio.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngrtran.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngrutil.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngset.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngtrans.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwio.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwrite.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwtran.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP107.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP108.tmp" with contents
+[
+/nologo /MD /W3 /O2 /I "..\.." /I "..\..\..\zlib" /D "WIN32" /D "NDEBUG" /Fp".\win32\libpng\lib/libpng.pch" /Yc"png.h" /Fo".\win32\libpng\lib/" /Fd".\win32\libpng\lib/" /FD /c 
+"E:\GPAC\gpac_extra_libs\libpng\pngerror.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP108.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP109.tmp" with contents
+[
+/nologo /out:"../../../lib/w32_release/libpng.lib" 
+.\win32\libpng\lib\png.obj
+.\win32\libpng\lib\pngerror.obj
+.\win32\libpng\lib\pngget.obj
+.\win32\libpng\lib\pngmem.obj
+.\win32\libpng\lib\pngpread.obj
+.\win32\libpng\lib\pngread.obj
+.\win32\libpng\lib\pngrio.obj
+.\win32\libpng\lib\pngrtran.obj
+.\win32\libpng\lib\pngrutil.obj
+.\win32\libpng\lib\pngset.obj
+.\win32\libpng\lib\pngtrans.obj
+.\win32\libpng\lib\pngwio.obj
+.\win32\libpng\lib\pngwrite.obj
+.\win32\libpng\lib\pngwtran.obj
+.\win32\libpng\lib\pngwutil.obj
+\GPAC\gpac_extra_libs\lib\w32_release\zlib.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP109.tmp"
+<h3>Output Window</h3>
+Compiling...
+pngerror.c
+Compiling...
+png.c
+Compiling...
+pngget.c
+Generating Code...
+Compiling...
+pngmem.c
+Generating Code...
+Compiling...
+pngpread.c
+Generating Code...
+Compiling...
+pngread.c
+Generating Code...
+Compiling...
+pngrio.c
+Generating Code...
+Compiling...
+pngrtran.c
+Generating Code...
+Compiling...
+pngrutil.c
+Generating Code...
+Compiling...
+pngset.c
+Generating Code...
+Compiling...
+pngtrans.c
+Generating Code...
+Compiling...
+pngwio.c
+Generating Code...
+Compiling...
+pngwrite.c
+Generating Code...
+Compiling...
+pngwtran.c
+Generating Code...
+Compiling...
+pngwutil.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+libpng.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: zlib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10A.tmp" with contents
+[
+/nologo /MDd /W3 /Zi /Od /D "WIN32" /D "_DEBUG" /FR".\win32\zlib\lib_dbg/" /Fo".\win32\zlib\lib_dbg/" /Fd".\win32\zlib\lib_dbg/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\zlib\adler32.c"
+"E:\GPAC\gpac_extra_libs\zlib\compress.c"
+"E:\GPAC\gpac_extra_libs\zlib\crc32.c"
+"E:\GPAC\gpac_extra_libs\zlib\deflate.c"
+"E:\GPAC\gpac_extra_libs\zlib\gzio.c"
+"E:\GPAC\gpac_extra_libs\zlib\infblock.c"
+"E:\GPAC\gpac_extra_libs\zlib\infcodes.c"
+"E:\GPAC\gpac_extra_libs\zlib\inffast.c"
+"E:\GPAC\gpac_extra_libs\zlib\inflate.c"
+"E:\GPAC\gpac_extra_libs\zlib\inftrees.c"
+"E:\GPAC\gpac_extra_libs\zlib\infutil.c"
+"E:\GPAC\gpac_extra_libs\zlib\maketree.c"
+"E:\GPAC\gpac_extra_libs\zlib\trees.c"
+"E:\GPAC\gpac_extra_libs\zlib\uncompr.c"
+"E:\GPAC\gpac_extra_libs\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10A.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10B.tmp" with contents
+[
+/nologo /out:"../../lib/w32_debug/zlib.lib" 
+.\win32\zlib\lib_dbg\adler32.obj
+.\win32\zlib\lib_dbg\compress.obj
+.\win32\zlib\lib_dbg\crc32.obj
+.\win32\zlib\lib_dbg\deflate.obj
+.\win32\zlib\lib_dbg\gzio.obj
+.\win32\zlib\lib_dbg\infblock.obj
+.\win32\zlib\lib_dbg\infcodes.obj
+.\win32\zlib\lib_dbg\inffast.obj
+.\win32\zlib\lib_dbg\inflate.obj
+.\win32\zlib\lib_dbg\inftrees.obj
+.\win32\zlib\lib_dbg\infutil.obj
+.\win32\zlib\lib_dbg\maketree.obj
+.\win32\zlib\lib_dbg\trees.obj
+.\win32\zlib\lib_dbg\uncompr.obj
+.\win32\zlib\lib_dbg\zutil.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10B.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+Generating Code...
+Compiling...
+compress.c
+Generating Code...
+Compiling...
+crc32.c
+Generating Code...
+Compiling...
+deflate.c
+Generating Code...
+Compiling...
+gzio.c
+Generating Code...
+Compiling...
+infblock.c
+Generating Code...
+Compiling...
+infcodes.c
+Generating Code...
+Compiling...
+inffast.c
+Generating Code...
+Compiling...
+inflate.c
+Generating Code...
+Compiling...
+inftrees.c
+Generating Code...
+Compiling...
+infutil.c
+Generating Code...
+Compiling...
+maketree.c
+Generating Code...
+Compiling...
+trees.c
+Generating Code...
+Compiling...
+uncompr.c
+Generating Code...
+Compiling...
+zutil.c
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: libpng - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10C.tmp" with contents
+[
+/nologo /MDd /W3 /Zi /Od /I "..\.." /I "..\..\..\zlib" /D "DEBUG" /D "_DEBUG" /D PNG_DEBUG=1 /D "WIN32" /FR".\win32\libpng\lib_dbg/" /Fo".\win32\libpng\lib_dbg/" /Fd".\win32\libpng\lib_dbg/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\libpng\png.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10C.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10D.tmp" with contents
+[
+/nologo /MDd /W3 /Zi /Od /I "..\.." /I "..\..\..\zlib" /D "DEBUG" /D "_DEBUG" /D PNG_DEBUG=1 /D "WIN32" /FR".\win32\libpng\lib_dbg/" /Fp".\win32\libpng\lib_dbg/libpng.pch" /Yu"png.h" /Fo".\win32\libpng\lib_dbg/" /Fd".\win32\libpng\lib_dbg/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\libpng\pngget.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngmem.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngpread.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngread.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngrio.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngrtran.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngrutil.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngset.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngtrans.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwio.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwrite.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwtran.c"
+"E:\GPAC\gpac_extra_libs\libpng\pngwutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10D.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10E.tmp" with contents
+[
+/nologo /MDd /W3 /Zi /Od /I "..\.." /I "..\..\..\zlib" /D "DEBUG" /D "_DEBUG" /D PNG_DEBUG=1 /D "WIN32" /FR".\win32\libpng\lib_dbg/" /Fp".\win32\libpng\lib_dbg/libpng.pch" /Yc"png.h" /Fo".\win32\libpng\lib_dbg/" /Fd".\win32\libpng\lib_dbg/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\libpng\pngerror.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10E.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10F.tmp" with contents
+[
+/nologo /out:"../../../lib/w32_debug/libpng.lib" 
+.\win32\libpng\lib_dbg\png.obj
+.\win32\libpng\lib_dbg\pngerror.obj
+.\win32\libpng\lib_dbg\pngget.obj
+.\win32\libpng\lib_dbg\pngmem.obj
+.\win32\libpng\lib_dbg\pngpread.obj
+.\win32\libpng\lib_dbg\pngread.obj
+.\win32\libpng\lib_dbg\pngrio.obj
+.\win32\libpng\lib_dbg\pngrtran.obj
+.\win32\libpng\lib_dbg\pngrutil.obj
+.\win32\libpng\lib_dbg\pngset.obj
+.\win32\libpng\lib_dbg\pngtrans.obj
+.\win32\libpng\lib_dbg\pngwio.obj
+.\win32\libpng\lib_dbg\pngwrite.obj
+.\win32\libpng\lib_dbg\pngwtran.obj
+.\win32\libpng\lib_dbg\pngwutil.obj
+\GPAC\gpac_extra_libs\lib\w32_debug\zlib.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP10F.tmp"
+<h3>Output Window</h3>
+Compiling...
+pngerror.c
+Compiling...
+png.c
+Compiling...
+pngget.c
+Generating Code...
+Compiling...
+pngmem.c
+Generating Code...
+Compiling...
+pngpread.c
+Generating Code...
+Compiling...
+pngread.c
+Generating Code...
+Compiling...
+pngrio.c
+Generating Code...
+Compiling...
+pngrtran.c
+Generating Code...
+Compiling...
+pngrutil.c
+Generating Code...
+Compiling...
+pngset.c
+Generating Code...
+Compiling...
+pngtrans.c
+Generating Code...
+Compiling...
+pngwio.c
+Generating Code...
+Compiling...
+pngwrite.c
+Generating Code...
+Compiling...
+pngwtran.c
+Generating Code...
+Compiling...
+pngwutil.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+libpng.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libxvidcore - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP110.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\mem_transfer_mmx.obj ..\..\src\utils\x86_asm\mem_transfer_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP110.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP111.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\mem_transfer_3dne.obj ..\..\src\utils\x86_asm\mem_transfer_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP111.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP112.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\interlacing_mmx.obj ..\..\src\utils\x86_asm\interlacing_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP112.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP113.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\cpuid.obj ..\..\src\utils\x86_asm\cpuid.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP113.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP114.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\quantize_mpeg_xmm.obj ..\..\src\quant\x86_asm\quantize_mpeg_xmm.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP114.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP115.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\quantize_mpeg_mmx.obj ..\..\src\quant\x86_asm\quantize_mpeg_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP115.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP116.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\quantize_h263_mmx.obj ..\..\src\quant\x86_asm\quantize_h263_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP116.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP117.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\quantize_h263_3dne.obj ..\..\src\quant\x86_asm\quantize_h263_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP117.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP118.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\sad_xmm.obj ..\..\src\motion\x86_asm\sad_xmm.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP118.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP119.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\sad_sse2.obj ..\..\src\motion\x86_asm\sad_sse2.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP119.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11A.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\sad_mmx.obj ..\..\src\motion\x86_asm\sad_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11A.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11B.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\sad_3dne.obj ..\..\src\motion\x86_asm\sad_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11B.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11C.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\sad_3dn.obj ..\..\src\motion\x86_asm\sad_3dn.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11C.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11D.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\reduced_mmx.obj ..\..\src\image\x86_asm\reduced_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11D.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11E.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\qpel_mmx.obj ..\..\src\image\x86_asm\qpel_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11E.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11F.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\interpolate8x8_xmm.obj ..\..\src\image\x86_asm\interpolate8x8_xmm.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP11F.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP120.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\interpolate8x8_mmx.obj ..\..\src\image\x86_asm\interpolate8x8_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP120.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP121.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\interpolate8x8_3dne.obj ..\..\src\image\x86_asm\interpolate8x8_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP121.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP122.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\interpolate8x8_3dn.obj ..\..\src\image\x86_asm\interpolate8x8_3dn.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP122.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP123.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -I"\GPAC\gpac_extra_libs\xvidcore\src\image\x86_asm"\ -o .\Release\colorspace_yuyv_mmx.obj ..\..\src\image\x86_asm\colorspace_yuyv_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP123.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP124.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -I"\GPAC\gpac_extra_libs\xvidcore\src\image\x86_asm"\ -o .\Release\colorspace_yuv_mmx.obj ..\..\src\image\x86_asm\colorspace_yuv_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP124.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP125.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -I"\GPAC\gpac_extra_libs\xvidcore\src\image\x86_asm"\ -o .\Release\colorspace_rgb_mmx.obj ..\..\src\image\x86_asm\colorspace_rgb_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP125.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP126.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\simple_idct_mmx.obj ..\..\src\dct\x86_asm\simple_idct_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP126.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP127.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\idct_sse2_dmitry.obj ..\..\src\dct\x86_asm\idct_sse2_dmitry.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP127.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP128.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\idct_mmx.obj ..\..\src\dct\x86_asm\idct_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP128.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP129.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\idct_3dne.obj ..\..\src\dct\x86_asm\idct_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP129.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12A.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\fdct_sse2_skal.obj ..\..\src\dct\x86_asm\fdct_sse2_skal.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12A.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12B.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\fdct_mmx_skal.obj ..\..\src\dct\x86_asm\fdct_mmx_skal.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12B.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12C.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\fdct_mmx_ffmpeg.obj ..\..\src\dct\x86_asm\fdct_mmx_ffmpeg.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12C.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12D.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\cbp_sse2.obj ..\..\src\bitstream\x86_asm\cbp_sse2.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12D.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12E.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\cbp_mmx.obj ..\..\src\bitstream\x86_asm\cbp_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12E.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12F.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Release\cbp_3dne.obj ..\..\src\bitstream\x86_asm\cbp_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP12F.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP130.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "ARCH_IS_IA32" /D "WIN32" /D "_WINDOWS" /D "ARCH_IS_32BIT" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\xvidcore\src\bitstream\bitstream.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\bitstream\cbp.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\bitstream\mbcoding.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\dct\fdct.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\dct\idct.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\dct\simple_idct.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\colorspace.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\font.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\image.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\interpolate8x8.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\postprocessing.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\qpel.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\reduced.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_bvop.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_common.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_gmc.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_pvop.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\gmc.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\motion_comp.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\sad.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\vop_type_decision.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\prediction\mbprediction.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\quant\quant_h263.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\quant\quant_matrix.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\quant\quant_mpeg.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\emms.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\mbtransquant.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\mem_align.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\mem_transfer.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\timer.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\decoder.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\xvid.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP130.tmp" 
+Assembling ..\..\src\utils\x86_asm\mem_transfer_mmx.asm
+Assembling ..\..\src\utils\x86_asm\mem_transfer_3dne.asm
+Assembling ..\..\src\utils\x86_asm\interlacing_mmx.asm
+Assembling ..\..\src\utils\x86_asm\cpuid.asm
+Assembling ..\..\src\quant\x86_asm\quantize_mpeg_xmm.asm
+Assembling ..\..\src\quant\x86_asm\quantize_mpeg_mmx.asm
+Assembling ..\..\src\quant\x86_asm\quantize_h263_mmx.asm
+Assembling ..\..\src\quant\x86_asm\quantize_h263_3dne.asm
+Assembling ..\..\src\motion\x86_asm\sad_xmm.asm
+Assembling ..\..\src\motion\x86_asm\sad_sse2.asm
+Assembling ..\..\src\motion\x86_asm\sad_mmx.asm
+Assembling ..\..\src\motion\x86_asm\sad_3dne.asm
+Assembling ..\..\src\motion\x86_asm\sad_3dn.asm
+Assembling ..\..\src\image\x86_asm\reduced_mmx.asm
+Assembling ..\..\src\image\x86_asm\qpel_mmx.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_xmm.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_mmx.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_3dne.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_3dn.asm
+Assembling ..\..\src\image\x86_asm\colorspace_yuyv_mmx.asm
+Assembling ..\..\src\image\x86_asm\colorspace_yuv_mmx.asm
+Assembling ..\..\src\image\x86_asm\colorspace_rgb_mmx.asm
+Assembling ..\..\src\dct\x86_asm\simple_idct_mmx.asm
+Assembling ..\..\src\dct\x86_asm\idct_sse2_dmitry.asm
+Assembling ..\..\src\dct\x86_asm\idct_mmx.asm
+Assembling ..\..\src\dct\x86_asm\idct_3dne.asm
+Assembling ..\..\src\dct\x86_asm\fdct_sse2_skal.asm
+Assembling ..\..\src\dct\x86_asm\fdct_mmx_skal.asm
+Assembling ..\..\src\dct\x86_asm\fdct_mmx_ffmpeg.asm
+Assembling ..\..\src\bitstream\x86_asm\cbp_sse2.asm
+Assembling ..\..\src\bitstream\x86_asm\cbp_mmx.asm
+Assembling ..\..\src\bitstream\x86_asm\cbp_3dne.asm
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP131.tmp" with contents
+[
+/nologo /out:"..\..\..\lib\w32_release\libxvidcore.lib" 
+.\Release\bitstream.obj
+.\Release\cbp.obj
+.\Release\mbcoding.obj
+.\Release\fdct.obj
+.\Release\idct.obj
+.\Release\simple_idct.obj
+.\Release\colorspace.obj
+.\Release\font.obj
+.\Release\image.obj
+.\Release\interpolate8x8.obj
+.\Release\postprocessing.obj
+.\Release\qpel.obj
+.\Release\reduced.obj
+.\Release\estimation_bvop.obj
+.\Release\estimation_common.obj
+.\Release\estimation_gmc.obj
+.\Release\estimation_pvop.obj
+.\Release\estimation_rd_based.obj
+.\Release\gmc.obj
+.\Release\motion_comp.obj
+.\Release\sad.obj
+.\Release\vop_type_decision.obj
+.\Release\mbprediction.obj
+.\Release\quant_h263.obj
+.\Release\quant_matrix.obj
+.\Release\quant_mpeg.obj
+.\Release\emms.obj
+.\Release\mbtransquant.obj
+.\Release\mem_align.obj
+.\Release\mem_transfer.obj
+.\Release\timer.obj
+.\Release\decoder.obj
+.\Release\encoder.obj
+.\Release\xvid.obj
+.\Release\cbp_3dne.obj
+.\Release\cbp_mmx.obj
+.\Release\cbp_sse2.obj
+.\Release\fdct_mmx_ffmpeg.obj
+.\Release\fdct_mmx_skal.obj
+.\Release\fdct_sse2_skal.obj
+.\Release\idct_3dne.obj
+.\Release\idct_mmx.obj
+.\Release\idct_sse2_dmitry.obj
+.\Release\simple_idct_mmx.obj
+.\Release\colorspace_rgb_mmx.obj
+.\Release\colorspace_yuv_mmx.obj
+.\Release\colorspace_yuyv_mmx.obj
+.\Release\interpolate8x8_3dn.obj
+.\Release\interpolate8x8_3dne.obj
+.\Release\interpolate8x8_mmx.obj
+.\Release\interpolate8x8_xmm.obj
+.\Release\qpel_mmx.obj
+.\Release\reduced_mmx.obj
+.\Release\sad_3dn.obj
+.\Release\sad_3dne.obj
+.\Release\sad_mmx.obj
+.\Release\sad_sse2.obj
+.\Release\sad_xmm.obj
+.\Release\quantize_h263_3dne.obj
+.\Release\quantize_h263_mmx.obj
+.\Release\quantize_mpeg_mmx.obj
+.\Release\quantize_mpeg_xmm.obj
+.\Release\cpuid.obj
+.\Release\interlacing_mmx.obj
+.\Release\mem_transfer_3dne.obj
+.\Release\mem_transfer_mmx.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP131.tmp"
+<h3>Output Window</h3>
+Compiling...
+bitstream.c
+Generating Code...
+Compiling...
+cbp.c
+Generating Code...
+Compiling...
+mbcoding.c
+Generating Code...
+Compiling...
+fdct.c
+Generating Code...
+Compiling...
+idct.c
+Generating Code...
+Compiling...
+simple_idct.c
+Generating Code...
+Compiling...
+colorspace.c
+Generating Code...
+Compiling...
+font.c
+Generating Code...
+Compiling...
+image.c
+Generating Code...
+Compiling...
+interpolate8x8.c
+Generating Code...
+Compiling...
+postprocessing.c
+Generating Code...
+Compiling...
+qpel.c
+Generating Code...
+Compiling...
+reduced.c
+Generating Code...
+Compiling...
+estimation_bvop.c
+E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_bvop.c(1125) : warning C4018: '<' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+estimation_common.c
+Generating Code...
+Compiling...
+estimation_gmc.c
+Generating Code...
+Compiling...
+estimation_pvop.c
+Generating Code...
+Compiling...
+estimation_rd_based.c
+E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(439) : warning C4018: '>=' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(471) : warning C4018: '>=' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(506) : warning C4018: '>=' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(506) : warning C4018: '>=' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(520) : warning C4018: '>=' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(520) : warning C4018: '>=' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+gmc.c
+Generating Code...
+Compiling...
+motion_comp.c
+Generating Code...
+Compiling...
+sad.c
+Generating Code...
+Compiling...
+vop_type_decision.c
+Generating Code...
+Compiling...
+mbprediction.c
+Generating Code...
+Compiling...
+quant_h263.c
+Generating Code...
+Compiling...
+quant_matrix.c
+Generating Code...
+Compiling...
+quant_mpeg.c
+Generating Code...
+Compiling...
+emms.c
+Generating Code...
+Compiling...
+mbtransquant.c
+Generating Code...
+Compiling...
+mem_align.c
+Generating Code...
+Compiling...
+mem_transfer.c
+Generating Code...
+Compiling...
+timer.c
+Generating Code...
+Compiling...
+decoder.c
+Generating Code...
+Compiling...
+encoder.c
+E:\GPAC\gpac_extra_libs\xvidcore\src\decoder.c(1380) : warning C4700: local variable 'quant' used without having been initialized
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(823) : warning C4018: '==' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(823) : warning C4018: '==' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(1569) : warning C4018: '!=' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(1847) : warning C4018: '<=' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(1854) : warning C4018: '>=' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+xvid.c
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(713) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(713) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(713) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(718) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(718) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c(718) : warning C4761: integral size mismatch in argument; conversion supplied
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+libxvidcore.lib - 0 error(s), 22 warning(s)
+<h3>
+--------------------Configuration: libxvidcore - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP132.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\mem_transfer_mmx.obj ..\..\src\utils\x86_asm\mem_transfer_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP132.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP134.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\mem_transfer_3dne.obj ..\..\src\utils\x86_asm\mem_transfer_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP134.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP135.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\interlacing_mmx.obj ..\..\src\utils\x86_asm\interlacing_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP135.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP136.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\cpuid.obj ..\..\src\utils\x86_asm\cpuid.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP136.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP137.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\quantize_mpeg_xmm.obj ..\..\src\quant\x86_asm\quantize_mpeg_xmm.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP137.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP138.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\quantize_mpeg_mmx.obj ..\..\src\quant\x86_asm\quantize_mpeg_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP138.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP139.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\quantize_h263_mmx.obj ..\..\src\quant\x86_asm\quantize_h263_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP139.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13A.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\quantize_h263_3dne.obj ..\..\src\quant\x86_asm\quantize_h263_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13A.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13B.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\sad_xmm.obj ..\..\src\motion\x86_asm\sad_xmm.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13B.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13C.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\sad_sse2.obj ..\..\src\motion\x86_asm\sad_sse2.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13C.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13D.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\sad_mmx.obj ..\..\src\motion\x86_asm\sad_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13D.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13E.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\sad_3dne.obj ..\..\src\motion\x86_asm\sad_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13E.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13F.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\sad_3dn.obj ..\..\src\motion\x86_asm\sad_3dn.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP13F.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP140.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\reduced_mmx.obj ..\..\src\image\x86_asm\reduced_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP140.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP141.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\qpel_mmx.obj ..\..\src\image\x86_asm\qpel_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP141.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP142.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\interpolate8x8_xmm.obj ..\..\src\image\x86_asm\interpolate8x8_xmm.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP142.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP143.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\interpolate8x8_mmx.obj ..\..\src\image\x86_asm\interpolate8x8_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP143.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP144.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\interpolate8x8_3dne.obj ..\..\src\image\x86_asm\interpolate8x8_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP144.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP145.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\interpolate8x8_3dn.obj ..\..\src\image\x86_asm\interpolate8x8_3dn.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP145.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP146.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -I"\GPAC\gpac_extra_libs\xvidcore\src\image\x86_asm"\ -o .\Debug\colorspace_yuyv_mmx.obj ..\..\src\image\x86_asm\colorspace_yuyv_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP146.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP147.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -I"\GPAC\gpac_extra_libs\xvidcore\src\image\x86_asm"\ -o .\Debug\colorspace_yuv_mmx.obj ..\..\src\image\x86_asm\colorspace_yuv_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP147.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP148.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -I"\GPAC\gpac_extra_libs\xvidcore\src\image\x86_asm"\ -o .\Debug\colorspace_rgb_mmx.obj ..\..\src\image\x86_asm\colorspace_rgb_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP148.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP149.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\simple_idct_mmx.obj ..\..\src\dct\x86_asm\simple_idct_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP149.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14A.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\idct_sse2_dmitry.obj ..\..\src\dct\x86_asm\idct_sse2_dmitry.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14A.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14B.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\idct_mmx.obj ..\..\src\dct\x86_asm\idct_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14B.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14C.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\idct_3dne.obj ..\..\src\dct\x86_asm\idct_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14C.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14D.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\fdct_sse2_skal.obj ..\..\src\dct\x86_asm\fdct_sse2_skal.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14D.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14E.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\fdct_mmx_skal.obj ..\..\src\dct\x86_asm\fdct_mmx_skal.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14E.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14F.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\fdct_mmx_ffmpeg.obj ..\..\src\dct\x86_asm\fdct_mmx_ffmpeg.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP14F.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP150.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\cbp_sse2.obj ..\..\src\bitstream\x86_asm\cbp_sse2.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP150.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP151.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\cbp_mmx.obj ..\..\src\bitstream\x86_asm\cbp_mmx.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP151.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP152.bat" with contents
+[
+@echo off
+nasm -f win32 -DPREFIX -o .\Debug\cbp_3dne.obj ..\..\src\bitstream\x86_asm\cbp_3dne.asm
+]
+Creating command line "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP152.bat"
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP153.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "ARCH_IS_32BIT" /D "ARCH_IS_IA32" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\xvidcore\src\bitstream\bitstream.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\bitstream\cbp.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\bitstream\mbcoding.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\dct\fdct.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\dct\idct.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\dct\simple_idct.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\colorspace.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\font.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\image.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\interpolate8x8.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\postprocessing.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\qpel.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\image\reduced.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_bvop.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_common.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_gmc.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_pvop.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\gmc.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\motion_comp.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\sad.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\motion\vop_type_decision.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\prediction\mbprediction.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\quant\quant_h263.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\quant\quant_matrix.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\quant\quant_mpeg.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\emms.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\mbtransquant.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\mem_align.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\mem_transfer.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\utils\timer.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\decoder.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\encoder.c"
+"E:\GPAC\gpac_extra_libs\xvidcore\src\xvid.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP153.tmp" 
+Assembling ..\..\src\utils\x86_asm\mem_transfer_mmx.asm
+Assembling ..\..\src\utils\x86_asm\mem_transfer_3dne.asm
+Assembling ..\..\src\utils\x86_asm\interlacing_mmx.asm
+Assembling ..\..\src\utils\x86_asm\cpuid.asm
+Assembling ..\..\src\quant\x86_asm\quantize_mpeg_xmm.asm
+Assembling ..\..\src\quant\x86_asm\quantize_mpeg_mmx.asm
+Assembling ..\..\src\quant\x86_asm\quantize_h263_mmx.asm
+Assembling ..\..\src\quant\x86_asm\quantize_h263_3dne.asm
+Assembling ..\..\src\motion\x86_asm\sad_xmm.asm
+Assembling ..\..\src\motion\x86_asm\sad_sse2.asm
+Assembling ..\..\src\motion\x86_asm\sad_mmx.asm
+Assembling ..\..\src\motion\x86_asm\sad_3dne.asm
+Assembling ..\..\src\motion\x86_asm\sad_3dn.asm
+Assembling ..\..\src\image\x86_asm\reduced_mmx.asm
+Assembling ..\..\src\image\x86_asm\qpel_mmx.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_xmm.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_mmx.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_3dne.asm
+Assembling ..\..\src\image\x86_asm\interpolate8x8_3dn.asm
+Assembling ..\..\src\image\x86_asm\colorspace_yuyv_mmx.asm
+Assembling ..\..\src\image\x86_asm\colorspace_yuv_mmx.asm
+Assembling ..\..\src\image\x86_asm\colorspace_rgb_mmx.asm
+Assembling ..\..\src\dct\x86_asm\simple_idct_mmx.asm
+Assembling ..\..\src\dct\x86_asm\idct_sse2_dmitry.asm
+Assembling ..\..\src\dct\x86_asm\idct_mmx.asm
+Assembling ..\..\src\dct\x86_asm\idct_3dne.asm
+Assembling ..\..\src\dct\x86_asm\fdct_sse2_skal.asm
+Assembling ..\..\src\dct\x86_asm\fdct_mmx_skal.asm
+Assembling ..\..\src\dct\x86_asm\fdct_mmx_ffmpeg.asm
+Assembling ..\..\src\bitstream\x86_asm\cbp_sse2.asm
+Assembling ..\..\src\bitstream\x86_asm\cbp_mmx.asm
+Assembling ..\..\src\bitstream\x86_asm\cbp_3dne.asm
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP154.tmp" with contents
+[
+/nologo /out:"..\..\..\lib\w32_debug\libxvidcore.lib" 
+.\Debug\bitstream.obj
+.\Debug\cbp.obj
+.\Debug\mbcoding.obj
+.\Debug\fdct.obj
+.\Debug\idct.obj
+.\Debug\simple_idct.obj
+.\Debug\colorspace.obj
+.\Debug\font.obj
+.\Debug\image.obj
+.\Debug\interpolate8x8.obj
+.\Debug\postprocessing.obj
+.\Debug\qpel.obj
+.\Debug\reduced.obj
+.\Debug\estimation_bvop.obj
+.\Debug\estimation_common.obj
+.\Debug\estimation_gmc.obj
+.\Debug\estimation_pvop.obj
+.\Debug\estimation_rd_based.obj
+.\Debug\gmc.obj
+.\Debug\motion_comp.obj
+.\Debug\sad.obj
+.\Debug\vop_type_decision.obj
+.\Debug\mbprediction.obj
+.\Debug\quant_h263.obj
+.\Debug\quant_matrix.obj
+.\Debug\quant_mpeg.obj
+.\Debug\emms.obj
+.\Debug\mbtransquant.obj
+.\Debug\mem_align.obj
+.\Debug\mem_transfer.obj
+.\Debug\timer.obj
+.\Debug\decoder.obj
+.\Debug\encoder.obj
+.\Debug\xvid.obj
+.\Debug\cbp_3dne.obj
+.\Debug\cbp_mmx.obj
+.\Debug\cbp_sse2.obj
+.\Debug\fdct_mmx_ffmpeg.obj
+.\Debug\fdct_mmx_skal.obj
+.\Debug\fdct_sse2_skal.obj
+.\Debug\idct_3dne.obj
+.\Debug\idct_mmx.obj
+.\Debug\idct_sse2_dmitry.obj
+.\Debug\simple_idct_mmx.obj
+.\Debug\colorspace_rgb_mmx.obj
+.\Debug\colorspace_yuv_mmx.obj
+.\Debug\colorspace_yuyv_mmx.obj
+.\Debug\interpolate8x8_3dn.obj
+.\Debug\interpolate8x8_3dne.obj
+.\Debug\interpolate8x8_mmx.obj
+.\Debug\interpolate8x8_xmm.obj
+.\Debug\qpel_mmx.obj
+.\Debug\reduced_mmx.obj
+.\Debug\sad_3dn.obj
+.\Debug\sad_3dne.obj
+.\Debug\sad_mmx.obj
+.\Debug\sad_sse2.obj
+.\Debug\sad_xmm.obj
+.\Debug\quantize_h263_3dne.obj
+.\Debug\quantize_h263_mmx.obj
+.\Debug\quantize_mpeg_mmx.obj
+.\Debug\quantize_mpeg_xmm.obj
+.\Debug\cpuid.obj
+.\Debug\interlacing_mmx.obj
+.\Debug\mem_transfer_3dne.obj
+.\Debug\mem_transfer_mmx.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP154.tmp"
+<h3>Output Window</h3>
+Compiling...
+bitstream.c
+Generating Code...
+Compiling...
+cbp.c
+Generating Code...
+Compiling...
+mbcoding.c
+Generating Code...
+Compiling...
+fdct.c
+Generating Code...
+Compiling...
+idct.c
+Generating Code...
+Compiling...
+simple_idct.c
+Generating Code...
+Compiling...
+colorspace.c
+Generating Code...
+Compiling...
+font.c
+Generating Code...
+Compiling...
+image.c
+Generating Code...
+Compiling...
+interpolate8x8.c
+Generating Code...
+Compiling...
+postprocessing.c
+Generating Code...
+Compiling...
+qpel.c
+Generating Code...
+Compiling...
+reduced.c
+Generating Code...
+Compiling...
+estimation_bvop.c
+e:\gpac\gpac_extra_libs\xvidcore\src\motion\estimation_bvop.c(1125) : warning C4018: '<' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+estimation_common.c
+Generating Code...
+Compiling...
+estimation_gmc.c
+Generating Code...
+Compiling...
+estimation_pvop.c
+Generating Code...
+Compiling...
+estimation_rd_based.c
+e:\gpac\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(439) : warning C4018: '>=' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(471) : warning C4018: '>=' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(506) : warning C4018: '>=' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(506) : warning C4018: '>=' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(520) : warning C4018: '>=' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\motion\estimation_rd_based.c(520) : warning C4018: '>=' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+gmc.c
+Generating Code...
+Compiling...
+motion_comp.c
+Generating Code...
+Compiling...
+sad.c
+Generating Code...
+Compiling...
+vop_type_decision.c
+Generating Code...
+Compiling...
+mbprediction.c
+Generating Code...
+Compiling...
+quant_h263.c
+Generating Code...
+Compiling...
+quant_matrix.c
+Generating Code...
+Compiling...
+quant_mpeg.c
+Generating Code...
+Compiling...
+emms.c
+Generating Code...
+Compiling...
+mbtransquant.c
+Generating Code...
+Compiling...
+mem_align.c
+Generating Code...
+Compiling...
+mem_transfer.c
+Generating Code...
+Compiling...
+timer.c
+Generating Code...
+Compiling...
+decoder.c
+Generating Code...
+Compiling...
+encoder.c
+e:\gpac\gpac_extra_libs\xvidcore\src\decoder.c(1380) : warning C4700: local variable 'quant' used without having been initialized
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(823) : warning C4018: '==' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(823) : warning C4018: '==' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(1569) : warning C4018: '!=' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(1847) : warning C4018: '<=' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(1854) : warning C4018: '>=' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+xvid.c
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(713) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(713) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(713) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(718) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(718) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\xvidcore\src\encoder.c(718) : warning C4761: integral size mismatch in argument; conversion supplied
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+libxvidcore.lib - 0 error(s), 22 warning(s)
+<h3>
+--------------------Configuration: ogg_static - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP155.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Obj/Static_Release/ogg_static.pch" /YX /Fo"Obj/Static_Release/" /Fd"Obj/Static_Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c"
+"E:\GPAC\gpac_extra_libs\libogg\src\framing.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP155.tmp" 
+Creating command line "link.exe -lib /nologo /out:"../../lib/w32_release/ogg_static.lib"  .\Obj\Static_Release\bitwise.obj .\Obj\Static_Release\framing.obj "
+<h3>Output Window</h3>
+Compiling...
+bitwise.c
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(82) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(84) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(86) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(89) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(116) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(118) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(120) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(123) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(320) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(356) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(387) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c(409) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+framing.c
+E:\GPAC\gpac_extra_libs\libogg\src\framing.c(263) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\framing.c(264) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\framing.c(265) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\framing.c(266) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+E:\GPAC\gpac_extra_libs\libogg\src\framing.c(381) : warning C4244: '=' : conversion from '__int64 ' to 'unsigned char ', possible loss of data
+Creating library...
+
+
+
+<h3>Results</h3>
+ogg_static.lib - 0 error(s), 17 warning(s)
+<h3>
+--------------------Configuration: ogg_static - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP156.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Obj/Static_Debug/ogg_static.pch" /YX /Fo"Obj/Static_Debug/" /Fd"Obj/Static_Debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\libogg\src\bitwise.c"
+"E:\GPAC\gpac_extra_libs\libogg\src\framing.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP156.tmp" 
+Creating command line "link.exe -lib /nologo /out:"../../lib/w32_debug/ogg_static_d.lib"  .\Obj\Static_Debug\bitwise.obj .\Obj\Static_Debug\framing.obj "
+<h3>Output Window</h3>
+Compiling...
+bitwise.c
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(82) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(84) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(86) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(89) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(116) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(118) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(120) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(123) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(320) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(356) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(387) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+e:\gpac\gpac_extra_libs\libogg\src\bitwise.c(409) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+framing.c
+e:\gpac\gpac_extra_libs\libogg\src\framing.c(263) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\framing.c(264) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\framing.c(265) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\framing.c(266) : warning C4244: '=' : conversion from 'unsigned __int32 ' to 'unsigned char ', possible loss of data
+e:\gpac\gpac_extra_libs\libogg\src\framing.c(381) : warning C4244: '=' : conversion from '__int64 ' to 'unsigned char ', possible loss of data
+Creating library...
+
+
+
+<h3>Results</h3>
+ogg_static_d.lib - 0 error(s), 17 warning(s)
+<h3>
+--------------------Configuration: theora_static - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP157.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../include" /I "../../libogg/include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Obj/Static_Release/theora_static.pch" /YX /Fo"Obj/Static_Release/" /Fd"Obj/Static_Release/" /FD /c 
+"E:\GPAC\gpac_extra_libs\libtheora\lib\blockmap.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\comment.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\dct.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\dct_decode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\dct_encode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\decode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\encode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\frarray.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\frinit.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\huffman.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\idct.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\mcomp.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\misc_common.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\pb.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\pp.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\reconstruct.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP157.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP158.tmp" with contents
+[
+/nologo /out:"../../lib/w32_release/theora_static.lib" 
+.\Obj\Static_Release\blockmap.obj
+.\Obj\Static_Release\comment.obj
+.\Obj\Static_Release\dct.obj
+.\Obj\Static_Release\dct_decode.obj
+.\Obj\Static_Release\dct_encode.obj
+.\Obj\Static_Release\decode.obj
+.\Obj\Static_Release\encode.obj
+.\Obj\Static_Release\frarray.obj
+.\Obj\Static_Release\frinit.obj
+.\Obj\Static_Release\huffman.obj
+.\Obj\Static_Release\idct.obj
+.\Obj\Static_Release\mcomp.obj
+.\Obj\Static_Release\misc_common.obj
+.\Obj\Static_Release\pb.obj
+.\Obj\Static_Release\pp.obj
+.\Obj\Static_Release\quant.obj
+.\Obj\Static_Release\reconstruct.obj
+.\Obj\Static_Release\scan.obj
+.\Obj\Static_Release\toplevel.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP158.tmp"
+<h3>Output Window</h3>
+Compiling...
+blockmap.c
+comment.c
+dct.c
+dct_decode.c
+dct_encode.c
+decode.c
+encode.c
+frarray.c
+frinit.c
+huffman.c
+idct.c
+mcomp.c
+misc_common.c
+pb.c
+pp.c
+quant.c
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(420) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(429) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(432) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(435) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(444) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(447) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(450) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(459) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(462) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(466) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(477) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(480) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(483) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(492) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(495) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(498) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(507) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(510) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(513) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(522) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(525) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(528) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(763) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(770) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(777) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(784) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+reconstruct.c
+scan.c
+E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c(1188) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c(2009) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c(2011) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+toplevel.c
+E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c(2203) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c(2208) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c(2233) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c(2240) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c(271) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c(281) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c(289) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c(487) : warning C4244: '=' : conversion from 'double ' to '__int64 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c(871) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c(1509) : warning C4244: 'initializing' : conversion from '__int64 ' to 'long ', possible loss of data
+Creating library...
+
+
+
+<h3>Results</h3>
+theora_static.lib - 0 error(s), 39 warning(s)
+<h3>
+--------------------Configuration: theora_static - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP159.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../include" /I "../../libogg/include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Obj/Static_Debug/theora_static.pch" /YX /Fo"Obj/Static_Debug/" /Fd"Obj/Static_Debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\libtheora\lib\blockmap.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\comment.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\dct.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\dct_decode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\dct_encode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\decode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\encode.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\frarray.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\frinit.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\huffman.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\idct.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\mcomp.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\misc_common.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\pb.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\pp.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\reconstruct.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\scan.c"
+"E:\GPAC\gpac_extra_libs\libtheora\lib\toplevel.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP159.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15A.tmp" with contents
+[
+/nologo /out:"../../lib/w32_debug/theora_static_d.lib" 
+.\Obj\Static_Debug\blockmap.obj
+.\Obj\Static_Debug\comment.obj
+.\Obj\Static_Debug\dct.obj
+.\Obj\Static_Debug\dct_decode.obj
+.\Obj\Static_Debug\dct_encode.obj
+.\Obj\Static_Debug\decode.obj
+.\Obj\Static_Debug\encode.obj
+.\Obj\Static_Debug\frarray.obj
+.\Obj\Static_Debug\frinit.obj
+.\Obj\Static_Debug\huffman.obj
+.\Obj\Static_Debug\idct.obj
+.\Obj\Static_Debug\mcomp.obj
+.\Obj\Static_Debug\misc_common.obj
+.\Obj\Static_Debug\pb.obj
+.\Obj\Static_Debug\pp.obj
+.\Obj\Static_Debug\quant.obj
+.\Obj\Static_Debug\reconstruct.obj
+.\Obj\Static_Debug\scan.obj
+.\Obj\Static_Debug\toplevel.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15A.tmp"
+<h3>Output Window</h3>
+Compiling...
+blockmap.c
+comment.c
+dct.c
+dct_decode.c
+dct_encode.c
+decode.c
+encode.c
+frarray.c
+frinit.c
+huffman.c
+idct.c
+mcomp.c
+misc_common.c
+pb.c
+pp.c
+quant.c
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(420) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(429) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(432) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(435) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(444) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(447) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(450) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(459) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(462) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(466) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(477) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(480) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(483) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(492) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(495) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(498) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(507) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(510) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(513) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(522) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(525) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(528) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(763) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(770) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(777) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libtheora\lib\quant.c(784) : warning C4244: '=' : conversion from 'unsigned __int32 ' to '__int16 ', possible loss of data
+reconstruct.c
+scan.c
+e:\gpac\gpac_extra_libs\libtheora\lib\scan.c(1188) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libtheora\lib\scan.c(2009) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libtheora\lib\scan.c(2011) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+toplevel.c
+e:\gpac\gpac_extra_libs\libtheora\lib\scan.c(2203) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\libtheora\lib\scan.c(2208) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\libtheora\lib\scan.c(2233) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\libtheora\lib\scan.c(2240) : warning C4761: integral size mismatch in argument; conversion supplied
+e:\gpac\gpac_extra_libs\libtheora\lib\toplevel.c(271) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libtheora\lib\toplevel.c(281) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libtheora\lib\toplevel.c(289) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libtheora\lib\toplevel.c(487) : warning C4244: '=' : conversion from 'double ' to '__int64 ', possible loss of data
+e:\gpac\gpac_extra_libs\libtheora\lib\toplevel.c(871) : warning C4244: '=' : conversion from 'double ' to '__int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libtheora\lib\toplevel.c(1509) : warning C4244: 'initializing' : conversion from '__int64 ' to 'long ', possible loss of data
+Creating library...
+
+
+
+<h3>Results</h3>
+theora_static_d.lib - 0 error(s), 39 warning(s)
+<h3>
+--------------------Configuration: vorbis_static - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../include" /I "../../libogg/include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR"Obj/Static_Release/" /Fp"Obj/Static_Release/vorbis_static.pch" /YX /Fo"Obj/Static_Release/" /Fd"Obj/Static_Release/" /FD /O3 /QaxK /Qsox- /Qip /c 
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\analysis.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\block.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\codebook.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\envelope.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\floor0.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\floor1.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\info.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\lookup.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\lpc.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\lsp.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\mapping0.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\registry.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\synthesis.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\window.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15B.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15C.tmp" with contents
+[
+/nologo /out:"../../lib/w32_release/vorbis_static.lib" 
+.\Obj\Static_Release\analysis.obj
+.\Obj\Static_Release\bitrate.obj
+.\Obj\Static_Release\block.obj
+.\Obj\Static_Release\codebook.obj
+.\Obj\Static_Release\envelope.obj
+.\Obj\Static_Release\floor0.obj
+.\Obj\Static_Release\floor1.obj
+.\Obj\Static_Release\info.obj
+.\Obj\Static_Release\lookup.obj
+.\Obj\Static_Release\lpc.obj
+.\Obj\Static_Release\lsp.obj
+.\Obj\Static_Release\mapping0.obj
+.\Obj\Static_Release\mdct.obj
+.\Obj\Static_Release\psy.obj
+.\Obj\Static_Release\registry.obj
+.\Obj\Static_Release\res0.obj
+.\Obj\Static_Release\sharedbook.obj
+.\Obj\Static_Release\smallft.obj
+.\Obj\Static_Release\synthesis.obj
+.\Obj\Static_Release\window.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15C.tmp"
+<h3>Output Window</h3>
+Compiling...
+Command line warning D4002 : ignoring unknown option '/O3'
+Command line warning D4002 : ignoring unknown option '/QaxK'
+Command line warning D4002 : ignoring unknown option '/Qsox-'
+Command line warning D4002 : ignoring unknown option '/Qip'
+analysis.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\analysis.c(80) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+bitrate.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c(44) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c(89) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c(90) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c(91) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c(294) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c(348) : warning C4018: '>' : signed/unsigned mismatch
+E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c(352) : warning C4018: '<' : signed/unsigned mismatch
+block.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\block.c(823) : warning C4244: '-=' : conversion from '__int64 ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\block.c(826) : warning C4244: '+=' : conversion from '__int64 ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\block.c(839) : warning C4244: 'initializing' : conversion from '__int64 ' to 'long ', possible loss of data
+codebook.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+envelope.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\envelope.c(48) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\envelope.c(65) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\envelope.c(68) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\envelope.c(128) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\envelope.c(146) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+floor0.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\floor0.c(124) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\floor0.c(135) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+floor1.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\floor1.c(288) : warning C4244: 'initializing' : conversion from 'float ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\floor1.c(455) : warning C4244: 'initializing' : conversion from 'float ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\floor1.c(509) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\floor1.c(510) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+info.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\info.c(54) : warning C4244: '=' : conversion from 'long ' to 'char ', possible loss of data
+lookup.c
+lpc.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lpc.c(114) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+lsp.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lookup.c(31) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lookup.c(38) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lsp.c(101) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lsp.c(351) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lsp.c(398) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lsp.c(450) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\lsp.c(453) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+mapping0.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+mdct.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c(58) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c(66) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c(67) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c(68) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c(69) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c(72) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c(73) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+psy.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(136) : warning C4244: 'function' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(138) : warning C4244: 'function' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(172) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(173) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(174) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(191) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(192) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(216) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(217) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(238) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(253) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(258) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(273) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(275) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(276) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(289) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(294) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(301) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(314) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(316) : warning C4244: 'function' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(325) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(337) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(391) : warning C4244: '=' : conversion from 'float ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(393) : warning C4244: '=' : conversion from 'const float ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(557) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(811) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(887) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(924) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(925) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(926) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(928) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(929) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(930) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(934) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(935) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(936) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(938) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(939) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(940) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(969) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(970) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(1029) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(1042) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(1060) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(1101) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c(1102) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+registry.c
+res0.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c(265) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c(381) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c(398) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c(399) : warning C4244: '+=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c(461) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c(463) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+sharedbook.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(55) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(56) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(67) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(151) : warning C4244: 'initializing' : conversion from 'double ' to 'long ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(209) : warning C4244: 'initializing' : conversion from 'long ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(210) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(229) : warning C4244: 'initializing' : conversion from 'long ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(230) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c(379) : warning C4244: '=' : conversion from 'long ' to 'char ', possible loss of data
+smallft.c
+E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c(98) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c(99) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c(282) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c(283) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c(852) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c(853) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+synthesis.c
+window.c
+Creating library...
+
+
+
+<h3>Results</h3>
+vorbis_static.lib - 0 error(s), 151 warning(s)
+<h3>
+--------------------Configuration: vorbis_static - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../include" /I "../../libogg/include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Obj/Static_Debug/vorbis_static.pch" /YX /Fo"Obj/Static_Debug/" /Fd"Obj/Static_Debug/" /FD /GZ /c 
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\analysis.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\bitrate.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\block.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\codebook.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\envelope.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\floor0.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\floor1.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\info.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\lookup.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\lpc.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\lsp.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\mapping0.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\mdct.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\psy.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\registry.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\res0.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\sharedbook.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\smallft.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\synthesis.c"
+"E:\GPAC\gpac_extra_libs\libvorbis\lib\window.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15D.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15E.tmp" with contents
+[
+/nologo /out:"../../lib/w32_debug/vorbis_static_d.lib" 
+.\Obj\Static_Debug\analysis.obj
+.\Obj\Static_Debug\bitrate.obj
+.\Obj\Static_Debug\block.obj
+.\Obj\Static_Debug\codebook.obj
+.\Obj\Static_Debug\envelope.obj
+.\Obj\Static_Debug\floor0.obj
+.\Obj\Static_Debug\floor1.obj
+.\Obj\Static_Debug\info.obj
+.\Obj\Static_Debug\lookup.obj
+.\Obj\Static_Debug\lpc.obj
+.\Obj\Static_Debug\lsp.obj
+.\Obj\Static_Debug\mapping0.obj
+.\Obj\Static_Debug\mdct.obj
+.\Obj\Static_Debug\psy.obj
+.\Obj\Static_Debug\registry.obj
+.\Obj\Static_Debug\res0.obj
+.\Obj\Static_Debug\sharedbook.obj
+.\Obj\Static_Debug\smallft.obj
+.\Obj\Static_Debug\synthesis.obj
+.\Obj\Static_Debug\window.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP15E.tmp"
+<h3>Output Window</h3>
+Compiling...
+analysis.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\analysis.c(80) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+bitrate.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\bitrate.c(44) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\bitrate.c(89) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\bitrate.c(90) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\bitrate.c(91) : warning C4244: '=' : conversion from 'double ' to 'unsigned __int32 ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\bitrate.c(294) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\bitrate.c(348) : warning C4018: '>' : signed/unsigned mismatch
+e:\gpac\gpac_extra_libs\libvorbis\lib\bitrate.c(352) : warning C4018: '<' : signed/unsigned mismatch
+block.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\block.c(823) : warning C4244: '-=' : conversion from '__int64 ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\block.c(826) : warning C4244: '+=' : conversion from '__int64 ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\block.c(839) : warning C4244: 'initializing' : conversion from '__int64 ' to 'long ', possible loss of data
+codebook.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+envelope.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\envelope.c(48) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\envelope.c(65) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\envelope.c(68) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\envelope.c(128) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\envelope.c(146) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+floor0.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\floor0.c(124) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\floor0.c(135) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+floor1.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\floor1.c(288) : warning C4244: 'initializing' : conversion from 'float ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\floor1.c(455) : warning C4244: 'initializing' : conversion from 'float ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\floor1.c(509) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\floor1.c(510) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+info.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\info.c(54) : warning C4244: '=' : conversion from 'long ' to 'char ', possible loss of data
+lookup.c
+lpc.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lpc.c(114) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+lsp.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lookup.c(31) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lookup.c(38) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lsp.c(101) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lsp.c(351) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lsp.c(398) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lsp.c(450) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\lsp.c(453) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+mapping0.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+mdct.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\mdct.c(58) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\mdct.c(66) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\mdct.c(67) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\mdct.c(68) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\mdct.c(69) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\mdct.c(72) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\mdct.c(73) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+psy.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(136) : warning C4244: 'function' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(138) : warning C4244: 'function' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(172) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(173) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(174) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(191) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(192) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(216) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(217) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(238) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(253) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(258) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(273) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(275) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(276) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(289) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(294) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(301) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(314) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(316) : warning C4244: 'function' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(325) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(337) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(391) : warning C4244: '=' : conversion from 'float ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(393) : warning C4244: '=' : conversion from 'const float ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(557) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(811) : warning C4244: 'initializing' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(887) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(893) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(894) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(895) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(896) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(897) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(898) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(899) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(900) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(924) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(925) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(926) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(928) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(929) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(930) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(934) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(935) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(936) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(938) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(939) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(940) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(969) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(970) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(1029) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(1042) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(1060) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(1101) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\psy.c(1102) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+registry.c
+res0.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\res0.c(265) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\res0.c(381) : warning C4244: 'initializing' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\res0.c(398) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\res0.c(399) : warning C4244: '+=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\res0.c(461) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\res0.c(463) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+sharedbook.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\scales.h(43) : warning C4244: '=' : conversion from 'int ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(55) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(56) : warning C4244: '=' : conversion from 'double ' to 'long ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(67) : warning C4244: 'return' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(151) : warning C4244: 'initializing' : conversion from 'double ' to 'long ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(209) : warning C4244: 'initializing' : conversion from 'long ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(210) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(229) : warning C4244: 'initializing' : conversion from 'long ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(230) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\sharedbook.c(379) : warning C4244: '=' : conversion from 'long ' to 'char ', possible loss of data
+smallft.c
+e:\gpac\gpac_extra_libs\libvorbis\lib\smallft.c(98) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\smallft.c(99) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\smallft.c(282) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\smallft.c(283) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\smallft.c(852) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+e:\gpac\gpac_extra_libs\libvorbis\lib\smallft.c(853) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+synthesis.c
+window.c
+Creating library...
+
+
+
+<h3>Results</h3>
+vorbis_static_d.lib - 0 error(s), 147 warning(s)
+</pre>
+</body>
+</html>

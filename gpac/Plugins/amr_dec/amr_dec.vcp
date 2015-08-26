@@ -1,0 +1,2309 @@
+# Microsoft eMbedded Visual Tools Project File - Name="amr_dec" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARM) Dynamic-Link Library" 0x8502
+
+CFG=amr_dec - Win32 (WCE ARM) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "amr_dec.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "amr_dec.vcn" CFG="amr_dec - Win32 (WCE ARM) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "amr_dec - Win32 (WCE ARM) Release" (based on "Win32 (WCE ARM) Dynamic-Link Library")
+!MESSAGE "amr_dec - Win32 (WCE ARM) Debug" (based on "Win32 (WCE ARM) Dynamic-Link Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+CPP=clarm.exe
+MTL=midl.exe
+RSC=rc.exe
+
+!IF  "$(CFG)" == "amr_dec - Win32 (WCE ARM) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMRel"
+# PROP BASE Intermediate_Dir "ARMRel"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Obj/ARMRel"
+# PROP Intermediate_Dir "Obj/ARMRel"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_USRDLL" /D "__MSDOS__" /D "MMS_IO" /D "AMR_DEC_EXPORTS" /YX /Oxs /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /O2 /I "../../include" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_USRDLL" /D "__MSDOS__" /D "MMS_IO" /Oxs /M$(CECrtMT) /c
+# SUBTRACT CPP /YX
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /out:"../../bin/arm_release/amr_dec.dll" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+
+!ELSEIF  "$(CFG)" == "amr_dec - Win32 (WCE ARM) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMDbg"
+# PROP BASE Intermediate_Dir "ARMDbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "Obj/ARMDbg"
+# PROP Intermediate_Dir "Obj/ARMDbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL"  /D "__MSDOS__" /D "MMS_IO" /D "AMR_DEC_EXPORTS" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "../../include" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "__MSDOS__" /D "MMS_IO" /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /YX
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /out:"../../bin/arm_debug/amr_dec.dll" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+
+!ENDIF 
+
+# Begin Target
+
+# Name "amr_dec - Win32 (WCE ARM) Release"
+# Name "amr_dec - Win32 (WCE ARM) Debug"
+# Begin Group "AMR_NB"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\AMR_NB\a_refl.c
+DEP_CPP_A_REF=\
+	".\AMR_NB\a_refl.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\a_refl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\agc.c
+DEP_CPP_AGC_C=\
+	".\AMR_NB\agc.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\agc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\autocorr.c
+DEP_CPP_AUTOC=\
+	".\AMR_NB\autocorr.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\autocorr.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\az_lsp.c
+DEP_CPP_AZ_LS=\
+	".\AMR_NB\az_lsp.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\grid.tab"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\az_lsp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\b_cn_cod.c
+DEP_CPP_B_CN_=\
+	".\AMR_NB\b_cn_cod.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\window.tab"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\b_cn_cod.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\basic_op.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\basicop2.c
+DEP_CPP_BASIC=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\bgnscd.c
+DEP_CPP_BGNSC=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\bgnscd.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gmed_n.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\sqrt_l.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\bgnscd.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\bits2prm.c
+DEP_CPP_BITS2=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\bitno.tab"\
+	".\AMR_NB\bits2prm.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\bits2prm.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c1035pf.c
+DEP_CPP_C1035=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c1035pf.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cor_h.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gray.tab"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\s10_8pf.h"\
+	".\AMR_NB\set_sign.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c1035pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c2_11pf.c
+DEP_CPP_C2_11=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c2_11pf.h"\
+	".\AMR_NB\c2_11pf.tab"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cor_h.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\set_sign.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c2_11pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c2_9pf.c
+DEP_CPP_C2_9P=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c2_9pf.h"\
+	".\AMR_NB\c2_9pf.tab"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cor_h.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\set_sign.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c2_9pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c3_14pf.c
+DEP_CPP_C3_14=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c3_14pf.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cor_h.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\set_sign.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c3_14pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c4_17pf.c
+DEP_CPP_C4_17=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c4_17pf.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cor_h.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gray.tab"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\set_sign.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c4_17pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c8_31pf.c
+DEP_CPP_C8_31=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c8_31pf.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cor_h.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\s10_8pf.h"\
+	".\AMR_NB\set_sign.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c8_31pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c_g_aver.c
+DEP_CPP_C_G_A=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c_g_aver.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\c_g_aver.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\calc_cor.c
+DEP_CPP_CALC_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\calc_cor.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\calc_cor.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\calc_en.c
+DEP_CPP_CALC_E=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\calc_en.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\calc_en.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cbsearch.c
+DEP_CPP_CBSEA=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c1035pf.h"\
+	".\AMR_NB\c2_11pf.h"\
+	".\AMR_NB\c2_9pf.h"\
+	".\AMR_NB\c3_14pf.h"\
+	".\AMR_NB\c4_17pf.h"\
+	".\AMR_NB\c8_31pf.h"\
+	".\AMR_NB\cbsearch.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cbsearch.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cl_ltp.c
+DEP_CPP_CL_LT=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cl_ltp.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\convolve.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\enc_lag3.h"\
+	".\AMR_NB\enc_lag6.h"\
+	".\AMR_NB\g_pitch.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pitch_fr.h"\
+	".\AMR_NB\pred_lt.h"\
+	".\AMR_NB\q_gain_p.h"\
+	".\AMR_NB\ton_stab.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cl_ltp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cnst.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cnst_vad.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cod_amr.c
+DEP_CPP_COD_A=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cbsearch.h"\
+	".\AMR_NB\cl_ltp.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cnst_vad.h"\
+	".\AMR_NB\cod_amr.h"\
+	".\AMR_NB\convolve.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\dtx_enc.h"\
+	".\AMR_NB\g_adapt.h"\
+	".\AMR_NB\gain_q.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\levinson.h"\
+	".\AMR_NB\lpc.h"\
+	".\AMR_NB\lsp.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\ol_ltp.h"\
+	".\AMR_NB\p_ol_wgh.h"\
+	".\AMR_NB\pitch_fr.h"\
+	".\AMR_NB\pre_big.h"\
+	".\AMR_NB\pred_lt.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\qua_gain.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\spreproc.h"\
+	".\AMR_NB\spstproc.h"\
+	".\AMR_NB\ton_stab.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad.h"\
+	".\AMR_NB\vad1.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cod_amr.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\convolve.c
+DEP_CPP_CONVO=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\convolve.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\convolve.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\copy.c
+DEP_CPP_COPY_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\copy.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cor_h.c
+DEP_CPP_COR_H=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cor_h.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\cor_h.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\count.c
+DEP_CPP_COUNT=\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\count.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d1035pf.c
+DEP_CPP_D1035=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d1035pf.h"\
+	".\AMR_NB\gray.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d1035pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d2_11pf.c
+DEP_CPP_D2_11=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d2_11pf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d2_11pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d2_9pf.c
+DEP_CPP_D2_9P=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c2_9pf.tab"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d2_9pf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d2_9pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d3_14pf.c
+DEP_CPP_D3_14=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d3_14pf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d3_14pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d4_17pf.c
+DEP_CPP_D4_17=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d4_17pf.h"\
+	".\AMR_NB\gray.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d4_17pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d8_31pf.c
+DEP_CPP_D8_31=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d8_31pf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d8_31pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_gain_c.c
+DEP_CPP_D_GAI=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d_gain_c.h"\
+	".\AMR_NB\gains.tab"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_gain_c.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_gain_p.c
+DEP_CPP_D_GAIN=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d_gain_p.h"\
+	".\AMR_NB\gains.tab"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_gain_p.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_homing.c
+DEP_CPP_D_HOM=\
+	".\AMR_NB\bitno.tab"\
+	".\AMR_NB\bits2prm.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\d_homing.h"\
+	".\AMR_NB\d_homing.tab"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_homing.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_plsf.c
+DEP_CPP_D_PLS=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d_plsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\q_plsf_5.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_plsf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_plsf_3.c
+DEP_CPP_D_PLSF=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d_plsf.h"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\q_plsf_3.tab"\
+	".\AMR_NB\reorder.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\d_plsf_5.c
+DEP_CPP_D_PLSF_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d_plsf.h"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\q_plsf_5.tab"\
+	".\AMR_NB\reorder.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_amr.c
+DEP_CPP_DEC_A=\
+	".\AMR_NB\agc.h"\
+	".\AMR_NB\b_cn_cod.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\bgnscd.h"\
+	".\AMR_NB\bitno.tab"\
+	".\AMR_NB\c_g_aver.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d1035pf.h"\
+	".\AMR_NB\d2_11pf.h"\
+	".\AMR_NB\d2_9pf.h"\
+	".\AMR_NB\d3_14pf.h"\
+	".\AMR_NB\d4_17pf.h"\
+	".\AMR_NB\d8_31pf.h"\
+	".\AMR_NB\d_gain_c.h"\
+	".\AMR_NB\d_gain_p.h"\
+	".\AMR_NB\d_plsf.h"\
+	".\AMR_NB\dec_amr.h"\
+	".\AMR_NB\dec_gain.h"\
+	".\AMR_NB\dec_lag3.h"\
+	".\AMR_NB\dec_lag6.h"\
+	".\AMR_NB\dtx_dec.h"\
+	".\AMR_NB\dtx_enc.h"\
+	".\AMR_NB\ec_gains.h"\
+	".\AMR_NB\ex_ctrl.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\int_lpc.h"\
+	".\AMR_NB\int_lsf.h"\
+	".\AMR_NB\lsp.tab"\
+	".\AMR_NB\lsp_avg.h"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\ph_disp.h"\
+	".\AMR_NB\pred_lt.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\sqrt_l.h"\
+	".\AMR_NB\syn_filt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_amr.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_gain.c
+DEP_CPP_DEC_G=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\dec_gain.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\qgain475.tab"\
+	".\AMR_NB\qua_gain.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_gain.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_lag3.c
+DEP_CPP_DEC_L=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\dec_lag3.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_lag3.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_lag6.c
+DEP_CPP_DEC_LA=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\dec_lag6.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dec_lag6.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dtx_dec.c
+DEP_CPP_DTX_D=\
+	".\AMR_NB\a_refl.h"\
+	".\AMR_NB\b_cn_cod.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\c_g_aver.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d_plsf.h"\
+	".\AMR_NB\dtx_dec.h"\
+	".\AMR_NB\dtx_enc.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\lsp.tab"\
+	".\AMR_NB\lsp_az.h"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\q_plsf_5.tab"\
+	".\AMR_NB\reorder.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\syn_filt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dtx_dec.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dtx_enc.c
+DEP_CPP_DTX_E=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\dtx_enc.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\lsp.tab"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\reorder.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\dtx_enc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\e_homing.c
+DEP_CPP_E_HOM=\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\e_homing.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\e_homing.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ec_gains.c
+DEP_CPP_EC_GA=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\ec_gains.h"\
+	".\AMR_NB\gains.tab"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\gmed_n.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ec_gains.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\enc_lag3.c
+DEP_CPP_ENC_L=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\enc_lag3.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\enc_lag3.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\enc_lag6.c
+DEP_CPP_ENC_LA=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\enc_lag6.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\enc_lag6.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ex_ctrl.c
+DEP_CPP_EX_CT=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\ex_ctrl.h"\
+	".\AMR_NB\gmed_n.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\sqrt_l.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ex_ctrl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\frame.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\g_adapt.c
+DEP_CPP_G_ADA=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\g_adapt.h"\
+	".\AMR_NB\gmed_n.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\g_adapt.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\g_code.c
+DEP_CPP_G_COD=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\g_code.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\g_code.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\g_pitch.c
+DEP_CPP_G_PIT=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\g_pitch.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\g_pitch.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\gain_q.c
+DEP_CPP_GAIN_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\calc_en.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\g_adapt.h"\
+	".\AMR_NB\g_code.h"\
+	".\AMR_NB\gain_q.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\q_gain_c.h"\
+	".\AMR_NB\qgain475.h"\
+	".\AMR_NB\qgain795.h"\
+	".\AMR_NB\qua_gain.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\gain_q.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\gc_pred.c
+DEP_CPP_GC_PR=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\gc_pred.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\gmed_n.c
+DEP_CPP_GMED_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gmed_n.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\gmed_n.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\hp_max.c
+DEP_CPP_HP_MA=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\hp_max.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\hp_max.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\int_lpc.c
+DEP_CPP_INT_L=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\int_lpc.h"\
+	".\AMR_NB\lsp_az.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\int_lpc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\int_lsf.c
+DEP_CPP_INT_LS=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\int_lsf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\int_lsf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\inter_36.c
+DEP_CPP_INTER=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inter_36.h"\
+	".\AMR_NB\inter_36.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\inter_36.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\inv_sqrt.c
+DEP_CPP_INV_S=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\inv_sqrt.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\inv_sqrt.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lag_wind.c
+DEP_CPP_LAG_W=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lag_wind.h"\
+	".\AMR_NB\lag_wind.tab"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lag_wind.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\levinson.c
+DEP_CPP_LEVIN=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\levinson.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\levinson.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lflg_upd.c
+DEP_CPP_LFLG_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\log2.c
+DEP_CPP_LOG2_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\log2.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\log2.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lpc.c
+DEP_CPP_LPC_C=\
+	".\AMR_NB\autocorr.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lag_wind.h"\
+	".\AMR_NB\levinson.h"\
+	".\AMR_NB\lpc.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\window.tab"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lpc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsfwt.c
+DEP_CPP_LSFWT=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lsfwt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsfwt.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp.c
+DEP_CPP_LSP_C=\
+	".\AMR_NB\az_lsp.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\int_lpc.h"\
+	".\AMR_NB\lsp.h"\
+	".\AMR_NB\lsp.tab"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp_avg.c
+DEP_CPP_LSP_A=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lsp_avg.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\q_plsf_5.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp_avg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp_az.c
+DEP_CPP_LSP_AZ=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lsp_az.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp_az.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp_lsf.c
+DEP_CPP_LSP_L=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\lsp_lsf.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\lsp_lsf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\mac_32.c
+DEP_CPP_MAC_3=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mac_32.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\mac_32.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\mode.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\n_proc.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\n_proc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ol_ltp.c
+DEP_CPP_OL_LT=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cnst_vad.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\ol_ltp.h"\
+	".\AMR_NB\p_ol_wgh.h"\
+	".\AMR_NB\pitch_ol.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad.h"\
+	".\AMR_NB\vad1.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ol_ltp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\oper_32b.c
+DEP_CPP_OPER_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\oper_32b.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\p_ol_wgh.c
+DEP_CPP_P_OL_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\calc_cor.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cnst_vad.h"\
+	".\AMR_NB\corrwght.tab"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gmed_n.h"\
+	".\AMR_NB\hp_max.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\p_ol_wgh.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad.h"\
+	".\AMR_NB\vad1.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\p_ol_wgh.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ph_disp.c
+DEP_CPP_PH_DI=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\ph_disp.h"\
+	".\AMR_NB\ph_disp.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ph_disp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pitch_fr.c
+DEP_CPP_PITCH=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\convolve.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\enc_lag3.h"\
+	".\AMR_NB\enc_lag6.h"\
+	".\AMR_NB\inter_36.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pitch_fr.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pitch_fr.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pitch_ol.c
+DEP_CPP_PITCH_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\calc_cor.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cnst_vad.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\hp_max.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pitch_ol.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad.h"\
+	".\AMR_NB\vad1.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pitch_ol.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\post_pro.c
+DEP_CPP_POST_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\post_pro.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\post_pro.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pow2.c
+DEP_CPP_POW2_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\pow2.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pow2.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pre_big.c
+DEP_CPP_PRE_B=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pre_big.h"\
+	".\AMR_NB\residu.h"\
+	".\AMR_NB\syn_filt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\weight_a.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pre_big.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pre_proc.c
+DEP_CPP_PRE_P=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pre_proc.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pre_proc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pred_lt.c
+DEP_CPP_PRED_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\pred_lt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pred_lt.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\preemph.c
+DEP_CPP_PREEM=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\preemph.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\preemph.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\prm2bits.c
+DEP_CPP_PRM2B=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\bitno.tab"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\prm2bits.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\prm2bits.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pstfilt.c
+DEP_CPP_PSTFI=\
+	".\AMR_NB\agc.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\preemph.h"\
+	".\AMR_NB\pstfilt.h"\
+	".\AMR_NB\residu.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\syn_filt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\weight_a.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\pstfilt.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_gain_c.c
+DEP_CPP_Q_GAI=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gains.tab"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\q_gain_c.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_gain_c.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_gain_p.c
+DEP_CPP_Q_GAIN=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gains.tab"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\q_gain_p.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_gain_p.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_plsf.c
+DEP_CPP_Q_PLS=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_plsf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_plsf_3.c
+DEP_CPP_Q_PLSF=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lsfwt.h"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\q_plsf_3.tab"\
+	".\AMR_NB\reorder.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\q_plsf_5.c
+DEP_CPP_Q_PLSF_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\lsfwt.h"\
+	".\AMR_NB\lsp_lsf.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\q_plsf_5.tab"\
+	".\AMR_NB\reorder.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\qgain475.c
+DEP_CPP_QGAIN=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\mac_32.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\qgain475.h"\
+	".\AMR_NB\qgain475.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\qgain475.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\qgain795.c
+DEP_CPP_QGAIN7=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\calc_en.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\g_adapt.h"\
+	".\AMR_NB\gains.tab"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\mac_32.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\q_gain_p.h"\
+	".\AMR_NB\qgain795.h"\
+	".\AMR_NB\sqrt_l.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\qgain795.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\qua_gain.c
+DEP_CPP_QUA_G=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\qua_gain.h"\
+	".\AMR_NB\qua_gain.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\qua_gain.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\r_fft.c
+DEP_CPP_R_FFT=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\reorder.c
+DEP_CPP_REORD=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\reorder.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\reorder.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\residu.c
+DEP_CPP_RESID=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\residu.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\residu.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\s10_8pf.c
+DEP_CPP_S10_8=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\s10_8pf.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\s10_8pf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\set_sign.c
+DEP_CPP_SET_S=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\inv_sqrt.h"\
+	".\AMR_NB\set_sign.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\set_sign.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\set_zero.c
+DEP_CPP_SET_Z=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\set_zero.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sid_sync.c
+DEP_CPP_SID_S=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\sid_sync.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sid_sync.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sp_dec.c
+DEP_CPP_SP_DE=\
+	".\AMR_NB\agc.h"\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\bgnscd.h"\
+	".\AMR_NB\bitno.tab"\
+	".\AMR_NB\bits2prm.h"\
+	".\AMR_NB\c_g_aver.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\d_plsf.h"\
+	".\AMR_NB\dec_amr.h"\
+	".\AMR_NB\dtx_dec.h"\
+	".\AMR_NB\dtx_enc.h"\
+	".\AMR_NB\ec_gains.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\lsp_avg.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\ph_disp.h"\
+	".\AMR_NB\post_pro.h"\
+	".\AMR_NB\preemph.h"\
+	".\AMR_NB\pstfilt.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\sp_dec.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sp_dec.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sp_enc.c
+DEP_CPP_SP_EN=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\bitno.tab"\
+	".\AMR_NB\cl_ltp.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\cnst_vad.h"\
+	".\AMR_NB\cod_amr.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\dtx_enc.h"\
+	".\AMR_NB\g_adapt.h"\
+	".\AMR_NB\gain_q.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\levinson.h"\
+	".\AMR_NB\lpc.h"\
+	".\AMR_NB\lsp.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\p_ol_wgh.h"\
+	".\AMR_NB\pitch_fr.h"\
+	".\AMR_NB\pre_proc.h"\
+	".\AMR_NB\prm2bits.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\sp_enc.h"\
+	".\AMR_NB\ton_stab.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad.h"\
+	".\AMR_NB\vad1.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sp_enc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\spreproc.c
+DEP_CPP_SPREP=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\residu.h"\
+	".\AMR_NB\spreproc.h"\
+	".\AMR_NB\syn_filt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\weight_a.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\spreproc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\spstproc.c
+DEP_CPP_SPSTP=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\spstproc.h"\
+	".\AMR_NB\syn_filt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\spstproc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sqrt_l.c
+DEP_CPP_SQRT_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\sqrt_l.h"\
+	".\AMR_NB\sqrt_l.tab"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\sqrt_l.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\strfunc.c
+DEP_CPP_STRFU=\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\strfunc.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\strfunc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\syn_filt.c
+DEP_CPP_SYN_F=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\syn_filt.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\syn_filt.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ton_stab.c
+DEP_CPP_TON_S=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\copy.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\set_zero.h"\
+	".\AMR_NB\ton_stab.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\ton_stab.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\typedef.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\typedefs.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\vad.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\vad1.c
+DEP_CPP_VAD1_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst_vad.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad.h"\
+	".\AMR_NB\vad1.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\vad1.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\vad2.c
+DEP_CPP_VAD2_=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\log2.h"\
+	".\AMR_NB\oper_32b.h"\
+	".\AMR_NB\pow2.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\vad2.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\vad2.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\vadname.c
+DEP_CPP_VADNA=\
+	".\AMR_NB\vadname.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\vadname.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\weight_a.c
+DEP_CPP_WEIGH=\
+	".\AMR_NB\basic_op.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\count.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	".\AMR_NB\weight_a.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\AMR_NB\weight_a.h
+# End Source File
+# End Group
+# Begin Group "Plugin"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\amr_dec.c
+DEP_CPP_AMR_D=\
+	"..\..\include\gpac\m4_config.h"\
+	"..\..\include\gpac\m4_decoder.h"\
+	"..\..\include\gpac\m4_descriptors.h"\
+	"..\..\include\gpac\m4_network.h"\
+	"..\..\include\gpac\m4_tools.h"\
+	".\AMR_NB\agc.h"\
+	".\AMR_NB\bgnscd.h"\
+	".\AMR_NB\c_g_aver.h"\
+	".\AMR_NB\cnst.h"\
+	".\AMR_NB\d_homing.h"\
+	".\AMR_NB\d_plsf.h"\
+	".\AMR_NB\dec_amr.h"\
+	".\AMR_NB\dtx_dec.h"\
+	".\AMR_NB\dtx_enc.h"\
+	".\AMR_NB\ec_gains.h"\
+	".\AMR_NB\gc_pred.h"\
+	".\AMR_NB\lsp_avg.h"\
+	".\AMR_NB\mode.h"\
+	".\AMR_NB\ph_disp.h"\
+	".\AMR_NB\post_pro.h"\
+	".\AMR_NB\preemph.h"\
+	".\AMR_NB\pstfilt.h"\
+	".\AMR_NB\q_plsf.h"\
+	".\AMR_NB\sp_dec.h"\
+	".\AMR_NB\typedef.h"\
+	".\AMR_NB\typedefs.h"\
+	
+NODEP_CPP_AMR_D=\
+	"..\..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\amr_dec.def
+# End Source File
+# Begin Source File
+
+SOURCE=.\amr_dec.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\amr_in.c
+DEP_CPP_AMR_I=\
+	"..\..\include\gpac\m4_author.h"\
+	"..\..\include\gpac\m4_config.h"\
+	"..\..\include\gpac\m4_decoder.h"\
+	"..\..\include\gpac\m4_descriptors.h"\
+	"..\..\include\gpac\m4_ietf.h"\
+	"..\..\include\gpac\m4_isomedia.h"\
+	"..\..\include\gpac\m4_network.h"\
+	"..\..\include\gpac\m4_scenegraph.h"\
+	"..\..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_AMR_I=\
+	"..\..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# End Target
+# End Project

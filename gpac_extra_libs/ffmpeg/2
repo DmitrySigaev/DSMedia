@@ -1,0 +1,134 @@
+In file included from avcodec.h:14,
+                 from common.c:28:
+common.h: In function `get_xbits':
+common.h:791: error: syntax error before "cache"
+common.h:794: error: `cache' undeclared (first use in this function)
+common.h:794: error: (Each undeclared identifier is reported only once
+common.h:794: error: for each function it appears in.)
+common.h:795: error: `int32_t' undeclared (first use in this function)
+common.h:795: error: syntax error before "cache"
+common.h:790: warning: unused variable `tmp'
+common.h:797: warning: no return statement in function returning non-void
+common.h: At top level:
+common.h:803: error: syntax error before '->' token
+common.h: In function `get_sbits':
+common.h:811: error: `int32_t' undeclared (first use in this function)
+In file included from avcodec.h:14,
+                 from common.c:28:
+common.h: At top level:
+common.h:1188: error: syntax error before "ff_gcd"
+common.h:1188: error: syntax error before "a"
+common.h:1188: warning: type defaults to `int' in declaration of `ff_gcd'
+common.h:1188: warning: data definition has no type or storage class
+In file included from avcodec.h:15,
+                 from common.c:28:
+rational.h: In function `av_cmp_q':
+rational.h:42: error: syntax error before "tmp"
+rational.h:44: error: `tmp' undeclared (first use in this function)
+In file included from common.c:28:
+avcodec.h: At top level:
+avcodec.h:596: error: syntax error before "int64_t"
+avcodec.h:596: warning: no semicolon at end of struct or union
+avcodec.h:597: error: syntax error before '}' token
+avcodec.h:597: warning: type defaults to `int' in declaration of `AVFrame'
+avcodec.h:597: warning: data definition has no type or storage class
+avcodec.h:726: warning: type defaults to `int' in declaration of `AVFrame'
+avcodec.h:726: error: syntax error before '*' token
+avcodec.h:927: error: syntax error before "AVFrame"
+avcodec.h:936: error: syntax error before "AVFrame"
+avcodec.h:1186: error: syntax error before "AVFrame"
+avcodec.h:1186: warning: no semicolon at end of struct or union
+avcodec.h:1527: error: syntax error before "AVFrame"
+avcodec.h:1666: error: syntax error before '}' token
+avcodec.h:1666: warning: type defaults to `int' in declaration of `AVCodecContext'
+avcodec.h:1666: warning: data definition has no type or storage class
+avcodec.h:1721: error: syntax error before '*' token
+avcodec.h:1722: error: syntax error before '*' token
+avcodec.h:1723: error: syntax error before '*' token
+avcodec.h:1724: error: syntax error before '*' token
+avcodec.h:1729: error: syntax error before '*' token
+avcodec.h:2018: error: syntax error before "AVCodecContext"
+avcodec.h:2020: error: syntax error before '*' token
+avcodec.h:2021: error: syntax error before '*' token
+avcodec.h:2021: warning: type defaults to `int' in declaration of `avcodec_alloc_context'
+avcodec.h:2021: warning: data definition has no type or storage class
+avcodec.h:2022: error: syntax error before '*' token
+avcodec.h:2023: error: syntax error before '*' token
+avcodec.h:2023: warning: type defaults to `int' in declaration of `avcodec_alloc_frame'
+avcodec.h:2023: warning: data definition has no type or storage class
+avcodec.h:2025: error: syntax error before '*' token
+avcodec.h:2026: error: syntax error before '*' token
+avcodec.h:2027: error: syntax error before '*' token
+avcodec.h:2028: error: syntax error before '*' token
+avcodec.h:2031: error: syntax error before '*' token
+avcodec.h:2032: error: syntax error before '*' token
+avcodec.h:2033: error: syntax error before '*' token
+avcodec.h:2033: error: syntax error before '*' token
+avcodec.h:2033: error: `avcodec_thread_execute' declared as function returning a function
+avcodec.h:2034: error: syntax error before '*' token
+avcodec.h:2034: error: syntax error before '*' token
+avcodec.h:2034: error: `avcodec_default_execute' declared as function returning a function
+avcodec.h:2041: error: syntax error before '*' token
+avcodec.h:2043: error: syntax error before '*' token
+avcodec.h:2046: error: syntax error before '*' token
+avcodec.h:2049: error: syntax error before '*' token
+avcodec.h:2052: error: syntax error before '*' token
+avcodec.h:2054: error: syntax error before '*' token
+avcodec.h:2057: error: syntax error before '*' token
+avcodec.h:2061: error: syntax error before '*' token
+avcodec.h:2076: error: syntax error before "int64_t"
+avcodec.h:2082: error: syntax error before "av_rescale"
+avcodec.h:2082: error: syntax error before "a"
+avcodec.h:2082: warning: type defaults to `int' in declaration of `av_rescale'
+avcodec.h:2082: warning: data definition has no type or storage class
+avcodec.h:2088: error: syntax error before "av_rescale_rnd"
+avcodec.h:2088: error: syntax error before "a"
+avcodec.h:2088: warning: type defaults to `int' in declaration of `av_rescale_rnd'
+avcodec.h:2088: warning: data definition has no type or storage class
+avcodec.h:2170: error: syntax error before "int64_t"
+avcodec.h:2170: warning: no semicolon at end of struct or union
+avcodec.h:2171: warning: type defaults to `int' in declaration of `cur_offset'
+avcodec.h:2171: warning: data definition has no type or storage class
+avcodec.h:2173: error: syntax error before "last_frame_offset"
+avcodec.h:2173: warning: type defaults to `int' in declaration of `last_frame_offset'
+avcodec.h:2173: warning: data definition has no type or storage class
+avcodec.h:2177: error: syntax error before "pts"
+avcodec.h:2177: warning: type defaults to `int' in declaration of `pts'
+avcodec.h:2177: warning: data definition has no type or storage class
+avcodec.h:2178: error: syntax error before "dts"
+avcodec.h:2178: warning: type defaults to `int' in declaration of `dts'
+avcodec.h:2178: warning: data definition has no type or storage class
+avcodec.h:2181: error: syntax error before "last_pts"
+avcodec.h:2181: warning: type defaults to `int' in declaration of `last_pts'
+avcodec.h:2181: warning: data definition has no type or storage class
+avcodec.h:2182: error: syntax error before "last_dts"
+avcodec.h:2182: warning: type defaults to `int' in declaration of `last_dts'
+avcodec.h:2182: warning: data definition has no type or storage class
+avcodec.h:2187: error: syntax error before "cur_frame_offset"
+avcodec.h:2187: warning: type defaults to `int' in declaration of `cur_frame_offset'
+avcodec.h:2187: warning: data definition has no type or storage class
+avcodec.h:2188: error: syntax error before "cur_frame_pts"
+avcodec.h:2188: warning: type defaults to `int' in declaration of `cur_frame_pts'
+avcodec.h:2188: warning: data definition has no type or storage class
+avcodec.h:2189: error: syntax error before "cur_frame_dts"
+avcodec.h:2189: warning: type defaults to `int' in declaration of `cur_frame_dts'
+avcodec.h:2189: warning: data definition has no type or storage class
+avcodec.h:2190: error: syntax error before '}' token
+avcodec.h:2190: warning: type defaults to `int' in declaration of `AVCodecParserContext'
+avcodec.h:2190: warning: data definition has no type or storage class
+avcodec.h:2195: error: syntax error before '*' token
+avcodec.h:2196: error: syntax error before '*' token
+avcodec.h:2200: error: syntax error before '*' token
+avcodec.h:2207: error: syntax error before '*' token
+avcodec.h:2207: warning: type defaults to `int' in declaration of `av_parser_init'
+avcodec.h:2207: warning: data definition has no type or storage class
+avcodec.h:2208: error: syntax error before '*' token
+avcodec.h:2213: error: syntax error before '*' token
+common.c:289: error: syntax error before "ff_gcd"
+common.c:289: error: syntax error before "a"
+common.c:289: warning: return type defaults to `int'
+common.c: In function `ff_gcd':
+common.c:290: error: `b' undeclared (first use in this function)
+common.c:290: error: `a' undeclared (first use in this function)
+make[1]: *** [common.o] Error 1
+make: *** [lib] Error 2

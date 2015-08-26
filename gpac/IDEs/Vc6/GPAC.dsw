@@ -1,0 +1,455 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "M4Systems"=..\..\M4Systems\M4Systems.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "M4Systems_dll"=..\..\M4SYSTEMS\M4Systems_dll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Osmo4"=..\..\Applications\Osmo4_w32\Osmo4.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dx_hw
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name file_dnload
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ft_font
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name gdip_rend
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name m4_rend
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mp3_in
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mp4_io
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name rtp_in
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name wav_audio
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name render2d
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name render3d
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dummy_in
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bifs_dec
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ctx_load
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name od_dec
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ogg
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name amr_dec
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ffmpeg_in
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name aac_in
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name timedtext
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name img_in
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name xvid_dec
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "aac_in"=..\..\PLUGINS\aac_in\aac_in.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "amr_dec"=..\..\Plugins\amr_dec\amr_dec.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "bifs_dec"=..\..\PLUGINS\bifs_dec\bifs_dec.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ctx_load"=..\..\PLUGINS\ctx_load\ctx_load.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dummy_in"=..\..\Plugins\dummy_in\bt_in.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dx_hw"=..\..\plugins\dx_hw\dx_hw.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ffmpeg_in"=..\..\Plugins\ffmpeg_in\ffmpeg_in.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "file_dnload"=..\..\Plugins\file_dnload\file_dnload.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ft_font"=..\..\PLUGINS\ft_font\ft_font.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "gdip_rend"=..\..\plugins\gdip_rend\gdip_rend.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "img_in"=..\..\PLUGINS\img_in\img_in.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "m4_rend"=..\..\PLUGINS\m4_rend\m4_rend.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mp3_in"=..\..\PLUGINS\mp3_in\mp3_in.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mp4_io"=..\..\PLUGINS\mp4_io\mp4_io.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "od_dec"=..\..\PLUGINS\od_dec\od_dec.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ogg"=..\..\PLUGINS\ogg\ogg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "raw_out"=..\..\Plugins\raw_out\raw_out.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "render2d"=..\..\Plugins\render2d\render2d.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "rtp_in"=..\..\Plugins\rtp_in\rtp_in.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "timedtext"=..\..\Plugins\timedtext\timedtext.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "wav_audio"=..\..\PLUGINS\wav_audio\wav_audio.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "xvid_dec"=..\..\PLUGINS\XVID_DEC\xvid_dec.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

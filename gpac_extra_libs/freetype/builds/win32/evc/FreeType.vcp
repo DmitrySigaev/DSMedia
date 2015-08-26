@@ -1,0 +1,1303 @@
+# Microsoft eMbedded Visual Tools Project File - Name="FreeType" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE x86) Static Library" 0x8304
+# TARGTYPE "Win32 (WCE ARM) Static Library" 0x8504
+
+CFG=FreeType - Win32 (WCE ARM) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "FreeType.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "FreeType.vcn" CFG="FreeType - Win32 (WCE ARM) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "FreeType - Win32 (WCE ARM) Release" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE "FreeType - Win32 (WCE ARM) Debug" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE "FreeType - Win32 (WCE x86) Debug" (based on "Win32 (WCE x86) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMRel"
+# PROP BASE Intermediate_Dir "ARMRel"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "ARMRel"
+# PROP Intermediate_Dir "ARMRel"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Oxs /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /O2 /I "..\..\..\include" /I "./" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /Oxs /M$(CECrtMT) /c
+# SUBTRACT CPP /YX
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../../../lib/arm_release/freetype.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMDbg"
+# PROP BASE Intermediate_Dir "ARMDbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "ARMDbg"
+# PROP Intermediate_Dir "ARMDbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "..\..\..\include" /I "./" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /YX
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../../../lib/arm_debug/freetype.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "X86Dbg"
+# PROP BASE Intermediate_Dir "X86Dbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "X86Dbg"
+# PROP Intermediate_Dir "X86Dbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /Gs8192 /M$(CECrtMTDebug) /c
+# SUBTRACT BASE CPP /YX
+# ADD CPP /nologo /W3 /Zi /Od /I "..\..\..\include" /I "./" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /Gs8192 /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /YX
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "FreeType - Win32 (WCE ARM) Release"
+# Name "FreeType - Win32 (WCE ARM) Debug"
+# Name "FreeType - Win32 (WCE x86) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=..\..\..\src\autohint\autohint.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_AUTOH=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\autohint\ahangles.c"\
+	"..\..\..\src\autohint\ahangles.h"\
+	"..\..\..\src\autohint\aherrors.h"\
+	"..\..\..\src\autohint\ahglobal.c"\
+	"..\..\..\src\autohint\ahglobal.h"\
+	"..\..\..\src\autohint\ahglyph.c"\
+	"..\..\..\src\autohint\ahglyph.h"\
+	"..\..\..\src\autohint\ahhint.c"\
+	"..\..\..\src\autohint\ahhint.h"\
+	"..\..\..\src\autohint\ahloader.h"\
+	"..\..\..\src\autohint\ahmodule.c"\
+	"..\..\..\src\autohint\ahtypes.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_AUTOH=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\autohint\ahangles.c"\
+	"..\..\..\src\autohint\ahangles.h"\
+	"..\..\..\src\autohint\aherrors.h"\
+	"..\..\..\src\autohint\ahglobal.c"\
+	"..\..\..\src\autohint\ahglobal.h"\
+	"..\..\..\src\autohint\ahglyph.c"\
+	"..\..\..\src\autohint\ahglyph.h"\
+	"..\..\..\src\autohint\ahhint.c"\
+	"..\..\..\src\autohint\ahhint.h"\
+	"..\..\..\src\autohint\ahloader.h"\
+	"..\..\..\src\autohint\ahmodule.c"\
+	"..\..\..\src\autohint\ahtypes.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_AUTOH=\
+	"..\..\..\src\autohint\ahangles.c"\
+	"..\..\..\src\autohint\ahangles.h"\
+	"..\..\..\src\autohint\aherrors.h"\
+	"..\..\..\src\autohint\ahglobal.c"\
+	"..\..\..\src\autohint\ahglobal.h"\
+	"..\..\..\src\autohint\ahglyph.c"\
+	"..\..\..\src\autohint\ahglyph.h"\
+	"..\..\..\src\autohint\ahhint.c"\
+	"..\..\..\src\autohint\ahhint.h"\
+	"..\..\..\src\autohint\ahloader.h"\
+	"..\..\..\src\autohint\ahmodule.c"\
+	"..\..\..\src\autohint\ahtypes.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\bdf\bdf.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_BDF_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\bdf\bdf.h"\
+	"..\..\..\src\bdf\bdfdrivr.c"\
+	"..\..\..\src\bdf\bdfdrivr.h"\
+	"..\..\..\src\bdf\bdferror.h"\
+	"..\..\..\src\bdf\bdflib.c"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_BDF_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\bdf\bdf.h"\
+	"..\..\..\src\bdf\bdfdrivr.c"\
+	"..\..\..\src\bdf\bdfdrivr.h"\
+	"..\..\..\src\bdf\bdferror.h"\
+	"..\..\..\src\bdf\bdflib.c"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_BDF_C=\
+	"..\..\..\src\bdf\bdf.h"\
+	"..\..\..\src\bdf\bdfdrivr.c"\
+	"..\..\..\src\bdf\bdfdrivr.h"\
+	"..\..\..\src\bdf\bdferror.h"\
+	"..\..\..\src\bdf\bdflib.c"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\cff\cff.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_CFF_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\cff\cffcmap.c"\
+	"..\..\..\src\cff\cffcmap.h"\
+	"..\..\..\src\cff\cffdrivr.c"\
+	"..\..\..\src\cff\cffdrivr.h"\
+	"..\..\..\src\cff\cfferrs.h"\
+	"..\..\..\src\cff\cffgload.c"\
+	"..\..\..\src\cff\cffgload.h"\
+	"..\..\..\src\cff\cffload.c"\
+	"..\..\..\src\cff\cffload.h"\
+	"..\..\..\src\cff\cffobjs.c"\
+	"..\..\..\src\cff\cffobjs.h"\
+	"..\..\..\src\cff\cffparse.c"\
+	"..\..\..\src\cff\cffparse.h"\
+	"..\..\..\src\cff\cfftoken.h"\
+	"..\..\..\src\cff\cfftypes.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_CFF_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\cff\cffcmap.c"\
+	"..\..\..\src\cff\cffcmap.h"\
+	"..\..\..\src\cff\cffdrivr.c"\
+	"..\..\..\src\cff\cffdrivr.h"\
+	"..\..\..\src\cff\cfferrs.h"\
+	"..\..\..\src\cff\cffgload.c"\
+	"..\..\..\src\cff\cffgload.h"\
+	"..\..\..\src\cff\cffload.c"\
+	"..\..\..\src\cff\cffload.h"\
+	"..\..\..\src\cff\cffobjs.c"\
+	"..\..\..\src\cff\cffobjs.h"\
+	"..\..\..\src\cff\cffparse.c"\
+	"..\..\..\src\cff\cffparse.h"\
+	"..\..\..\src\cff\cfftoken.h"\
+	"..\..\..\src\cff\cfftypes.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_CFF_C=\
+	"..\..\..\src\cff\cffcmap.c"\
+	"..\..\..\src\cff\cffcmap.h"\
+	"..\..\..\src\cff\cffdrivr.c"\
+	"..\..\..\src\cff\cffdrivr.h"\
+	"..\..\..\src\cff\cfferrs.h"\
+	"..\..\..\src\cff\cffgload.c"\
+	"..\..\..\src\cff\cffgload.h"\
+	"..\..\..\src\cff\cffload.c"\
+	"..\..\..\src\cff\cffload.h"\
+	"..\..\..\src\cff\cffobjs.c"\
+	"..\..\..\src\cff\cffobjs.h"\
+	"..\..\..\src\cff\cffparse.c"\
+	"..\..\..\src\cff\cffparse.h"\
+	"..\..\..\src\cff\cfftoken.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\base\ftbase.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_FTBAS=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\base\ftcalc.c"\
+	"..\..\..\src\base\ftdbgmem.c"\
+	"..\..\..\src\base\ftgloadr.c"\
+	"..\..\..\src\base\ftmac.c"\
+	"..\..\..\src\base\ftnames.c"\
+	"..\..\..\src\base\ftobjs.c"\
+	"..\..\..\src\base\ftoutln.c"\
+	"..\..\..\src\base\ftstream.c"\
+	"..\..\..\src\base\fttrigon.c"\
+	"..\..\..\src\base\ftutil.c"\
+	"..\..\..\src\truetype\ttobjs.h"\
+	"..\..\..\src\type1\t1objs.h"\
+	
+NODEP_CPP_FTBAS=\
+	"..\..\..\src\base\truetype\ttobjs.h"\
+	"..\..\..\src\base\type1\t1objs.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FTBAS=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\base\ftcalc.c"\
+	"..\..\..\src\base\ftdbgmem.c"\
+	"..\..\..\src\base\ftgloadr.c"\
+	"..\..\..\src\base\ftmac.c"\
+	"..\..\..\src\base\ftnames.c"\
+	"..\..\..\src\base\ftobjs.c"\
+	"..\..\..\src\base\ftoutln.c"\
+	"..\..\..\src\base\ftstream.c"\
+	"..\..\..\src\base\fttrigon.c"\
+	"..\..\..\src\base\ftutil.c"\
+	"..\..\..\src\truetype\ttobjs.h"\
+	"..\..\..\src\type1\t1objs.h"\
+	
+NODEP_CPP_FTBAS=\
+	"..\..\..\src\base\truetype\ttobjs.h"\
+	"..\..\..\src\base\type1\t1objs.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_FTBAS=\
+	"..\..\..\src\base\ftcalc.c"\
+	"..\..\..\src\base\ftdbgmem.c"\
+	"..\..\..\src\base\ftgloadr.c"\
+	"..\..\..\src\base\ftnames.c"\
+	"..\..\..\src\base\ftobjs.c"\
+	"..\..\..\src\base\ftoutln.c"\
+	"..\..\..\src\base\ftstream.c"\
+	"..\..\..\src\base\fttrigon.c"\
+	"..\..\..\src\base\ftutil.c"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\base\ftdebug.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_FTDEB=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FTDEB=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_FTDEB=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\base\ftglyph.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_FTGLY=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FTGLY=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_FTGLY=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\gzip\ftgzip.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_FTGZI=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\gzip\adler32.c"\
+	"..\..\..\src\gzip\infblock.c"\
+	"..\..\..\src\gzip\infblock.h"\
+	"..\..\..\src\gzip\infcodes.c"\
+	"..\..\..\src\gzip\infcodes.h"\
+	"..\..\..\src\gzip\inffixed.h"\
+	"..\..\..\src\gzip\inflate.c"\
+	"..\..\..\src\gzip\inftrees.c"\
+	"..\..\..\src\gzip\inftrees.h"\
+	"..\..\..\src\gzip\infutil.c"\
+	"..\..\..\src\gzip\infutil.h"\
+	"..\..\..\src\gzip\zconf.h"\
+	"..\..\..\src\gzip\zlib.h"\
+	"..\..\..\src\gzip\zutil.c"\
+	"..\..\..\src\gzip\zutil.h"\
+	".\errno.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FTGZI=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\gzip\adler32.c"\
+	"..\..\..\src\gzip\infblock.c"\
+	"..\..\..\src\gzip\infblock.h"\
+	"..\..\..\src\gzip\infcodes.c"\
+	"..\..\..\src\gzip\infcodes.h"\
+	"..\..\..\src\gzip\inffixed.h"\
+	"..\..\..\src\gzip\inflate.c"\
+	"..\..\..\src\gzip\inftrees.c"\
+	"..\..\..\src\gzip\inftrees.h"\
+	"..\..\..\src\gzip\infutil.c"\
+	"..\..\..\src\gzip\infutil.h"\
+	"..\..\..\src\gzip\zconf.h"\
+	"..\..\..\src\gzip\zlib.h"\
+	"..\..\..\src\gzip\zutil.c"\
+	"..\..\..\src\gzip\zutil.h"\
+	".\errno.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_FTGZI=\
+	"..\..\..\src\gzip\adler32.c"\
+	"..\..\..\src\gzip\infblock.c"\
+	"..\..\..\src\gzip\infblock.h"\
+	"..\..\..\src\gzip\infcodes.c"\
+	"..\..\..\src\gzip\infcodes.h"\
+	"..\..\..\src\gzip\inffixed.h"\
+	"..\..\..\src\gzip\inflate.c"\
+	"..\..\..\src\gzip\inftrees.c"\
+	"..\..\..\src\gzip\inftrees.h"\
+	"..\..\..\src\gzip\infutil.c"\
+	"..\..\..\src\gzip\infutil.h"\
+	"..\..\..\src\gzip\zconf.h"\
+	"..\..\..\src\gzip\zlib.h"\
+	"..\..\..\src\gzip\zutil.c"\
+	"..\..\..\src\gzip\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\base\ftinit.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_FTINI=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FTINI=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_FTINI=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\base\ftmm.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_FTMM_=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FTMM_=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_FTMM_=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\base\ftsystem.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_FTSYS=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FTSYS=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_FTSYS=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\pcf\pcf.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_PCF_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\pcf\pcf.h"\
+	"..\..\..\src\pcf\pcfdrivr.c"\
+	"..\..\..\src\pcf\pcfdrivr.h"\
+	"..\..\..\src\pcf\pcferror.h"\
+	"..\..\..\src\pcf\pcfread.c"\
+	"..\..\..\src\pcf\pcfread.h"\
+	"..\..\..\src\pcf\pcfutil.c"\
+	"..\..\..\src\pcf\pcfutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PCF_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\pcf\pcf.h"\
+	"..\..\..\src\pcf\pcfdrivr.c"\
+	"..\..\..\src\pcf\pcfdrivr.h"\
+	"..\..\..\src\pcf\pcferror.h"\
+	"..\..\..\src\pcf\pcfread.c"\
+	"..\..\..\src\pcf\pcfread.h"\
+	"..\..\..\src\pcf\pcfutil.c"\
+	"..\..\..\src\pcf\pcfutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_PCF_C=\
+	"..\..\..\src\pcf\pcf.h"\
+	"..\..\..\src\pcf\pcferror.h"\
+	"..\..\..\src\pcf\pcfread.c"\
+	"..\..\..\src\pcf\pcfread.h"\
+	"..\..\..\src\pcf\pcfutil.c"\
+	"..\..\..\src\pcf\pcfutil.h"\
+	
+NODEP_CPP_PCF_C=\
+	"..\..\..\src\pcf\pcfdriver.c"\
+	"..\..\..\src\pcf\pcfdriver.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\pfr\pfr.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_PFR_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\pfr\pfrcmap.c"\
+	"..\..\..\src\pfr\pfrcmap.h"\
+	"..\..\..\src\pfr\pfrdrivr.c"\
+	"..\..\..\src\pfr\pfrdrivr.h"\
+	"..\..\..\src\pfr\pfrerror.h"\
+	"..\..\..\src\pfr\pfrgload.c"\
+	"..\..\..\src\pfr\pfrgload.h"\
+	"..\..\..\src\pfr\pfrload.c"\
+	"..\..\..\src\pfr\pfrload.h"\
+	"..\..\..\src\pfr\pfrobjs.c"\
+	"..\..\..\src\pfr\pfrobjs.h"\
+	"..\..\..\src\pfr\pfrsbit.c"\
+	"..\..\..\src\pfr\pfrsbit.h"\
+	"..\..\..\src\pfr\pfrtypes.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PFR_C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\pfr\pfrcmap.c"\
+	"..\..\..\src\pfr\pfrcmap.h"\
+	"..\..\..\src\pfr\pfrdrivr.c"\
+	"..\..\..\src\pfr\pfrdrivr.h"\
+	"..\..\..\src\pfr\pfrerror.h"\
+	"..\..\..\src\pfr\pfrgload.c"\
+	"..\..\..\src\pfr\pfrgload.h"\
+	"..\..\..\src\pfr\pfrload.c"\
+	"..\..\..\src\pfr\pfrload.h"\
+	"..\..\..\src\pfr\pfrobjs.c"\
+	"..\..\..\src\pfr\pfrobjs.h"\
+	"..\..\..\src\pfr\pfrsbit.c"\
+	"..\..\..\src\pfr\pfrsbit.h"\
+	"..\..\..\src\pfr\pfrtypes.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_PFR_C=\
+	"..\..\..\src\pfr\pfrcmap.c"\
+	"..\..\..\src\pfr\pfrcmap.h"\
+	"..\..\..\src\pfr\pfrdrivr.c"\
+	"..\..\..\src\pfr\pfrdrivr.h"\
+	"..\..\..\src\pfr\pfrerror.h"\
+	"..\..\..\src\pfr\pfrgload.c"\
+	"..\..\..\src\pfr\pfrgload.h"\
+	"..\..\..\src\pfr\pfrload.c"\
+	"..\..\..\src\pfr\pfrload.h"\
+	"..\..\..\src\pfr\pfrobjs.c"\
+	"..\..\..\src\pfr\pfrobjs.h"\
+	"..\..\..\src\pfr\pfrsbit.c"\
+	"..\..\..\src\pfr\pfrsbit.h"\
+	"..\..\..\src\pfr\pfrtypes.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\psaux\psaux.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_PSAUX=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\psaux\psauxerr.h"\
+	"..\..\..\src\psaux\psauxmod.c"\
+	"..\..\..\src\psaux\psauxmod.h"\
+	"..\..\..\src\psaux\psobjs.c"\
+	"..\..\..\src\psaux\psobjs.h"\
+	"..\..\..\src\psaux\t1cmap.c"\
+	"..\..\..\src\psaux\t1cmap.h"\
+	"..\..\..\src\psaux\t1decode.c"\
+	"..\..\..\src\psaux\t1decode.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PSAUX=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\psaux\psauxerr.h"\
+	"..\..\..\src\psaux\psauxmod.c"\
+	"..\..\..\src\psaux\psauxmod.h"\
+	"..\..\..\src\psaux\psobjs.c"\
+	"..\..\..\src\psaux\psobjs.h"\
+	"..\..\..\src\psaux\t1cmap.c"\
+	"..\..\..\src\psaux\t1cmap.h"\
+	"..\..\..\src\psaux\t1decode.c"\
+	"..\..\..\src\psaux\t1decode.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_PSAUX=\
+	"..\..\..\src\psaux\psauxerr.h"\
+	"..\..\..\src\psaux\psauxmod.c"\
+	"..\..\..\src\psaux\psauxmod.h"\
+	"..\..\..\src\psaux\psobjs.c"\
+	"..\..\..\src\psaux\psobjs.h"\
+	"..\..\..\src\psaux\t1cmap.c"\
+	"..\..\..\src\psaux\t1cmap.h"\
+	"..\..\..\src\psaux\t1decode.c"\
+	"..\..\..\src\psaux\t1decode.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\pshinter\pshinter.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_PSHIN=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\pshinter\pshalgo.c"\
+	"..\..\..\src\pshinter\pshalgo.h"\
+	"..\..\..\src\pshinter\pshglob.c"\
+	"..\..\..\src\pshinter\pshglob.h"\
+	"..\..\..\src\pshinter\pshmod.c"\
+	"..\..\..\src\pshinter\pshnterr.h"\
+	"..\..\..\src\pshinter\pshrec.c"\
+	"..\..\..\src\pshinter\pshrec.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PSHIN=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\pshinter\pshalgo.c"\
+	"..\..\..\src\pshinter\pshalgo.h"\
+	"..\..\..\src\pshinter\pshglob.c"\
+	"..\..\..\src\pshinter\pshglob.h"\
+	"..\..\..\src\pshinter\pshmod.c"\
+	"..\..\..\src\pshinter\pshnterr.h"\
+	"..\..\..\src\pshinter\pshrec.c"\
+	"..\..\..\src\pshinter\pshrec.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_PSHIN=\
+	"..\..\..\src\pshinter\pshalgo.h"\
+	"..\..\..\src\pshinter\pshglob.c"\
+	"..\..\..\src\pshinter\pshglob.h"\
+	"..\..\..\src\pshinter\pshmod.c"\
+	"..\..\..\src\pshinter\pshrec.c"\
+	"..\..\..\src\pshinter\pshrec.h"\
+	
+NODEP_CPP_PSHIN=\
+	"..\..\..\src\pshinter\pshalgo1.c"\
+	"..\..\..\src\pshinter\pshalgo1.h"\
+	"..\..\..\src\pshinter\pshalgo2.c"\
+	"..\..\..\src\pshinter\pshalgo2.h"\
+	"..\..\..\src\pshinter\pshalgo3.c"\
+	"..\..\..\src\pshinter\pshalgo3.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\psnames\psmodule.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_PSMOD=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\psnames\psmodule.h"\
+	"..\..\..\src\psnames\psnamerr.h"\
+	"..\..\..\src\psnames\pstables.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PSMOD=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\psnames\psmodule.h"\
+	"..\..\..\src\psnames\psnamerr.h"\
+	"..\..\..\src\psnames\pstables.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_PSMOD=\
+	"..\..\..\src\psnames\psmodule.h"\
+	"..\..\..\src\psnames\psnamerr.h"\
+	"..\..\..\src\psnames\pstables.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\raster\raster.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_RASTE=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\raster\ftraster.c"\
+	"..\..\..\src\raster\ftraster.h"\
+	"..\..\..\src\raster\ftrend1.c"\
+	"..\..\..\src\raster\ftrend1.h"\
+	"..\..\..\src\raster\rasterrs.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_RASTE=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\raster\ftraster.c"\
+	"..\..\..\src\raster\ftraster.h"\
+	"..\..\..\src\raster\ftrend1.c"\
+	"..\..\..\src\raster\ftrend1.h"\
+	"..\..\..\src\raster\rasterrs.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_RASTE=\
+	"..\..\..\src\raster\ftraster.c"\
+	"..\..\..\src\raster\ftraster.h"\
+	"..\..\..\src\raster\ftrend1.c"\
+	"..\..\..\src\raster\ftrend1.h"\
+	"..\..\..\src\raster\rasterrs.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\sfnt\sfnt.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_SFNT_=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\sfnt\sfdriver.c"\
+	"..\..\..\src\sfnt\sfdriver.h"\
+	"..\..\..\src\sfnt\sferrors.h"\
+	"..\..\..\src\sfnt\sfobjs.c"\
+	"..\..\..\src\sfnt\sfobjs.h"\
+	"..\..\..\src\sfnt\ttcmap.c"\
+	"..\..\..\src\sfnt\ttcmap.h"\
+	"..\..\..\src\sfnt\ttcmap0.c"\
+	"..\..\..\src\sfnt\ttcmap0.h"\
+	"..\..\..\src\sfnt\ttload.c"\
+	"..\..\..\src\sfnt\ttload.h"\
+	"..\..\..\src\sfnt\ttpost.c"\
+	"..\..\..\src\sfnt\ttpost.h"\
+	"..\..\..\src\sfnt\ttsbit.c"\
+	"..\..\..\src\sfnt\ttsbit.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_SFNT_=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\sfnt\sfdriver.c"\
+	"..\..\..\src\sfnt\sfdriver.h"\
+	"..\..\..\src\sfnt\sferrors.h"\
+	"..\..\..\src\sfnt\sfobjs.c"\
+	"..\..\..\src\sfnt\sfobjs.h"\
+	"..\..\..\src\sfnt\ttcmap.c"\
+	"..\..\..\src\sfnt\ttcmap.h"\
+	"..\..\..\src\sfnt\ttcmap0.c"\
+	"..\..\..\src\sfnt\ttcmap0.h"\
+	"..\..\..\src\sfnt\ttload.c"\
+	"..\..\..\src\sfnt\ttload.h"\
+	"..\..\..\src\sfnt\ttpost.c"\
+	"..\..\..\src\sfnt\ttpost.h"\
+	"..\..\..\src\sfnt\ttsbit.c"\
+	"..\..\..\src\sfnt\ttsbit.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_SFNT_=\
+	"..\..\..\src\sfnt\sfdriver.c"\
+	"..\..\..\src\sfnt\sfdriver.h"\
+	"..\..\..\src\sfnt\sferrors.h"\
+	"..\..\..\src\sfnt\sfobjs.c"\
+	"..\..\..\src\sfnt\sfobjs.h"\
+	"..\..\..\src\sfnt\ttcmap.c"\
+	"..\..\..\src\sfnt\ttcmap.h"\
+	"..\..\..\src\sfnt\ttcmap0.c"\
+	"..\..\..\src\sfnt\ttcmap0.h"\
+	"..\..\..\src\sfnt\ttload.c"\
+	"..\..\..\src\sfnt\ttload.h"\
+	"..\..\..\src\sfnt\ttpost.c"\
+	"..\..\..\src\sfnt\ttpost.h"\
+	"..\..\..\src\sfnt\ttsbit.c"\
+	"..\..\..\src\sfnt\ttsbit.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\smooth\smooth.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_SMOOT=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\smooth\ftgrays.c"\
+	"..\..\..\src\smooth\ftgrays.h"\
+	"..\..\..\src\smooth\ftsmerrs.h"\
+	"..\..\..\src\smooth\ftsmooth.c"\
+	"..\..\..\src\smooth\ftsmooth.h"\
+	
+NODEP_CPP_SMOOT=\
+	"..\..\..\src\smooth\ftimage.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_SMOOT=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\smooth\ftgrays.c"\
+	"..\..\..\src\smooth\ftgrays.h"\
+	"..\..\..\src\smooth\ftsmerrs.h"\
+	"..\..\..\src\smooth\ftsmooth.c"\
+	"..\..\..\src\smooth\ftsmooth.h"\
+	
+NODEP_CPP_SMOOT=\
+	"..\..\..\src\smooth\ftimage.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_SMOOT=\
+	"..\..\..\src\smooth\ftgrays.c"\
+	"..\..\..\src\smooth\ftgrays.h"\
+	"..\..\..\src\smooth\ftsmerrs.h"\
+	"..\..\..\src\smooth\ftsmooth.c"\
+	"..\..\..\src\smooth\ftsmooth.h"\
+	
+NODEP_CPP_SMOOT=\
+	"..\..\..\src\smooth\ftimage.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\truetype\truetype.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_TRUET=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\truetype\ttdriver.c"\
+	"..\..\..\src\truetype\ttdriver.h"\
+	"..\..\..\src\truetype\tterrors.h"\
+	"..\..\..\src\truetype\ttgload.c"\
+	"..\..\..\src\truetype\ttgload.h"\
+	"..\..\..\src\truetype\ttinterp.c"\
+	"..\..\..\src\truetype\ttinterp.h"\
+	"..\..\..\src\truetype\ttobjs.c"\
+	"..\..\..\src\truetype\ttobjs.h"\
+	"..\..\..\src\truetype\ttpload.c"\
+	"..\..\..\src\truetype\ttpload.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_TRUET=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\truetype\ttdriver.c"\
+	"..\..\..\src\truetype\ttdriver.h"\
+	"..\..\..\src\truetype\tterrors.h"\
+	"..\..\..\src\truetype\ttgload.c"\
+	"..\..\..\src\truetype\ttgload.h"\
+	"..\..\..\src\truetype\ttinterp.c"\
+	"..\..\..\src\truetype\ttinterp.h"\
+	"..\..\..\src\truetype\ttobjs.c"\
+	"..\..\..\src\truetype\ttobjs.h"\
+	"..\..\..\src\truetype\ttpload.c"\
+	"..\..\..\src\truetype\ttpload.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_TRUET=\
+	"..\..\..\src\truetype\ttdriver.c"\
+	"..\..\..\src\truetype\ttdriver.h"\
+	"..\..\..\src\truetype\tterrors.h"\
+	"..\..\..\src\truetype\ttgload.c"\
+	"..\..\..\src\truetype\ttgload.h"\
+	"..\..\..\src\truetype\ttinterp.c"\
+	"..\..\..\src\truetype\ttinterp.h"\
+	"..\..\..\src\truetype\ttobjs.c"\
+	"..\..\..\src\truetype\ttobjs.h"\
+	"..\..\..\src\truetype\ttpload.c"\
+	"..\..\..\src\truetype\ttpload.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\type1\type1.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_TYPE1=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\type1\t1afm.c"\
+	"..\..\..\src\type1\t1afm.h"\
+	"..\..\..\src\type1\t1driver.c"\
+	"..\..\..\src\type1\t1driver.h"\
+	"..\..\..\src\type1\t1errors.h"\
+	"..\..\..\src\type1\t1gload.c"\
+	"..\..\..\src\type1\t1gload.h"\
+	"..\..\..\src\type1\t1load.c"\
+	"..\..\..\src\type1\t1load.h"\
+	"..\..\..\src\type1\t1objs.c"\
+	"..\..\..\src\type1\t1objs.h"\
+	"..\..\..\src\type1\t1parse.c"\
+	"..\..\..\src\type1\t1parse.h"\
+	"..\..\..\src\type1\t1tokens.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_TYPE1=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\type1\t1afm.c"\
+	"..\..\..\src\type1\t1afm.h"\
+	"..\..\..\src\type1\t1driver.c"\
+	"..\..\..\src\type1\t1driver.h"\
+	"..\..\..\src\type1\t1errors.h"\
+	"..\..\..\src\type1\t1gload.c"\
+	"..\..\..\src\type1\t1gload.h"\
+	"..\..\..\src\type1\t1load.c"\
+	"..\..\..\src\type1\t1load.h"\
+	"..\..\..\src\type1\t1objs.c"\
+	"..\..\..\src\type1\t1objs.h"\
+	"..\..\..\src\type1\t1parse.c"\
+	"..\..\..\src\type1\t1parse.h"\
+	"..\..\..\src\type1\t1tokens.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_TYPE1=\
+	"..\..\..\src\type1\t1afm.c"\
+	"..\..\..\src\type1\t1afm.h"\
+	"..\..\..\src\type1\t1driver.c"\
+	"..\..\..\src\type1\t1driver.h"\
+	"..\..\..\src\type1\t1errors.h"\
+	"..\..\..\src\type1\t1gload.c"\
+	"..\..\..\src\type1\t1gload.h"\
+	"..\..\..\src\type1\t1load.c"\
+	"..\..\..\src\type1\t1load.h"\
+	"..\..\..\src\type1\t1objs.c"\
+	"..\..\..\src\type1\t1objs.h"\
+	"..\..\..\src\type1\t1parse.c"\
+	"..\..\..\src\type1\t1parse.h"\
+	"..\..\..\src\type1\t1tokens.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\cid\type1cid.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_TYPE1C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\cid\ciderrs.h"\
+	"..\..\..\src\cid\cidgload.c"\
+	"..\..\..\src\cid\cidgload.h"\
+	"..\..\..\src\cid\cidload.c"\
+	"..\..\..\src\cid\cidload.h"\
+	"..\..\..\src\cid\cidobjs.c"\
+	"..\..\..\src\cid\cidobjs.h"\
+	"..\..\..\src\cid\cidparse.c"\
+	"..\..\..\src\cid\cidparse.h"\
+	"..\..\..\src\cid\cidriver.c"\
+	"..\..\..\src\cid\cidriver.h"\
+	"..\..\..\src\cid\cidtoken.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_TYPE1C=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\cid\ciderrs.h"\
+	"..\..\..\src\cid\cidgload.c"\
+	"..\..\..\src\cid\cidgload.h"\
+	"..\..\..\src\cid\cidload.c"\
+	"..\..\..\src\cid\cidload.h"\
+	"..\..\..\src\cid\cidobjs.c"\
+	"..\..\..\src\cid\cidobjs.h"\
+	"..\..\..\src\cid\cidparse.c"\
+	"..\..\..\src\cid\cidparse.h"\
+	"..\..\..\src\cid\cidriver.c"\
+	"..\..\..\src\cid\cidriver.h"\
+	"..\..\..\src\cid\cidtoken.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_TYPE1C=\
+	"..\..\..\src\cid\ciderrs.h"\
+	"..\..\..\src\cid\cidgload.c"\
+	"..\..\..\src\cid\cidgload.h"\
+	"..\..\..\src\cid\cidload.c"\
+	"..\..\..\src\cid\cidload.h"\
+	"..\..\..\src\cid\cidobjs.c"\
+	"..\..\..\src\cid\cidobjs.h"\
+	"..\..\..\src\cid\cidparse.c"\
+	"..\..\..\src\cid\cidparse.h"\
+	"..\..\..\src\cid\cidriver.c"\
+	"..\..\..\src\cid\cidriver.h"\
+	"..\..\..\src\cid\cidtoken.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\type42\type42.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_TYPE4=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\type42\t42drivr.c"\
+	"..\..\..\src\type42\t42drivr.h"\
+	"..\..\..\src\type42\t42error.h"\
+	"..\..\..\src\type42\t42objs.c"\
+	"..\..\..\src\type42\t42objs.h"\
+	"..\..\..\src\type42\t42parse.c"\
+	"..\..\..\src\type42\t42parse.h"\
+	"..\..\..\src\type42\t42types.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_TYPE4=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\type42\t42drivr.c"\
+	"..\..\..\src\type42\t42drivr.h"\
+	"..\..\..\src\type42\t42error.h"\
+	"..\..\..\src\type42\t42objs.c"\
+	"..\..\..\src\type42\t42objs.h"\
+	"..\..\..\src\type42\t42parse.c"\
+	"..\..\..\src\type42\t42parse.h"\
+	"..\..\..\src\type42\t42types.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_TYPE4=\
+	"..\..\..\src\type42\t42drivr.c"\
+	"..\..\..\src\type42\t42drivr.h"\
+	"..\..\..\src\type42\t42error.h"\
+	"..\..\..\src\type42\t42objs.c"\
+	"..\..\..\src\type42\t42objs.h"\
+	"..\..\..\src\type42\t42parse.c"\
+	"..\..\..\src\type42\t42parse.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\src\winfonts\winfnt.c
+
+!IF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Release"
+
+DEP_CPP_WINFN=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\winfonts\fnterrs.h"\
+	"..\..\..\src\winfonts\winfnt.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE ARM) Debug"
+
+DEP_CPP_WINFN=\
+	"..\..\..\include\freetype\config\ftheader.h"\
+	"..\..\..\include\ft2build.h"\
+	"..\..\..\src\winfonts\fnterrs.h"\
+	"..\..\..\src\winfonts\winfnt.h"\
+	
+
+!ELSEIF  "$(CFG)" == "FreeType - Win32 (WCE x86) Debug"
+
+DEP_CPP_WINFN=\
+	"..\..\..\src\winfonts\fnterrs.h"\
+	"..\..\..\src\winfonts\winfnt.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=..\..\..\include\ft2build.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\include\freetype\config\ftconfig.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\include\freetype\config\ftheader.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\include\freetype\config\ftmodule.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\include\freetype\config\ftoption.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\..\include\freetype\config\ftstdlib.h
+# End Source File
+# End Group
+# End Target
+# End Project

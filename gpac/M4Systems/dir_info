@@ -1,0 +1,40 @@
+this is the libm4systems source repository. Sources are sorted by mpeg4 modules
+
+
+* ./authoring
+	Tools for authoring: ISMA, Scene management & parsers, dumpers, media import and export, hinting
+
+* ./BIFS
+	BInary Format for Scene coding (decoder and encoder)
+
+* ./ESM
+	Elementary Stream Management. The guts of the MPEG4 client performing stream synchronization and 
+media object setup, control and decoding. All decoders / network services are abstracted through plugins
+
+* ./IETF
+	Small RTP/RTSP/SDP library for the 4onIP framework
+
+* ./MP4
+	MPEG4 File Format - features file reading/writing/editing, precise interleaving, hint track creation 
+and supports movie fragments (read/write). Includes most of 3GPP and basic AVC support - JPEG2000 support to be done
+
+* ./OD
+	Object Descriptor framework: encoding/decoding of all descriptors, OD codec and OCI codec
+
+* ./render
+	base renderer handling all common things between 2D and 3D rendering plugins
+
+* ./SceneGraph
+	Scene Graph API (MPEG4/VRML/X3D) (BIFS tables are with SGGen application)
+
+* ./Tools
+	All generic objects used throughout the lib (list, bitstream, thread, mutex...)
+The OS specific files are in dedicated sub_folders (eg ./Tools/w32 for all windows code, ...)
+porting the lib means barely porting these files and updating the makefile
+
+* ../include/gpac
+	all exported files of the lib (high level APIs). Development headers are <gpac/file>
+
+* ../include/gpac/intern
+	all development files of the lib (low level access). Development headers are <gpac/intern/file>
+	

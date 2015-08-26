@@ -1,0 +1,6 @@
+LIBRARY     m4_rend.dll
+
+EXPORTS
+	QueryInterface
+	LoadInterface
+	ShutdownInterface

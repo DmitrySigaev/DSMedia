@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libavcodec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPDE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\libavcodec" /I "..\libavcodec\libac3 ..\libav" /I "..\." /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "HAVE_AV_CONFIG_H" /D "EMULATE_FAST_INT" /FR"../../build/vc6.0/Debug/libavcodec/" /Fp"../../build/vc6.0/Debug/libavcodec/libavcodec.pch" /YX /Fo"../../build/vc6.0/Debug/libavcodec/" /Fd"../../build/vc6.0/Debug/libavcodec/" /FD /GZ /c 
+"F:\Common\ffmpeg\current\src\libavcodec\allcodecs.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPDE.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPDF.tmp" with contents
+[
+/nologo /out:"../../build/vc6.0/Debug/libavcodec\avcodec.lib" 
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\bit_allocate.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\bitstream.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\downmix.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\imdct.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\parse.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\4xm.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\8bps.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\a52dec.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\ac3enc.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\adpcm.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\adx.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\allcodecs.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\asv1.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\cabac.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\cinepak.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\cljr.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\common.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\cyuv.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\dpcm.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\dsputil.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\dv.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\error_resilience.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\eval.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\faandct.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\fft.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\ffv1.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\flac.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\flicvideo.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\g726.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\golomb.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\h261.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\h263.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\h263dec.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\h264.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\huffyuv.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\idcinvideo.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\imgconvert.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\imgresample.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\integer.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\interplayvideo.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\jfdctfst.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\jfdctint.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\jrevdct.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\lcl.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mace.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mdct.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mem.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mjpeg.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\motion_est.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mpeg12.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mpegaudio.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mpegaudiodec.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\mpegvideo.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\msmpeg4.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\msrle.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\msvideo1.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\opts.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\parser.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\pcm.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\qtrle.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\ra144.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\ra288.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\ratecontrol.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\rational.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\raw.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\resample.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\resample2.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\roqvideo.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\rpza.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\rv10.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\simple_idct.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\smc.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\truemotion1.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\utils.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\vcr1.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\vmdav.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\vp3.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\vp3dsp.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\vqavideo.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\xan.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPDF.tmp"
+<h3>Output Window</h3>
+Compiling...
+allcodecs.c
+Creating library...
+<h3>
+--------------------Configuration: ffmpeg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE0.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /subsystem:console /incremental:yes /pdb:"..\build\vc6.0\Debug/ffmpeg.pdb" /debug /machine:I386 /out:"..\build\vc6.0\Debug/ffmpeg.exe" /pdbtype:sept /libpath:"../../build/vc6.0/" 
+\Common\ffmpeg\current\build\vc6.0\Debug\cmdutils.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\ffmpeg.obj
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\avcodec.lib
+\Common\ffmpeg\current\build\vc6.0\Debug\libavformat\avformat.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSPE0.tmp"
+<h3>Output Window</h3>
+Linking...
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /subsystem:console /incremental:yes "/pdb:..\build\vc6.0\Debug/ffmpeg.pdb" /debug /machine:I386 "/out:..\build\vc6.0\Debug/ffmpeg.exe" /pdbtype:sept "/libpath:../../build/vc6.0/" 
+\Common\ffmpeg\current\build\vc6.0\Debug\cmdutils.obj 
+\Common\ffmpeg\current\build\vc6.0\Debug\ffmpeg.obj 
+\Common\ffmpeg\current\build\vc6.0\Debug\libavcodec\avcodec.lib 
+\Common\ffmpeg\current\build\vc6.0\Debug\libavformat\avformat.lib 
+
+
+
+<h3>Results</h3>
+ffmpeg.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

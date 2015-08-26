@@ -1,0 +1,108 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "M4Systems"=..\..\src\M4Systems.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name zlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name raw_out
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name m4_rend
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name render2d
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "bifs_stream_parser"=..\..\SRC\bifs_stream_parser\bifs_stream_parser.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name M4Systems
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "m4_rend"=..\..\src\m4_rend\m4_rend.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "raw_out"=..\..\SRC\raw_out\raw_out.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "render2d"=..\..\src\render2d\render2d.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "zlib"=..\..\src\zlib\win32\zlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/GPAC_Project/gpac_extra_libs/zlib/win32", OHFAAAAA
+    ..\..\src\zlib\win32
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

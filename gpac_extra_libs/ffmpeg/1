@@ -1,0 +1,4 @@
+make -C libavcodec all
+make[1]: Entering directory `/cygdrive/e/GPAC/gpac_extra_libs/ffmpeg/libavcodec'
+gcc -O3 -Wall  -DHAVE_AV_CONFIG_H -I.. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_GNU_SOURCE -c -o common.o common.c 
+make[1]: Leaving directory `/cygdrive/e/GPAC/gpac_extra_libs/ffmpeg/libavcodec'

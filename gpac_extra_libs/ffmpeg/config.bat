@@ -1,0 +1,1 @@
+bash configure  ./configure --enable-shared --disable-debug --enable-memalign-hack --source-path=E:/GPAC/GPAC_E~1/FFMPEG

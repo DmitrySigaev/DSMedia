@@ -1,0 +1,19 @@
+To install Gdiplus SDK on your windows System:
+
+1 - use MS Windows 98 or later, Gdiplus is not supported on Windows95
+2 - setup your environment variables (include and lib paths) to point to Gdiplus files
+3 - if you are using a WindowsXP system, Gdiplus is distributed with the system so you don't need to use the provided Gdiplus.dll
+4 - if you're not using a WindowsXP system, copy Gdiplus.dll in your build directory (recomended by Microsoft) or to your system 
+directory (\winnt or \windows) but this is not recomended by Microsoft
+
+
+Nota:
+	This package is provided for convenience in order to build one of the GPAC rasterizer / font plugin. You should 
+go to microsoft web site TO download the full windows SDK (includes GDIplus):
+
+http://www.microsoft.com/msdownload/platformsdk/sdkupdate/
+
+The latest redistributable files for Gdiplus are available at Microsoft Products Download page:
+
+http://www.microsoft.com/downloads
+

@@ -1,0 +1,2817 @@
+# Microsoft eMbedded Visual Tools Project File - Name="M4Systems" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARM) Static Library" 0x8504
+
+CFG=M4Systems - Win32 (WCE ARM) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "M4SYSTEMS.VCN".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "M4SYSTEMS.VCN" CFG="M4Systems - Win32 (WCE ARM) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "M4Systems - Win32 (WCE ARM) Release" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE "M4Systems - Win32 (WCE ARM) Debug" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+CPP=clarm.exe
+
+!IF  "$(CFG)" == "M4Systems - Win32 (WCE ARM) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMRel"
+# PROP BASE Intermediate_Dir "ARMRel"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Obj/ARMRel"
+# PROP Intermediate_Dir "Obj/ARMRel"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Oxs /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /O2 /I "../include" /I "./ESM" /I "./OD" /I "./MP4" /I "./Tools" /I "./Tools/wCE" /I "./rendering" /I "./IETF" /I "./SceneGraph" /I "./BIFS" /I "../extra_lib/include/js" /I "../extra_lib/include/zlib" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "M4_USE_SPIDERMONKEY" /Oxs /M$(CECrtMT) /c
+# SUBTRACT CPP /YX
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "M4Systems - Win32 (WCE ARM) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMDbg"
+# PROP BASE Intermediate_Dir "ARMDbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "Obj/ARMDbg"
+# PROP Intermediate_Dir "Obj/ARMDbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "../include" /I "./ESM" /I "./OD" /I "./MP4" /I "./Tools" /I "./Tools/wCE" /I "./rendering" /I "./IETF" /I "./SceneGraph" /I "./BIFS" /I "../extra_lib/include/js" /I "../extra_lib/include/zlib" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "M4_USE_SPIDERMONKEY" /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /YX
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "M4Systems - Win32 (WCE ARM) Release"
+# Name "M4Systems - Win32 (WCE ARM) Debug"
+# Begin Group "Tools"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\Tools\base_encoding.c
+DEP_CPP_BASE_=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_BASE_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\bitstream.c
+DEP_CPP_BITST=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_BITST=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\chain.c
+DEP_CPP_CHAIN=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_CHAIN=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\error.c
+DEP_CPP_ERROR=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ERROR=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\inifile.c
+DEP_CPP_INIFI=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_INIFI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\wCE\os_divers.c
+DEP_CPP_OS_DI=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OS_DI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\wCE\os_net.c
+DEP_CPP_OS_NE=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OS_NE=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\wCE\os_plug.c
+DEP_CPP_OS_PL=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\Tools\plugin.h"\
+	
+NODEP_CPP_OS_PL=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\wCE\os_thread.c
+DEP_CPP_OS_TH=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OS_TH=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\plugin.c
+DEP_CPP_PLUGI=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\Tools\plugin.h"\
+	
+NODEP_CPP_PLUGI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\plugin.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\stringparser.c
+DEP_CPP_STRIN=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_STRIN=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\url.c
+DEP_CPP_URL_C=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_URL_C=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\Tools\UTF8.c
+DEP_CPP_UTF8_=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_UTF8_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "OD"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\OD\comPrivate.c
+DEP_CPP_COMPR=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_COMPR=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\descPrivate.c
+DEP_CPP_DESCP=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_DESCP=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\descriptors.c
+DEP_CPP_DESCR=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_DESCR=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\ESDescriptor.c
+DEP_CPP_ESDES=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ESDES=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\InitialObjectDescriptor.c
+DEP_CPP_INITI=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_INITI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_od_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\M4F_InitialObjectDescriptor.c
+DEP_CPP_M4F_I=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4F_I=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\M4F_ObjectDescriptor.c
+DEP_CPP_M4F_O=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4F_O=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\ObjectDescriptor.c
+DEP_CPP_OBJEC=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OBJEC=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\OCICodec.c
+DEP_CPP_OCICO=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OCICO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\od_code.c
+DEP_CPP_OD_CO=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OD_CO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\OD_Dump.c
+DEP_CPP_OD_DU=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OD_DU=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\OD_Parse.c
+DEP_CPP_OD_PA=\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_OD_PA=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\ODCoDec.c
+DEP_CPP_ODCOD=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ODCOD=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\ODCommand.c
+DEP_CPP_ODCOM=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ODCOM=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\QoSDescriptor.c
+DEP_CPP_QOSDE=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_QOSDE=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\SLConfigDescriptor.c
+DEP_CPP_SLCON=\
+	"..\include\gpac\intern\m4_od_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SLCON=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\OD\SyncLayer.c
+DEP_CPP_SYNCL=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SYNCL=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "MP4"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\MP4\3GPP_atoms_code.c
+DEP_CPP_3GPP_=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_3GPP_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\Atom.c
+DEP_CPP_ATOM_=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ATOM_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\AtomPriv.c
+DEP_CPP_ATOMP=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ATOMP=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\atoms_code.c
+DEP_CPP_ATOMS=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ATOMS=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\AVC.c
+DEP_CPP_AVC_C=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_AVC_C=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\base_sample_desc.c
+DEP_CPP_BASE_S=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_BASE_S=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\DTE.c
+DEP_CPP_DTE_C=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_DTE_C=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\ghnt.c
+DEP_CPP_GHNT_=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_GHNT_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\HintPacket.c
+DEP_CPP_HINTP=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_HINTP=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\HintSample.c
+DEP_CPP_HINTS=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_HINTS=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_3GPP.c
+DEP_CPP_M4_3G=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_3G=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_dataMap.c
+DEP_CPP_M4_DA=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_DA=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_FileDataMap.c
+DEP_CPP_M4_FI=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_FI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_FileMapping.c
+DEP_CPP_M4_FIL=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_FIL=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Fragments.c
+DEP_CPP_M4_FR=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_FR=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_HintDump.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_HintTrack.c
+DEP_CPP_M4_HI=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_HI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_isomedia_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Media.c
+DEP_CPP_M4_ME=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_ME=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Media_od.c
+DEP_CPP_M4_MED=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_MED=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Movie.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Movie_read.c
+DEP_CPP_M4_MO=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_MO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Movie_write.c
+DEP_CPP_M4_MOV=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_MOV=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_MovieIntern.c
+DEP_CPP_M4_MOVI=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_MOVI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_packing.c
+DEP_CPP_M4_PA=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_PA=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Publish.c
+DEP_CPP_M4_PU=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_PU=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_RTPHint.c
+DEP_CPP_M4_RT=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_RT=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_stbl_read.c
+DEP_CPP_M4_ST=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_ST=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_stbl_write.c
+DEP_CPP_M4_STB=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_STB=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_store.c
+DEP_CPP_M4_STO=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_STO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\M4_Track.c
+DEP_CPP_M4_TR=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_M4_TR=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\RTPPacket.c
+DEP_CPP_RTPPA=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTPPA=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\MP4\TimedText.c
+DEP_CPP_TIMED=\
+	"..\include\gpac\intern\m4_isomedia_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_TIMED=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "IETF"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_ietf_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTCP.c
+DEP_CPP_RTCP_=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTCP_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTP.c
+DEP_CPP_RTP_C=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTP_C=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTPReorder.c
+DEP_CPP_RTPRE=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTPRE=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTSP_command.c
+DEP_CPP_RTSP_=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTSP_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTSP_common.c
+DEP_CPP_RTSP_C=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTSP_C=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTSP_http.c
+DEP_CPP_RTSP_H=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTSP_H=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTSP_response.c
+DEP_CPP_RTSP_R=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTSP_R=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTSP_server.c
+DEP_CPP_RTSP_S=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTSP_S=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\RTSP_session.c
+DEP_CPP_RTSP_SE=\
+	"..\include\gpac\intern\m4_ietf_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RTSP_SE=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\IETF\SDP.c
+DEP_CPP_SDP_C=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SDP_C=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "SceneGraph"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\SceneGraph\base_scenegraph.c
+DEP_CPP_BASE_SC=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_svg.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	".\LASeR\m4_laser_dev.h"\
+	
+NODEP_CPP_BASE_SC=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_scenegraph_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\mpeg4_animators.c
+DEP_CPP_MPEG4=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_MPEG4=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\mpeg4_commands.c
+DEP_CPP_MPEG4_=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_MPEG4_=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\mpeg4_nodes.c
+DEP_CPP_MPEG4_N=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_bifs_tables.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_MPEG4_N=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\mpeg4_valuator.c
+DEP_CPP_MPEG4_V=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_MPEG4_V=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\svg_nodes.c
+DEP_CPP_SVG_N=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_svg.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_svg_nodes.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SVG_N=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\svg_tools.c
+DEP_CPP_SVG_T=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_svg.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SVG_T=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\vrml_interpolators.c
+DEP_CPP_VRML_=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_VRML_=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\vrml_proto.c
+DEP_CPP_VRML_P=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_VRML_P=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\vrml_route.c
+DEP_CPP_VRML_R=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_VRML_R=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\vrml_script.c
+DEP_CPP_VRML_S=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_VRML_S=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\vrml_SpiderMonkey.c
+DEP_CPP_VRML_SP=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_VRML_SP=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\vrml_tools.c
+DEP_CPP_VRML_T=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_VRML_T=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\SceneGraph\x3d_nodes.c
+DEP_CPP_X3D_N=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_X3D_N=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "BIFS"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\BIFS\AADecoder.c
+DEP_CPP_AADEC=\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\BIFS\Quantize.h"\
+	
+NODEP_CPP_AADEC=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\bifs_node_tables.c
+DEP_CPP_BIFS_=\
+	"..\include\gpac\intern\m4_bifs_tables.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_BIFS_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\BIFSComDec.c
+DEP_CPP_BIFSC=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\BIFS\Quantize.h"\
+	
+NODEP_CPP_BIFSC=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\BIFSDec.c
+DEP_CPP_BIFSD=\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_BIFSD=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\BIFSMemDec.c
+DEP_CPP_BIFSM=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\BIFS\Quantize.h"\
+	
+NODEP_CPP_BIFSM=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\Conditional.c
+DEP_CPP_CONDI=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_CONDI=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\FieldDec.c
+DEP_CPP_FIELD=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\BIFS\Quantize.h"\
+	
+NODEP_CPP_FIELD=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_bifs_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_bifs_tables.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\PredictiveMFField.c
+DEP_CPP_PREDI=\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\BIFS\Quantize.h"\
+	
+NODEP_CPP_PREDI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\Quantize.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\SFScript.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\SFScriptDec.c
+DEP_CPP_SFSCR=\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\BIFS\SFScript.h"\
+	
+NODEP_CPP_SFSCR=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\BIFS\Unquantize.c
+DEP_CPP_UNQUA=\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\BIFS\Quantize.h"\
+	
+NODEP_CPP_UNQUA=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "ESM"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\ESM\channel.c
+DEP_CPP_CHANN=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\MediaMemory.h"\
+	
+NODEP_CPP_CHANN=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\clock.c
+DEP_CPP_CLOCK=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_CLOCK=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\decoder.c
+DEP_CPP_DECOD=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\InputSensor.h"\
+	".\ESM\MediaControl.h"\
+	".\ESM\MediaMemory.h"\
+	
+NODEP_CPP_DECOD=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\InlineScene.c
+DEP_CPP_INLIN=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\MediaControl.h"\
+	
+NODEP_CPP_INLIN=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\InputSensor.c
+DEP_CPP_INPUT=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	".\ESM\InputSensor.h"\
+	
+NODEP_CPP_INPUT=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\InputSensor.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_esm_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\M4NodeInit.c
+DEP_CPP_M4NOD=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	".\ESM\InputSensor.h"\
+	
+NODEP_CPP_M4NOD=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\M4Term.c
+DEP_CPP_M4TER=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_M4TER=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\MediaControl.c
+DEP_CPP_MEDIA=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\MediaControl.h"\
+	
+NODEP_CPP_MEDIA=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\MediaControl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\MediaManager.c
+DEP_CPP_MEDIAM=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\MediaMemory.h"\
+	
+NODEP_CPP_MEDIAM=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\MediaMemory.c
+DEP_CPP_MEDIAME=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\MediaControl.h"\
+	".\ESM\MediaMemory.h"\
+	
+NODEP_CPP_MEDIAME=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\MediaMemory.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\MediaObject.c
+DEP_CPP_MEDIAO=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_svg.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_svg_nodes.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	".\ESM\MediaControl.h"\
+	".\ESM\MediaMemory.h"\
+	
+NODEP_CPP_MEDIAO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\MediaSensor.c
+DEP_CPP_MEDIAS=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\MediaControl.h"\
+	
+NODEP_CPP_MEDIAS=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\NetService.c
+DEP_CPP_NETSE=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_NETSE=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\ODBrowser.c
+DEP_CPP_ODBRO=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\MediaMemory.h"\
+	
+NODEP_CPP_ODBRO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\ESM\ODManager.c
+DEP_CPP_ODMAN=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\ESM\InputSensor.h"\
+	".\ESM\MediaControl.h"\
+	".\ESM\MediaMemory.h"\
+	
+NODEP_CPP_ODMAN=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "authoring"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\authoring\AVParsers.c
+DEP_CPP_AVPAR=\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_ogg.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_AVPAR=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\ISMA.c
+DEP_CPP_ISMA_=\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_ISMA_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\LoadBT.c
+DEP_CPP_LOADB=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\extra_lib\include\zlib\zconf.h"\
+	"..\extra_lib\include\zlib\zlib.h"\
+	"..\include\gpac\intern\m4_author_dev.h"\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_LOADB=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\LoadMP4.c
+DEP_CPP_LOADM=\
+	"..\extra_lib\include\zlib\zconf.h"\
+	"..\extra_lib\include\zlib\zlib.h"\
+	"..\include\gpac\intern\m4_author_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_LOADM=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\LoadXMTA.c
+DEP_CPP_LOADX=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\extra_lib\include\zlib\zconf.h"\
+	"..\extra_lib\include\zlib\zlib.h"\
+	"..\include\gpac\intern\m4_author_dev.h"\
+	"..\include\gpac\intern\m4_bifs_dev.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	
+NODEP_CPP_LOADX=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_author_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_swf_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\SceneManager.c
+DEP_CPP_SCENE=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_bifs.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SCENE=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\SWFParse.c
+DEP_CPP_SWFPA=\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\intern\m4_swf_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SWFPA=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\SWFShape.c
+DEP_CPP_SWFSH=\
+	"..\include\gpac\intern\m4_swf_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_SWFSH=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\TextImport.c
+DEP_CPP_TEXTI=\
+	"..\extra_lib\include\zlib\zconf.h"\
+	"..\extra_lib\include\zlib\zlib.h"\
+	"..\include\gpac\intern\m4_author_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_TEXTI=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\TrackTools.c
+DEP_CPP_TRACK=\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_TRACK=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\authoring\xml_parser.c
+DEP_CPP_XML_P=\
+	"..\extra_lib\include\zlib\zconf.h"\
+	"..\extra_lib\include\zlib\zlib.h"\
+	"..\include\gpac\intern\m4_author_dev.h"\
+	"..\include\gpac\m4_author.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_ietf.h"\
+	"..\include\gpac\m4_isomedia.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_XML_P=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "Render"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\render\audio_input.c
+DEP_CPP_AUDIO=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_AUDIO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\audio_mixer.c
+DEP_CPP_AUDIO_=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_AUDIO_=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\audio_render.c
+DEP_CPP_AUDIO_R=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_AUDIO_R=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\audio_stacks.c
+DEP_CPP_AUDIO_S=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\render\common_stacks.h"\
+	
+NODEP_CPP_AUDIO_S=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\base_textures.c
+DEP_CPP_BASE_T=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	".\render\common_stacks.h"\
+	
+NODEP_CPP_BASE_T=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\common_stacks.c
+DEP_CPP_COMMO=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	"..\include\gpac\m4_x3d_nodes.h"\
+	".\render\common_stacks.h"\
+	
+NODEP_CPP_COMMO=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\common_stacks.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_render_dev.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\intern\m4_render_tools.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\path2D.c
+DEP_CPP_PATH2=\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_PATH2=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\path2D_outline.c
+DEP_CPP_PATH2D=\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_PATH2D=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\render_tools.c
+DEP_CPP_RENDE=\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_RENDE=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\renderer.c
+DEP_CPP_RENDER=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_RENDER=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\texturing.c
+DEP_CPP_TEXTU=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\intern\m4_render_dev.h"\
+	"..\include\gpac\intern\m4_render_tools.h"\
+	"..\include\gpac\m4_avhw.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_graphics.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_render.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	
+NODEP_CPP_TEXTU=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\render\yuv_to_rgb.c
+DEP_CPP_YUV_T=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_tools.h"\
+	
+NODEP_CPP_YUV_T=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# End Group
+# Begin Group "LASeR"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\LASeR\laser_types.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\LASeR\LASeRCodec.c
+DEP_CPP_LASER=\
+	"..\include\gpac\intern\m4_esm_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_decoder.h"\
+	"..\include\gpac\m4_descriptors.h"\
+	"..\include\gpac\m4_mpeg4_nodes.h"\
+	"..\include\gpac\m4_network.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_terminal.h"\
+	"..\include\gpac\m4_tools.h"\
+	"..\include\gpac\m4_user.h"\
+	".\LASeR\LASeRCodec.h"\
+	".\LASeR\m4_laser_dev.h"\
+	
+NODEP_CPP_LASER=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\LASeR\LASeRCodec.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\LASeR\LASERDec.c
+DEP_CPP_LASERD=\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\LASeR\m4_laser_dev.h"\
+	
+NODEP_CPP_LASERD=\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\LASeR\LASeRNodes.c
+DEP_CPP_LASERN=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\LASeR\m4_laser_dev.h"\
+	
+NODEP_CPP_LASERN=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\LASeR\LASeRParse.c
+DEP_CPP_LASERP=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\LASeR\m4_laser_dev.h"\
+	
+NODEP_CPP_LASERP=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\LASeR\LASeRSceneGraph.c
+DEP_CPP_LASERS=\
+	"..\extra_lib\include\js\jsapi.h"\
+	"..\extra_lib\include\js\jsautocfg.h"\
+	"..\extra_lib\include\js\jscompat.h"\
+	"..\extra_lib\include\js\jscpucfg.h"\
+	"..\extra_lib\include\js\jslong.h"\
+	"..\extra_lib\include\js\jsosdep.h"\
+	"..\extra_lib\include\js\jsotypes.h"\
+	"..\extra_lib\include\js\jspubtd.h"\
+	"..\extra_lib\include\js\jstypes.h"\
+	"..\include\gpac\intern\m4_scenegraph_dev.h"\
+	"..\include\gpac\m4_config.h"\
+	"..\include\gpac\m4_scenegraph.h"\
+	"..\include\gpac\m4_scenegraph_vrml.h"\
+	"..\include\gpac\m4_tools.h"\
+	".\LASeR\m4_laser_dev.h"\
+	
+NODEP_CPP_LASERS=\
+	"..\extra_lib\include\js\jsstddef.h"\
+	"..\extra_lib\include\js\platform.h"\
+	"..\include\gpac\berrno.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=.\LASeR\m4_laser_dev.h
+# End Source File
+# End Group
+# Begin Group "include"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_author.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_avhw.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_bifs.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_config.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_decoder.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_descriptors.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_graphics.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_ietf.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_isomedia.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_mpeg4_nodes.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_network.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_nodes.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_ogg.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_render.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_scenegraph.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_scenegraph_svg.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_scenegraph_vrml.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_svg_nodes.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_terminal.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_tools.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_user.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\include\gpac\m4_x3d_nodes.h
+# End Source File
+# End Group
+# End Target
+# End Project

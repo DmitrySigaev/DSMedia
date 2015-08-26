@@ -1,0 +1,6 @@
+LIBRARY     gdip_rend.dll
+
+EXPORTS
+	QueryInterface
+	LoadInterface
+	ShutdownInterface

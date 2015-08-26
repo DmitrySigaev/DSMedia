@@ -1,0 +1,84 @@
+The Libisomedia package available on GPAC web site is the subpart of the GPAC project dealing with
+ISO media (MP4, 3GP, QT-based) and MPEG-4 OD framework (descriptors). This package is distributed 
+under the GNU Lesser General Public License (LGPL) to enable third-parties commercial applications
+around the ISO media format.
+Being still a part of GPAC, all the source code in the libisomedia package still has the GPL header
+for code maintainance purposes. 
+
+The following files are part of GPAC (GPL) and are relicensed in libisomedia package under the LGPL license. No other licensing of
+these files is allowed.
+
+gpac/M4Systems/OD/ESDescriptor.c
+gpac/M4Systems/OD/InitialObjectDescriptor.c
+gpac/M4Systems/OD/M4F_InitialObjectDescriptor.c
+gpac/M4Systems/OD/M4F_ObjectDescriptor.c
+gpac/M4Systems/OD/OCICodec.c
+gpac/M4Systems/OD/ODCoDec.c
+gpac/M4Systems/OD/ODCommand.c
+gpac/M4Systems/OD/OD_Dump.c
+gpac/M4Systems/OD/OD_Parse.c
+gpac/M4Systems/OD/ObjectDescriptor.c
+gpac/M4Systems/OD/QoSDescriptor.c
+gpac/M4Systems/OD/SLConfigDescriptor.c
+gpac/M4Systems/OD/SyncLayer.c
+gpac/M4Systems/OD/comFunct.h
+gpac/M4Systems/OD/comPrivate.c
+gpac/M4Systems/OD/descFunct.h
+gpac/M4Systems/OD/descPrivate.c
+gpac/M4Systems/OD/descriptors.c
+gpac/M4Systems/OD/od_code.c
+
+gpac/M4Systems/MP4/3GPP_atoms_code.c
+gpac/M4Systems/MP4/Atom.c
+gpac/M4Systems/MP4/AtomPriv.c
+gpac/M4Systems/MP4/AtomPriv.h
+gpac/M4Systems/MP4/Atoms.h
+gpac/M4Systems/MP4/DTE.c
+gpac/M4Systems/MP4/HintAtoms.h
+gpac/M4Systems/MP4/HintPacket.c
+gpac/M4Systems/MP4/HintSample.c
+gpac/M4Systems/MP4/HintSample.h
+gpac/M4Systems/MP4/M4_3GPP.c
+gpac/M4Systems/MP4/M4_Dump.c
+gpac/M4Systems/MP4/M4_FileDataMap.c
+gpac/M4Systems/MP4/M4_FileMapping.c
+gpac/M4Systems/MP4/M4_FileMapping_fake.c
+gpac/M4Systems/MP4/M4_Fragments.c
+gpac/M4Systems/MP4/M4_HintDump.c
+gpac/M4Systems/MP4/M4_HintTrack.c
+gpac/M4Systems/MP4/M4_HintTrack.h
+gpac/M4Systems/MP4/M4_Media.c
+gpac/M4Systems/MP4/M4_Media_od.c
+gpac/M4Systems/MP4/M4_Movie.h
+gpac/M4Systems/MP4/M4_MovieIntern.c
+gpac/M4Systems/MP4/M4_Movie_read.c
+gpac/M4Systems/MP4/M4_Movie_write.c
+gpac/M4Systems/MP4/M4_Publish.c
+gpac/M4Systems/MP4/M4_RTPHint.c
+gpac/M4Systems/MP4/M4_Track.c
+gpac/M4Systems/MP4/M4_dataMap.c
+gpac/M4Systems/MP4/M4_dataMap.h
+gpac/M4Systems/MP4/M4_packing.c
+gpac/M4Systems/MP4/M4_stbl_defrag.c
+gpac/M4Systems/MP4/M4_stbl_read.c
+gpac/M4Systems/MP4/M4_stbl_write.c
+gpac/M4Systems/MP4/M4_store.c
+gpac/M4Systems/MP4/MJ2K_Atoms.h
+gpac/M4Systems/MP4/RTPPacket.c
+gpac/M4Systems/MP4/atoms_code.c
+gpac/M4Systems/MP4/base_sample_desc.c
+gpac/M4Systems/MP4/ghnt.c
+
+gpac/M4Systems/Tools/bitstream.c
+gpac/M4Systems/Tools/chain.c
+gpac/M4Systems/Tools/error.c
+gpac/M4Systems/Tools/url.c
+gpac/M4Systems/Tools/UTF8.c
+gpac/M4Systems/Tools/linux/os_divers.c
+gpac/M4Systems/Tools/win32/os_divers.c
+gpac/M4Systems/Tools/winCE/os_divers.c
+
+gpac/include/gpac/m4_config.h
+gpac/include/gpac/m4_descriptors.h
+gpac/include/gpac/m4_isomedia.h
+gpac/include/gpac/m4_tools.h

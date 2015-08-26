@@ -1,0 +1,6 @@
+LIBRARY     file_dnload.dll
+
+EXPORTS
+	QueryInterface
+	LoadInterface
+	ShutdownInterface

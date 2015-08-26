@@ -1,0 +1,4438 @@
+# Microsoft eMbedded Visual Tools Project File - Name="js" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE x86) Dynamic-Link Library" 0x8302
+# TARGTYPE "Win32 (WCE ARM) Dynamic-Link Library" 0x8502
+
+CFG=js - Win32 (WCE ARM) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "js.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "js.vcn" CFG="js - Win32 (WCE ARM) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "js - Win32 (WCE ARM) Release" (based on "Win32 (WCE ARM) Dynamic-Link Library")
+!MESSAGE "js - Win32 (WCE ARM) Debug" (based on "Win32 (WCE ARM) Dynamic-Link Library")
+!MESSAGE "js - Win32 (WCE x86) Debug" (based on "Win32 (WCE x86) Dynamic-Link Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMRel"
+# PROP BASE Intermediate_Dir "ARMRel"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Obj/ARMRel"
+# PROP Intermediate_Dir "Obj/ARMRel"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_USRDLL" /D "JS_EXPORTS" /YX /Oxs /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /O2 /I "./winCE" /D "ARM" /D "_ARM_" /D "NDEBUG" /D "JS_EXPORTS" /D "WIN32" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "JSFILE" /D "EXPORT_JS_API" /D "XP_PC" /D "XP_WINCE" /Oxs /M$(CECrtMT) /c
+# SUBTRACT CPP /YX
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# Begin Special Build Tool
+SOURCE="$(InputPath)"
+PostBuild_Cmds=copy Obj\ARMRel\js.dll ..\lib\arm_release	copy Obj\ARMRel\js.lib ..\lib\arm_release
+# End Special Build Tool
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMDbg"
+# PROP BASE Intermediate_Dir "ARMDbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "Obj/ARMDbg"
+# PROP Intermediate_Dir "Obj/ARMDbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "JS_EXPORTS" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "./winCE" /D "DEBUG" /D "ARM" /D "_ARM_" /D "WIN32" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "JSFILE" /D "EXPORT_JS_API" /D "XP_PC" /D "XP_WINCE" /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /YX
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# Begin Special Build Tool
+SOURCE="$(InputPath)"
+PostBuild_Cmds=copy Obj\ARMDbg\js.dll ..\lib\arm_debug	copy Obj\ARMDbg\js.lib ..\lib\arm_debug
+# End Special Build Tool
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "X86Dbg"
+# PROP BASE Intermediate_Dir "X86Dbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Ignore_Export_Lib 0
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "X86Dbg"
+# PROP Intermediate_Dir "X86Dbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "_X86_" /d "x86" /d "_i386_" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "_X86_" /d "x86" /d "_i386_" /r
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "WIN32" /D "JSFILE" /D "EXPORT_JS_API" /D "XP_PC" /D "XP_WINCE" /Gs8192 /M$(CECrtMTDebug) /c
+# SUBTRACT BASE CPP /YX
+# ADD CPP /nologo /W3 /Zi /Od /I "./wince" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "WIN32" /D "JSFILE" /D "EXPORT_JS_API" /D "XP_PC" /D "XP_WINCE" /Gs8192 /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /YX
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"OLDNAMES.lib" /nodefaultlib:$(CENoDefaultLib) /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# SUBTRACT BASE LINK32 /incremental:no
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"OLDNAMES.lib" /nodefaultlib:$(CENoDefaultLib) /subsystem:$(CESubsystem) /align:"4096" /MACHINE:IX86
+# SUBTRACT LINK32 /pdb:none
+
+!ENDIF 
+
+# Begin Target
+
+# Name "js - Win32 (WCE ARM) Release"
+# Name "js - Win32 (WCE ARM) Debug"
+# Name "js - Win32 (WCE x86) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\jsapi.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSAPI=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdate.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsexn.h"\
+	".\jsfile.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsmath.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSAPI=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSAPI=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdate.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsexn.h"\
+	".\jsfile.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsmath.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSAPI=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSAPI=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdate.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsexn.h"\
+	".\jsfile.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsmath.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	
+NODEP_CPP_JSAPI=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsarena.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSARE=\
+	".\jsarena.h"\
+	".\jsbit.h"\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jshash.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSARE=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSARE=\
+	".\jsarena.h"\
+	".\jsbit.h"\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jshash.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSARE=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSARE=\
+	".\jsarena.h"\
+	".\jsbit.h"\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jshash.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSARE=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsarray.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSARR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSARR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSARR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSARR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSARR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSARR=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsatom.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSATO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSATO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSATO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSATO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSATO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSATO=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsbool.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSBOO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSBOO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSBOO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSBOO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSBOO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSBOO=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jscntxt.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSCNT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSCNT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSCNT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSCNT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSCNT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSCNT=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdate.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSDAT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdate.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDAT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSDAT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdate.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDAT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSDAT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdate.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	
+NODEP_CPP_JSDAT=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdbgapi.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSDBG=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDBG=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSDBG=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDBG=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSDBG=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSDBG=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdhash.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSDHA=\
+	".\jsbit.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDHA=\
+	".\jsautocfg.h"\
+	".\nsTraceMalloc.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSDHA=\
+	".\jsbit.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDHA=\
+	".\jsautocfg.h"\
+	".\nsTraceMalloc.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSDHA=\
+	".\jsbit.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSDHA=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\nsTraceMalloc.h"\
+	".\platform.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdtoa.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSDTO=\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdtoa.h"\
+	".\jslibmath.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jspubtd.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDTO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSDTO=\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdtoa.h"\
+	".\jslibmath.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jspubtd.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSDTO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSDTO=\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdtoa.h"\
+	".\jslibmath.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jspubtd.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSDTO=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsemit.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSEMI=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSEMI=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSEMI=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSEMI=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSEMI=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSEMI=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsexn.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSEXN=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSEXN=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSEXN=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSEXN=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSEXN=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSEXN=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsfun.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSFUN=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSFUN=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSFUN=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSFUN=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSFUN=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsexn.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	
+NODEP_CPP_JSFUN=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsgc.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSGC_=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSGC_=\
+	".\dump_xpc.h"\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSGC_=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSGC_=\
+	".\dump_xpc.h"\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSGC_=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSGC_=\
+	".\dump_xpc.h"\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jshash.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSHAS=\
+	".\jsbit.h"\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jshash.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSHAS=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSHAS=\
+	".\jsbit.h"\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jshash.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSHAS=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSHAS=\
+	".\jsbit.h"\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jshash.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSHAS=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsinterp.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSINT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSINT=\
+	".\jsautocfg.h"\
+	".\jsjit.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSINT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSINT=\
+	".\jsautocfg.h"\
+	".\jsjit.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSINT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSINT=\
+	".\jsautocfg.h"\
+	".\jsjit.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jslock.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSLOC=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSLOC=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	".\prthread.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSLOC=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSLOC=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	".\prthread.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSLOC=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSLOC=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	".\prthread.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jslog2.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSLOG=\
+	".\jsbit.h"\
+	".\jscpucfg.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSLOG=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSLOG=\
+	".\jsbit.h"\
+	".\jscpucfg.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSLOG=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSLOG=\
+	".\jsbit.h"\
+	".\jscpucfg.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	
+NODEP_CPP_JSLOG=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jslong.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSLON=\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSLON=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSLON=\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSLON=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSLON=\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	
+NODEP_CPP_JSLON=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsmath.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSMAT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslibmath.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsmath.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSMAT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSMAT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslibmath.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsmath.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSMAT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSMAT=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslibmath.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsmath.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\prmjtime.h"\
+	
+NODEP_CPP_JSMAT=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsnum.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSNUM=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSNUM=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSNUM=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSNUM=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSNUM=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSNUM=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsobj.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSOBJ=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSOBJ=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSOBJ=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSOBJ=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSOBJ=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	
+NODEP_CPP_JSOBJ=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsopcode.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSOPC=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSOPC=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSOPC=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSOPC=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSOPC=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSOPC=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsparse.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSPAR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSPAR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSPAR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSPAR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSPAR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsparse.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSPAR=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsprf.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSPRF=\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSPRF=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSPRF=\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSPRF=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSPRF=\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSPRF=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsregexp.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSREG=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSREG=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSREG=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSREG=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSREG=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	
+NODEP_CPP_JSREG=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsscan.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSSCA=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsemit.h"\
+	".\jsexn.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSCA=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSSCA=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsemit.h"\
+	".\jsexn.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSCA=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSSCA=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsdtoa.h"\
+	".\jsemit.h"\
+	".\jsexn.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscan.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSSCA=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsscope.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSSCO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSCO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSSCO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSCO=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSSCO=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsbit.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSSCO=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsscript.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSSCR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSCR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSSCR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSCR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSSCR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdbgapi.h"\
+	".\jsdhash.h"\
+	".\jsemit.h"\
+	".\jsfun.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	
+NODEP_CPP_JSSCR=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsstr.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSSTR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSTR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSSTR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSSTR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSSTR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsarray.h"\
+	".\jsatom.h"\
+	".\jsbool.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsnum.h"\
+	".\jsobj.h"\
+	".\jsopcode.h"\
+	".\jsopcode.tbl"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSSTR=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsutil.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSUTI=\
+	".\jscpucfg.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSUTI=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSUTI=\
+	".\jscpucfg.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSUTI=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSUTI=\
+	".\jscpucfg.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	
+NODEP_CPP_JSUTI=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsxdrapi.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_JSXDR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSXDR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_JSXDR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_JSXDR=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_JSXDR=\
+	".\js.msg"\
+	".\jsapi.h"\
+	".\jsarena.h"\
+	".\jsatom.h"\
+	".\jsclist.h"\
+	".\jscntxt.h"\
+	".\jscompat.h"\
+	".\jsconfig.h"\
+	".\jscpucfg.h"\
+	".\jsdhash.h"\
+	".\jsgc.h"\
+	".\jshash.h"\
+	".\jsinterp.h"\
+	".\jslock.h"\
+	".\jslong.h"\
+	".\jsobj.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsprvtd.h"\
+	".\jspubtd.h"\
+	".\jsregexp.h"\
+	".\jsscope.h"\
+	".\jsscript.h"\
+	".\jsstddef.h"\
+	".\jsstr.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\jsxdrapi.h"\
+	
+NODEP_CPP_JSXDR=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	".\pratom.h"\
+	".\prcvar.h"\
+	".\prlock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\prmjtime.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+DEP_CPP_PRMJT=\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_PRMJT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PRMJT=\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	".\winCE\jswincedef.h"\
+	
+NODEP_CPP_PRMJT=\
+	".\jsautocfg.h"\
+	".\platform.h"\
+	
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+DEP_CPP_PRMJT=\
+	".\jscompat.h"\
+	".\jscpucfg.h"\
+	".\jslong.h"\
+	".\jsosdep.h"\
+	".\jsotypes.h"\
+	".\jsprf.h"\
+	".\jsstddef.h"\
+	".\jstypes.h"\
+	".\jsutil.h"\
+	".\prmjtime.h"\
+	
+NODEP_CPP_PRMJT=\
+	".\jsautocfg.h"\
+	".\jswincedef.h"\
+	".\platform.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\winCE\wcetime.c
+
+!IF  "$(CFG)" == "js - Win32 (WCE ARM) Release"
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE ARM) Debug"
+
+!ELSEIF  "$(CFG)" == "js - Win32 (WCE x86) Debug"
+
+!ENDIF 
+
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\jsapi.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsarena.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsarray.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsatom.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsbit.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsbool.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsclist.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jscntxt.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jscompat.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsconfig.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jscpucfg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdate.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdbgapi.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdhash.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsdtoa.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsemit.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsexn.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsfile.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsfun.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsgc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jshash.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsinterp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jslibmath.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jslock.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jslong.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsmath.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsnum.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsobj.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsopcode.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsosdep.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsotypes.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsparse.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsprf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsprvtd.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jspubtd.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsregexp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsscan.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsscope.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsscript.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsstddef.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsstr.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jstypes.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsutil.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jsxdrapi.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\prmjtime.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource.h
+# End Source File
+# End Group
+# Begin Group "Resource Files"
+
+# PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# End Group
+# Begin Source File
+
+SOURCE=.\jswincedef.h
+# End Source File
+# End Target
+# End Project

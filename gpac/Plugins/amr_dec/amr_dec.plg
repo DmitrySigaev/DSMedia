@@ -1,0 +1,1169 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LASeR_dec - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+LASeR_dec.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LASeR_dec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+LASeR_dec.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems_dll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: gdip_rend - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2ED.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32Rel/gdip_rend.pch" /YX /Fo"Obj/W32Rel/" /Fd"Obj/W32Rel/" /FD /c 
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_font.cpp"
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_grad.cpp"
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_rend.cpp"
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_texture.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2ED.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2EE.tmp" with contents
+[
+gdiplus.lib /nologo /dll /incremental:no /pdb:"Obj/W32Rel/gdip_rend.pdb" /machine:I386 /def:".\gdip_rend.def" /out:"../../bin/Release/gdip_rend.dll" /implib:"Obj/W32Rel/gdip_rend.lib" 
+.\Obj\W32Rel\gdip_font.obj
+.\Obj\W32Rel\gdip_grad.obj
+.\Obj\W32Rel\gdip_rend.obj
+.\Obj\W32Rel\gdip_texture.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2EE.tmp"
+<h3>Output Window</h3>
+Compiling...
+gdip_font.cpp
+E:\GPAC\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+gdip_grad.cpp
+E:\GPAC\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+gdip_rend.cpp
+E:\GPAC\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+gdip_texture.cpp
+E:\GPAC\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+MP42AVI.exe - 4 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: gdip_rend - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2EF.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /FR"Obj/W32Deb/" /Fp"Obj/W32Deb/gdip_rend.pch" /YX /Fo"Obj/W32Deb/" /Fd"Obj/W32Deb/" /FD /GZ /c 
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_font.cpp"
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_grad.cpp"
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_rend.cpp"
+"E:\GPAC\gpac\plugins\gdip_rend\gdip_texture.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2EF.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F0.tmp" with contents
+[
+gdiplus.lib /nologo /dll /incremental:yes /pdb:"Obj/W32Deb/gdip_rend.pdb" /debug /machine:I386 /def:".\gdip_rend.def" /out:"../../bin/Debug/gdip_rend.dll" /implib:"Obj/W32Deb/gdip_rend.lib" /pdbtype:sept 
+.\Obj\W32Deb\gdip_font.obj
+.\Obj\W32Deb\gdip_grad.obj
+.\Obj\W32Deb\gdip_rend.obj
+.\Obj\W32Deb\gdip_texture.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F0.tmp"
+<h3>Output Window</h3>
+Compiling...
+gdip_font.cpp
+e:\gpac\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+gdip_grad.cpp
+e:\gpac\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+gdip_rend.cpp
+e:\gpac\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+gdip_texture.cpp
+e:\gpac\gpac\plugins\gdip_rend\gdip_priv.h(49) : fatal error C1083: Cannot open include file: 'GdiplusMem.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+MP42AVI.exe - 4 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MP4Box - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+MP4Box.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MP4Box - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+MP4Box.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ffmpeg_in - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F1.tmp" with contents
+[
+avcodec.lib avformat.lib /nologo /dll /incremental:no /pdb:"Obj/W32Rel/ffmpeg_in.pdb" /machine:I386 /def:".\ffmpeg_in.def" /out:"../../bin/Release/ffmpeg_in.dll" /implib:"Obj/W32Rel/ffmpeg_in.lib" /libpath:"../../extra_lib/lib/w32_release" 
+.\Obj\W32Rel\ffmpeg_decode.obj
+.\Obj\W32Rel\ffmpeg_demux.obj
+.\Obj\W32Rel\ffmpeg_load.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F1.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : fatal error LNK1181: cannot open input file "avcodec.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+MP4Client.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ffmpeg_in - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F2.tmp" with contents
+[
+avcodec.lib avformat.lib /nologo /dll /incremental:yes /pdb:"Obj/W32Deb/ffmpeg_in.pdb" /debug /machine:I386 /def:".\ffmpeg_in.def" /out:"../../bin/Debug/ffmpeg_in.dll" /implib:"Obj/W32Deb/ffmpeg_in.lib" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Obj\W32Deb\ffmpeg_decode.obj
+.\Obj\W32Deb\ffmpeg_demux.obj
+.\Obj\W32Deb\ffmpeg_load.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F2.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : fatal error LNK1104: cannot open file "avcodec.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+MP4Client.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: svg_loader - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F3.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /I "../../M4Systems/SVG" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SVG_LOADER_EXPORTS" /Fp"Obj/Release/svg_loader.pch" /YX /Fo"Obj/Release/" /Fd"Obj/Release/" /FD /c 
+"E:\GPAC\gpac\PLUGINS\svg_loader\svg_loader.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F3.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F4.tmp" with contents
+[
+libxml2.lib iconv.lib zlib.lib /nologo /dll /incremental:no /pdb:"Obj/Release/svg_loader.pdb" /machine:I386 /def:".\svg_loader.def" /out:"../../bin/Release/svg_loader.dll" /implib:"Obj/Release/svg_loader.lib" /libpath:"../../extra_lib/lib/w32_release" 
+.\Obj\Release\svg_loader.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F4.tmp"
+<h3>Output Window</h3>
+Compiling...
+svg_loader.c
+E:\GPAC\gpac\PLUGINS\svg_loader\svg_loader.c(33) : fatal error C1083: Cannot open include file: 'libxml/tree.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Osmo4.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: svg_loader - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /I "../../extra_lib/include" /I "../../M4Systems/SVG" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Obj/Debug/svg_loader.pch" /YX /Fo"Obj/Debug/" /Fd"Obj/Debug/" /FD /GZ /c 
+"E:\GPAC\gpac\PLUGINS\svg_loader\svg_loader.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F5.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F6.tmp" with contents
+[
+js32.lib winmm.lib libxml2.lib zlib.lib libxml2.lib zlib.lib /nologo /dll /incremental:yes /pdb:"Obj/Debug/svg_loader.pdb" /debug /machine:I386 /def:".\svg_loader.def" /out:"../../bin/Debug/svg_loader.dll" /implib:"Obj/Debug/svg_loader.lib" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Obj\Debug\svg_loader.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F6.tmp"
+<h3>Output Window</h3>
+Compiling...
+svg_loader.c
+e:\gpac\gpac\plugins\svg_loader\svg_loader.c(33) : fatal error C1083: Cannot open include file: 'libxml/tree.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Osmo4.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SDL_out - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32Rel/SDL_out.pch" /YX /Fo"Obj/W32Rel/" /Fd"Obj/W32Rel/" /FD /c 
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_audio.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video2d.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SoftStretch.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F7.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F8.tmp" with contents
+[
+SDL.lib user32.lib /nologo /dll /incremental:no /pdb:"Obj/W32Rel/SDL_out.pdb" /machine:I386 /def:".\SDL_out.def" /out:"../../bin/Release/SDL_out.dll" /implib:"Obj/W32Rel/SDL_out.lib" 
+.\Obj\W32Rel\SDL_audio.obj
+.\Obj\W32Rel\SDL_out.obj
+.\Obj\W32Rel\SDL_video.obj
+.\Obj\W32Rel\SDL_video2d.obj
+.\Obj\W32Rel\SoftStretch.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F8.tmp"
+<h3>Output Window</h3>
+Compiling...
+SDL_audio.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_out.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video2d.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SoftStretch.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+SDL_out.dll - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SDL_out - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32Deb/SDL_out.pch" /YX /Fo"Obj/W32Deb/" /Fd"Obj/W32Deb/" /FD /GZ /c 
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_audio.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video2d.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SoftStretch.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2F9.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FA.tmp" with contents
+[
+SDL.lib user32.lib /nologo /dll /incremental:yes /pdb:"Obj/W32Deb/SDL_out.pdb" /debug /machine:I386 /def:".\SDL_out.def" /out:"../../bin/Debug/SDL_out.dll" /implib:"Obj/W32Deb/SDL_out.lib" /pdbtype:sept 
+.\Obj\W32Deb\SDL_audio.obj
+.\Obj\W32Deb\SDL_out.obj
+.\Obj\W32Deb\SDL_video.obj
+.\Obj\W32Deb\SDL_video2d.obj
+.\Obj\W32Deb\SoftStretch.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FA.tmp"
+<h3>Output Window</h3>
+Compiling...
+SDL_audio.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_out.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video2d.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SoftStretch.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+SDL_out.dll - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: V4Studio - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"Release/V4Studio.res" /i "E:\MesProjets\wxWindows\include" /i "rc" /d "NDEBUG" "E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc"" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FB.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "__WINDOWS__" /D "__WXMSW__" /D "__WXDEBUG__" /D WXDEBUG=1 /D "__WIN95__" /D "__WIN32__" /D WINVER=0x0400 /D "STRICT" /Fp"Release/V4Studio.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GPAC\gpac\Applications\V4Studio\V4FieldList.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4SceneGraph.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioApp.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioFrame.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioTree.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\wxGPACPanel.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FB.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FC.tmp" with contents
+[
+wxmsw25_html.lib wxbase25.lib wxmsw25_core.lib wxmsw25_adv.lib wxbase25_xml.lib wxexpat.lib wxmsw25_xrc.lib js32.lib ws2_32.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib ole32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib rpcrt4.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/V4Studio.pdb" /machine:I386 /out:"../../bin/Release/V4Studio.exe" /libpath:"../../extra_lib/lib/w32_release" 
+.\Release\V4FieldList.obj
+.\Release\V4SceneGraph.obj
+.\Release\V4StudioApp.obj
+.\Release\V4StudioFrame.obj
+.\Release\V4StudioTree.obj
+.\Release\wxGPACPanel.obj
+.\Release\V4Studio.res
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc(1) : fatal error RC1015: cannot open include file 'wx/msw/wx.rc'.
+Error executing rc.exe.
+
+
+
+<h3>Results</h3>
+V4Studio.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: V4Studio - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"rc\V4Studio.res" /i "C:\Projets\wxWindows\include" /i "rc" /d "_DEBUG" "E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc"" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /I "../../M4Systems/SceneGraph" /I "C:\Projets\wxWindows\include" /I "C:\Projets\wxWindows\contrib\include" /I "C:\Projets\wxWindows\lib\mswd" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "__WINDOWS__" /D "__WXMSW__" /D "__WXDEBUG__" /D WXDEBUG=1 /D "__WIN95__" /D "__WIN32__" /D WINVER=0x0400 /D "STRICT" /FR"Debug/" /Fp"Debug/V4Studio.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /GZ /c 
+"E:\GPAC\gpac\Applications\V4Studio\V4FieldList.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4SceneGraph.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioApp.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioFrame.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioTree.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\wxGPACPanel.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FD.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FE.tmp" with contents
+[
+wxmsw25d_html.lib wxbase25d.lib wxmsw25d_core.lib wxmsw25d_adv.lib wxbase25d_xml.lib wxexpatd.lib js32.lib ws2_32.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib ole32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib rpcrt4.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/V4Studio.pdb" /debug /machine:I386 /out:"../../bin/Debug/V4Studio.exe" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Debug\V4FieldList.obj
+.\Debug\V4SceneGraph.obj
+.\Debug\V4StudioApp.obj
+.\Debug\V4StudioFrame.obj
+.\Debug\V4StudioTree.obj
+.\Debug\wxGPACPanel.obj
+.\rc\V4Studio.res
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FE.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc(1) : fatal error RC1015: cannot open include file 'wx/msw/wx.rc'.
+Error executing rc.exe.
+
+
+
+<h3>Results</h3>
+V4Studio.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: aac_in - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+aac_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: aac_in - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+aac_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: img_in - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+img_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: img_in - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+img_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ogg - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+ogg_xiph.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ogg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+ogg_xiph.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: raw_out - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+raw_out.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: raw_out - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+raw_out.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: timedtext - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+timedtext.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: timedtext - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+timedtext.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SDL_out - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FF.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32Rel/SDL_out.pch" /YX /Fo"Obj/W32Rel/" /Fd"Obj/W32Rel/" /FD /c 
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_audio.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video2d.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SoftStretch.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP2FF.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP300.tmp" with contents
+[
+SDL.lib user32.lib /nologo /dll /incremental:no /pdb:"Obj/W32Rel/SDL_out.pdb" /machine:I386 /def:".\SDL_out.def" /out:"../../bin/Release/SDL_out.dll" /implib:"Obj/W32Rel/SDL_out.lib" 
+.\Obj\W32Rel\SDL_audio.obj
+.\Obj\W32Rel\SDL_out.obj
+.\Obj\W32Rel\SDL_video.obj
+.\Obj\W32Rel\SDL_video2d.obj
+.\Obj\W32Rel\SoftStretch.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP300.tmp"
+<h3>Output Window</h3>
+Compiling...
+SDL_audio.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_out.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video2d.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SoftStretch.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+wxOsmo4.exe - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SDL_out - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP301.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32Deb/SDL_out.pch" /YX /Fo"Obj/W32Deb/" /Fd"Obj/W32Deb/" /FD /GZ /c 
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_audio.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video2d.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SoftStretch.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP301.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP302.tmp" with contents
+[
+SDL.lib user32.lib /nologo /dll /incremental:yes /pdb:"Obj/W32Deb/SDL_out.pdb" /debug /machine:I386 /def:".\SDL_out.def" /out:"../../bin/Debug/SDL_out.dll" /implib:"Obj/W32Deb/SDL_out.lib" /pdbtype:sept 
+.\Obj\W32Deb\SDL_audio.obj
+.\Obj\W32Deb\SDL_out.obj
+.\Obj\W32Deb\SDL_video.obj
+.\Obj\W32Deb\SDL_video2d.obj
+.\Obj\W32Deb\SoftStretch.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP302.tmp"
+<h3>Output Window</h3>
+Compiling...
+SDL_audio.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_out.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video2d.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SoftStretch.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+wxOsmo4.exe - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: xvid_dec - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+xvid_dec.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: xvid_dec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+xvid_dec.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: amr_dec - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP303.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "__MSDOS__" /D "MMS_IO" /Fp"Obj/W32Rel/amr_dec.pch" /YX /Fo"Obj/W32Rel/" /Fd"Obj/W32Rel/" /FD /c 
+"E:\GPAC\gpac\Plugins\amr_dec\amr_dec.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\a_refl.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\agc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\autocorr.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\az_lsp.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\b_cn_cod.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\basicop2.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\bgnscd.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\bits2prm.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c1035pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c2_11pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c2_9pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c3_14pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c4_17pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c8_31pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\calc_cor.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\calc_en.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cl_ltp.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\convolve.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\copy.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cor_h.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\count.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d1035pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d2_11pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d2_9pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d3_14pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d4_17pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d8_31pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_gain_c.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_gain_p.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_homing.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_5.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_gain.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_lag3.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_lag6.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_enc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\e_homing.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ec_gains.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\enc_lag3.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\enc_lag6.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ex_ctrl.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\g_adapt.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\g_code.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\g_pitch.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gain_q.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gc_pred.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gmed_n.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\hp_max.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\int_lpc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\int_lsf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\inter_36.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\inv_sqrt.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lag_wind.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\levinson.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lflg_upd.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\log2.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lpc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsfwt.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsp.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsp_avg.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsp_az.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsp_lsf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\mac_32.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ol_ltp.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\oper_32b.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\p_ol_wgh.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ph_disp.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_ol.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\post_pro.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pow2.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pre_big.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pre_proc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pred_lt.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\preemph.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\prm2bits.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pstfilt.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_c.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_p.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_plsf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_plsf_3.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_plsf_5.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\qgain475.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\qgain795.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\qua_gain.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\r_fft.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\reorder.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\residu.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\s10_8pf.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\set_sign.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\set_zero.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\sid_sync.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\sp_dec.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\sp_enc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\spreproc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\spstproc.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\sqrt_l.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\syn_filt.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ton_stab.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\vad1.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\vad2.c"
+"E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\weight_a.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP303.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP304.tmp" with contents
+[
+/nologo /stack:0x800000 /dll /incremental:no /pdb:"Obj/W32Rel/amr_dec.pdb" /machine:I386 /def:".\amr_dec.def" /out:"../../bin/Release/amr_dec.dll" /implib:"Obj/W32Rel/amr_dec.lib" 
+.\Obj\W32Rel\amr_dec.obj
+.\Obj\W32Rel\amr_in.obj
+.\Obj\W32Rel\a_refl.obj
+.\Obj\W32Rel\agc.obj
+.\Obj\W32Rel\autocorr.obj
+.\Obj\W32Rel\az_lsp.obj
+.\Obj\W32Rel\b_cn_cod.obj
+.\Obj\W32Rel\basicop2.obj
+.\Obj\W32Rel\bgnscd.obj
+.\Obj\W32Rel\bits2prm.obj
+.\Obj\W32Rel\c1035pf.obj
+.\Obj\W32Rel\c2_11pf.obj
+.\Obj\W32Rel\c2_9pf.obj
+.\Obj\W32Rel\c3_14pf.obj
+.\Obj\W32Rel\c4_17pf.obj
+.\Obj\W32Rel\c8_31pf.obj
+.\Obj\W32Rel\c_g_aver.obj
+.\Obj\W32Rel\calc_cor.obj
+.\Obj\W32Rel\calc_en.obj
+.\Obj\W32Rel\cbsearch.obj
+.\Obj\W32Rel\cl_ltp.obj
+.\Obj\W32Rel\cod_amr.obj
+.\Obj\W32Rel\convolve.obj
+.\Obj\W32Rel\copy.obj
+.\Obj\W32Rel\cor_h.obj
+.\Obj\W32Rel\count.obj
+.\Obj\W32Rel\d1035pf.obj
+.\Obj\W32Rel\d2_11pf.obj
+.\Obj\W32Rel\d2_9pf.obj
+.\Obj\W32Rel\d3_14pf.obj
+.\Obj\W32Rel\d4_17pf.obj
+.\Obj\W32Rel\d8_31pf.obj
+.\Obj\W32Rel\d_gain_c.obj
+.\Obj\W32Rel\d_gain_p.obj
+.\Obj\W32Rel\d_homing.obj
+.\Obj\W32Rel\d_plsf.obj
+.\Obj\W32Rel\d_plsf_3.obj
+.\Obj\W32Rel\d_plsf_5.obj
+.\Obj\W32Rel\dec_amr.obj
+.\Obj\W32Rel\dec_gain.obj
+.\Obj\W32Rel\dec_lag3.obj
+.\Obj\W32Rel\dec_lag6.obj
+.\Obj\W32Rel\dtx_dec.obj
+.\Obj\W32Rel\dtx_enc.obj
+.\Obj\W32Rel\e_homing.obj
+.\Obj\W32Rel\ec_gains.obj
+.\Obj\W32Rel\enc_lag3.obj
+.\Obj\W32Rel\enc_lag6.obj
+.\Obj\W32Rel\ex_ctrl.obj
+.\Obj\W32Rel\g_adapt.obj
+.\Obj\W32Rel\g_code.obj
+.\Obj\W32Rel\g_pitch.obj
+.\Obj\W32Rel\gain_q.obj
+.\Obj\W32Rel\gc_pred.obj
+.\Obj\W32Rel\gmed_n.obj
+.\Obj\W32Rel\hp_max.obj
+.\Obj\W32Rel\int_lpc.obj
+.\Obj\W32Rel\int_lsf.obj
+.\Obj\W32Rel\inter_36.obj
+.\Obj\W32Rel\inv_sqrt.obj
+.\Obj\W32Rel\lag_wind.obj
+.\Obj\W32Rel\levinson.obj
+.\Obj\W32Rel\lflg_upd.obj
+.\Obj\W32Rel\log2.obj
+.\Obj\W32Rel\lpc.obj
+.\Obj\W32Rel\lsfwt.obj
+.\Obj\W32Rel\lsp.obj
+.\Obj\W32Rel\lsp_avg.obj
+.\Obj\W32Rel\lsp_az.obj
+.\Obj\W32Rel\lsp_lsf.obj
+.\Obj\W32Rel\mac_32.obj
+.\Obj\W32Rel\n_proc.obj
+.\Obj\W32Rel\ol_ltp.obj
+.\Obj\W32Rel\oper_32b.obj
+.\Obj\W32Rel\p_ol_wgh.obj
+.\Obj\W32Rel\ph_disp.obj
+.\Obj\W32Rel\pitch_fr.obj
+.\Obj\W32Rel\pitch_ol.obj
+.\Obj\W32Rel\post_pro.obj
+.\Obj\W32Rel\pow2.obj
+.\Obj\W32Rel\pre_big.obj
+.\Obj\W32Rel\pre_proc.obj
+.\Obj\W32Rel\pred_lt.obj
+.\Obj\W32Rel\preemph.obj
+.\Obj\W32Rel\prm2bits.obj
+.\Obj\W32Rel\pstfilt.obj
+.\Obj\W32Rel\q_gain_c.obj
+.\Obj\W32Rel\q_gain_p.obj
+.\Obj\W32Rel\q_plsf.obj
+.\Obj\W32Rel\q_plsf_3.obj
+.\Obj\W32Rel\q_plsf_5.obj
+.\Obj\W32Rel\qgain475.obj
+.\Obj\W32Rel\qgain795.obj
+.\Obj\W32Rel\qua_gain.obj
+.\Obj\W32Rel\r_fft.obj
+.\Obj\W32Rel\reorder.obj
+.\Obj\W32Rel\residu.obj
+.\Obj\W32Rel\s10_8pf.obj
+.\Obj\W32Rel\set_sign.obj
+.\Obj\W32Rel\set_zero.obj
+.\Obj\W32Rel\sid_sync.obj
+.\Obj\W32Rel\sp_dec.obj
+.\Obj\W32Rel\sp_enc.obj
+.\Obj\W32Rel\spreproc.obj
+.\Obj\W32Rel\spstproc.obj
+.\Obj\W32Rel\sqrt_l.obj
+.\Obj\W32Rel\strfunc.obj
+.\Obj\W32Rel\syn_filt.obj
+.\Obj\W32Rel\ton_stab.obj
+.\Obj\W32Rel\vad1.obj
+.\Obj\W32Rel\vad2.obj
+.\Obj\W32Rel\vadname.obj
+.\Obj\W32Rel\weight_a.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP304.tmp"
+<h3>Output Window</h3>
+Compiling...
+amr_dec.c
+E:\GPAC\gpac\Plugins\amr_dec\amr_dec.c(32) : warning C4005: 'MMS_IO' : macro redefinition
+        unknown(0) : see previous definition of 'MMS_IO'
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB/typedefs.h(155) : warning C4142: benign redefinition of type
+a_refl.c
+agc.c
+autocorr.c
+az_lsp.c
+b_cn_cod.c
+basicop2.c
+bgnscd.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\basicop2.c(291) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\basicop2.c(362) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\basicop2.c(1348) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\basicop2.c(1424) : warning C4761: integral size mismatch in argument; conversion supplied
+bits2prm.c
+c1035pf.c
+c2_11pf.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c1035pf.c(157) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c1035pf.c(157) : warning C4761: integral size mismatch in argument; conversion supplied
+c2_9pf.c
+c3_14pf.c
+c4_17pf.c
+c8_31pf.c
+c_g_aver.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c8_31pf.c(277) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c8_31pf.c(212) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c8_31pf.c(213) : warning C4761: integral size mismatch in argument; conversion supplied
+calc_cor.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(216) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(216) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(225) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(225) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(225) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(300) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(300) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\c_g_aver.c(300) : warning C4761: integral size mismatch in argument; conversion supplied
+calc_en.c
+cbsearch.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\calc_en.c(200) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\calc_en.c(200) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\calc_en.c(250) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\calc_en.c(250) : warning C4761: integral size mismatch in argument; conversion supplied
+cl_ltp.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c(70) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c(70) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c(76) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c(82) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c(88) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c(88) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cbsearch.c(94) : warning C4761: integral size mismatch in argument; conversion supplied
+cod_amr.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cl_ltp.c(207) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cl_ltp.c(207) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cl_ltp.c(227) : warning C4761: integral size mismatch in argument; conversion supplied
+convolve.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(415) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(466) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(466) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(477) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(477) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(504) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(541) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(553) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\cod_amr.c(627) : warning C4761: integral size mismatch in argument; conversion supplied
+copy.c
+cor_h.c
+count.c
+d1035pf.c
+d2_11pf.c
+d2_9pf.c
+d3_14pf.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d2_9pf.c(69) : warning C4761: integral size mismatch in argument; conversion supplied
+d4_17pf.c
+d8_31pf.c
+d_gain_c.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d8_31pf.c(151) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d8_31pf.c(73) : warning C4761: integral size mismatch in argument; conversion supplied
+d_gain_p.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_gain_c.c(94) : warning C4761: integral size mismatch in argument; conversion supplied
+d_homing.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_gain_p.c(68) : warning C4761: integral size mismatch in argument; conversion supplied
+d_plsf.c
+d_plsf_3.c
+d_plsf_5.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c(99) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c(119) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c(119) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c(125) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c(151) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c(151) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\d_plsf_3.c(170) : warning C4761: integral size mismatch in argument; conversion supplied
+dec_amr.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(315) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(338) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(338) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(338) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(343) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(343) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(351) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(389) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(394) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(406) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(465) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(465) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(479) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(489) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(489) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(489) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(489) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(502) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(544) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(544) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(544) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(584) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(584) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(597) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(611) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(625) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(639) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(701) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(738) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(738) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(769) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(783) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(848) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\Gdec_gain.c
+PAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(867) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(899) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(899) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(899) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(925) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(925) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(936) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(976) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(976) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(976) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(1014) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(1014) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_amr.c(1014) : warning C4761: integral size mismatch in argument; conversion supplied
+dec_lag3.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_gain.c(84) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_gain.c(84) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_gain.c(84) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dec_gain.c(96) : warning C4761: integral size mismatch in argument; conversion supplied
+dec_lag6.c
+dtx_dec.c
+dtx_enc.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(438) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(626) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(757) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(767) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(767) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(767) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(767) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(767) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(783) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(801) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(816) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(816) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(816) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(816) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(816) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(828) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(828) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(846) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(869) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(881) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(885) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\dtx_dec.c(890) : warning C4761: integral size mismatch in argument; conversion supplied
+e_homing.c
+ec_gains.c
+enc_lag3.c
+enc_lag6.c
+ex_ctrl.c
+g_adapt.c
+g_code.c
+g_pitch.c
+gain_q.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\g_pitch.c(164) : warning C4761: integral size mismatch in argument; conversion supplied
+gc_pred.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gain_q.c(188) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gain_q.c(266) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gain_q.c(281) : warning C4761: integral size mismatch in argument; conversion supplied
+gmed_n.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gc_pred.c(190) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gc_pred.c(278) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gc_pred.c(283) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gc_pred.c(299) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gc_pred.c(304) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\gc_pred.c(336) : warning C4761: integral size mismatch in argument; conversion supplied
+hp_max.c
+int_lpc.c
+int_lsf.c
+inter_36.c
+inv_sqrt.c
+lag_wind.c
+levinson.c
+lflg_upd.c
+log2.c
+lpc.c
+lsfwt.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lpc.c(142) : warning C4761: integral size mismatch in argument; conversion supplied
+lsp.c
+lsp_avg.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsp.c(148) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsp.c(162) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\lsp.c(187) : warning C4761: integral size mismatch in argument; conversion supplied
+lsp_az.c
+lsp_lsf.c
+mac_32.c
+ol_ltp.c
+oper_32b.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ol_ltp.c(62) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ol_ltp.c(69) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ol_ltp.c(69) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ol_ltp.c(76) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ol_ltp.c(83) : warning C4761: integral size mismatch in argument; conversion supplied
+p_ol_wgh.c
+ph_disp.c
+pitch_fr.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ph_disp.c(281) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ph_disp.c(281) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ph_disp.c(281) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\ph_disp.c(299) : warning C4761: integral size mismatch in argument; conversion supplied
+pitch_ol.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(432) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(432) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(520) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(520) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(520) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(520) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(580) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(580) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(580) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_fr.c(580) : warning C4761: integral size mismatch in argument; conversion supplied
+post_pro.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_ol.c(223) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_ol.c(223) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pitch_ol.c(300) : warning C4761: integral size mismatch in argument; conversion supplied
+pow2.c
+pre_big.c
+pre_proc.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pre_big.c(65) : warning C4761: integral size mismatch in argument; conversion supplied
+pred_lt.c
+preemph.c
+prm2bits.c
+pstfilt.c
+q_gain_c.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pstfilt.c(218) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\pstfilt.c(218) : warning C4761: integral size mismatch in argument; conversion supplied
+q_gain_p.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_c.c(79) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_c.c(95) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_c.c(110) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_c.c(124) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_c.c(145) : warning C4761: integral size mismatch in argument; conversion supplied
+q_plsf.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_p.c(78) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_gain_p.c(123) : warning C4761: integral size mismatch in argument; conversion supplied
+q_plsf_3.c
+q_plsf_5.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_plsf_3.c(225) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_plsf_3.c(266) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_plsf_3.c(266) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\q_plsf_3.c(277) : warning C4761: integral size mismatch in argument; conversion supplied
+qgain475.c
+qgain795.c
+qua_gain.c
+r_fft.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\qua_gain.c(90) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\qua_gain.c(90) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\qua_gain.c(90) : warning C4761: integral size mismatch in argument; conversion supplied
+reorder.c
+residu.c
+s10_8pf.c
+set_sign.c
+set_zero.c
+sid_sync.c
+sp_dec.c
+sp_enc.c
+spreproc.c
+spstproc.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\spreproc.c(73) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\spreproc.c(73) : warning C4761: integral size mismatch in argument; conversion supplied
+sqrt_l.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\spstproc.c(76) : warning C4761: integral size mismatch in argument; conversion supplied
+syn_filt.c
+ton_stab.c
+vad1.c
+vad2.c
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\vad1.c(302) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\vad1.c(302) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\vad1.c(690) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\GPAC\gpac\Plugins\amr_dec\AMR_NB\vad1.c(690) : warning C4761: integral size mismatch in argument; conversion supplied
+weight_a.c
+Linking...
+   Creating library Obj/W32Rel/amr_dec.lib and object Obj/W32Rel/amr_dec.exp
+
+
+
+<h3>Results</h3>
+amr_dec.dll - 0 error(s), 193 warning(s)
+<h3>
+--------------------Configuration: amr_dec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+amr_dec.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

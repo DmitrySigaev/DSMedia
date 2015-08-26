@@ -1,0 +1,6 @@
+LIBRARY     wav_audio.dll
+
+EXPORTS
+	QueryInterface
+	LoadInterface
+	ShutdownInterface

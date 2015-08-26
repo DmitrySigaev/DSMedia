@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: m4_rend - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP134.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32DebVC6/m4_rend.pch" /YX /Fo"Obj/W32DebVC6/" /Fd"Obj/W32DebVC6/" /FD /GZ /c 
+"F:\Common\iso_stream\src\m4_rend\ftgrays.c"
+"F:\Common\iso_stream\src\m4_rend\m4_load.c"
+"F:\Common\iso_stream\src\m4_rend\m4_raster_565.c"
+"F:\Common\iso_stream\src\m4_rend\m4_raster_argb.c"
+"F:\Common\iso_stream\src\m4_rend\m4_raster_rgb.c"
+"F:\Common\iso_stream\src\m4_rend\m4_stencil.c"
+"F:\Common\iso_stream\src\m4_rend\m4_surface.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP134.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP135.tmp" with contents
+[
+/nologo /out:"Obj/W32DebVC6\m4_rend.lib" 
+.\Obj\W32DebVC6\ftgrays.obj
+.\Obj\W32DebVC6\m4_load.obj
+.\Obj\W32DebVC6\m4_raster_565.obj
+.\Obj\W32DebVC6\m4_raster_argb.obj
+.\Obj\W32DebVC6\m4_raster_rgb.obj
+.\Obj\W32DebVC6\m4_stencil.obj
+.\Obj\W32DebVC6\m4_surface.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP135.tmp"
+<h3>Output Window</h3>
+Compiling...
+ftgrays.c
+m4_load.c
+f:\common\iso_stream\src\m4_rend\m4_priv.h(33) : fatal error C1083: Cannot open include file: 'm4_graphics.h': No such file or directory
+m4_raster_565.c
+f:\common\iso_stream\src\m4_rend\m4_priv.h(33) : fatal error C1083: Cannot open include file: 'm4_graphics.h': No such file or directory
+m4_raster_argb.c
+f:\common\iso_stream\src\m4_rend\m4_priv.h(33) : fatal error C1083: Cannot open include file: 'm4_graphics.h': No such file or directory
+m4_raster_rgb.c
+f:\common\iso_stream\src\m4_rend\m4_priv.h(33) : fatal error C1083: Cannot open include file: 'm4_graphics.h': No such file or directory
+m4_stencil.c
+f:\common\iso_stream\src\m4_rend\m4_priv.h(33) : fatal error C1083: Cannot open include file: 'm4_graphics.h': No such file or directory
+m4_surface.c
+f:\common\iso_stream\src\m4_rend\m4_priv.h(33) : fatal error C1083: Cannot open include file: 'm4_graphics.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+m4_rend.lib - 6 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

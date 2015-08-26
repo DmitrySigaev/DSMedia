@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libavcodec - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Sergey\LOCALS~1\Temp\RSP2C2.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "..\libavcodec" /I "..\libavcodec\libac3 ..\libav" /I "..\." /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "HAVE_AV_CONFIG_H" /D "EMULATE_FAST_INT" /FR"../../build/vc6.0/Release/libavcodec/" /Fp"../../build/vc6.0/Release/libavcodec/libavcodec.pch" /YX /Fo"../../build/vc6.0/Release/libavcodec/" /Fd"../../build/vc6.0/Release/libavcodec/" /FD /c 
+"F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Sergey\LOCALS~1\Temp\RSP2C2.tmp" 
+<h3>Output Window</h3>
+Compiling...
+xan.c
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\common.h(225) : warning C4005: 'NDEBUG' : macro redefinition
+        unknown(0) : see previous definition of 'NDEBUG'
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\common.h(800) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(122) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(123) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(124) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(126) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(127) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(128) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(130) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(131) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+F:\Projects\Video\Common\ffmpeg\current\src\libavcodec\xan.c(132) : warning C4244: '=' : conversion from 'double ' to 'int ', possible loss of data
+
+
+
+<h3>Results</h3>
+xan.obj - 0 error(s), 11 warning(s)
+</pre>
+</body>
+</html>

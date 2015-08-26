@@ -1,0 +1,49 @@
+OrderedGroup { 
+  children [
+    Background2D { 
+      backColor 0.0 0.0 0.7
+    }
+    Shape { 
+      appearance Appearance { 
+	material Material2D { 
+	  emissiveColor 0.0 1.0 0.0
+	  filled true
+	  lineProps LineProperties { 
+	    width 2.0
+	  }
+	}
+      }
+      geometry Curve2D { 
+	type [ 2 3 0 1 ]
+	point Coordinate2D { 
+	  point [ 0.0 0.0 10.0 -10.0 20.0 33.0 -30.0 -20.0 45.0 -45.0 0.0 0.0 -30.0 -30.0 -30.0 20.0 ]
+	}
+      }
+    }
+  ]
+}
+InitialObjectDescriptor {
+  objectDescriptorID 1
+  ODProfileLevelIndication 254
+  sceneProfileLevelIndication 254
+  audioProfileLevelIndication 254
+  visualProfileLevelIndication 254
+  graphicsProfileLevelIndication 254
+
+  esdescr [
+    ES_Descriptor {
+      es_id 1
+      decConfigDescr DecoderConfigDescriptor {
+				streamType 3
+				objectTypeIndication 1	#needed by MP4Tool
+				decSpecificInfo BIFSConfig {
+				  isCommandStream true
+				  pixelMetrics true
+				  pixelWidth 100
+				  pixelHeight 100
+				}
+      }
+      slConfigDescr SLConfigDescriptor {} #needed by MP4Tool
+    }
+  ]
+}

@@ -1,0 +1,946 @@
+EXPORTS
+    __dynarray_add @1
+    _dist_code @2 DATA
+    _length_code @3 DATA
+    _tr_align @4
+    _tr_flush_block @5
+    _tr_init @6
+    _tr_stored_block @7
+    _tr_tally @8
+    ac3_iformat @9 DATA
+    ac3_oformat @10 DATA
+    adler32 @11
+    asf_init @12
+    asf_oformat @13 DATA
+    asf_stream_oformat @14 DATA
+    au_init @15
+    av_add_index_entry @16
+    av_alloc_format_context @17
+    av_close_input_file @18
+    av_dup_packet @19
+    av_find_default_stream_index @20
+    av_find_input_format @21
+    av_find_stream_info @22
+    av_frac_add @23
+    av_frac_init @24
+    av_frac_set @25
+    av_gettime @26
+    av_hex_dump @27
+    av_index_search_timestamp @28
+    av_interleaved_write_frame @29
+    av_new_packet @30
+    av_new_stream @31
+    av_open_input_file @32
+    av_open_input_stream @33
+    av_pkt_dump @34
+    av_probe_image_format @35
+    av_probe_input_format @36
+    av_read_frame @37
+    av_read_image @38
+    av_read_packet @39
+    av_read_pause @40
+    av_read_play @41
+    av_register_all @42
+    av_register_image_format @43
+    av_register_input_format @44
+    av_register_output_format @45
+    av_seek_frame @46
+    av_seek_frame_binary @47
+    av_set_parameters @48
+    av_set_pts_info @49
+    av_write_frame @50
+    av_write_header @51
+    av_write_image @52
+    av_write_trailer @53
+    avidec_init @54
+    avienc_init @55
+    brktimegm @56
+    codec_bmp_tags @57 DATA
+    codec_get_bmp_id @58
+    codec_get_bmp_tag @59
+    codec_get_id @60
+    codec_get_tag @61
+    codec_get_wav_id @62
+    codec_get_wav_tag @63
+    codec_movaudio_tags @64 DATA
+    codec_movvideo_tags @65 DATA
+    codec_wav_tags @66 DATA
+    crc32 @67
+    crc_init @68
+    deflate @69
+    deflateCopy @70
+    deflateEnd @71
+    deflateInit2_ @72
+    deflateInit_ @73
+    deflateParams @74
+    deflateReset @75
+    deflateSetDictionary @76
+    deflate_copyright @77 DATA
+    dts_iformat @78 DATA
+    dump_format @79
+    dv_assemble_frame @80
+    dv_delete_mux @81
+    dv_frame_offset @82
+    dv_get_packet @83
+    dv_init_demux @84
+    dv_init_mux @85
+    dv_produce_packet @86
+    end_tag @87
+    ff_dv_init @88
+    ff_qt_default_palette_16 @89 DATA
+    ff_qt_default_palette_256 @90 DATA
+    ff_qt_default_palette_4 @91 DATA
+    ff_wav_init @92
+    ffm_init @93
+    ffm_nopts @94 DATA
+    ffm_read_write_index @95
+    ffm_set_write_index @96
+    ffm_write_write_index @97
+    fifo_free @98
+    fifo_init @99
+    fifo_read @100
+    fifo_size @101
+    fifo_write @102
+    file_protocol @103 DATA
+    filename_number_test @104
+    film_init @105
+    find_info_tag @106
+    first_iformat @107 DATA
+    first_image_format @108 DATA
+    first_oformat @109 DATA
+    first_protocol @110 DATA
+    flic_init @111
+    flv_iformat @112 DATA
+    flvdec_init @113
+    flvenc_init @114
+    fourxm_init @115
+    frame_hook_add @116
+    frame_hook_process @117
+    frame_hook_release @118
+    get_be16 @119
+    get_be24 @120
+    get_be32 @121
+    get_be64 @122
+    get_be64_double @123
+    get_buffer @124
+    get_byte @125
+    get_checksum @126
+    get_crc_table @127
+    get_frame_filename @128
+    get_le16 @129
+    get_le32 @130
+    get_le64 @131
+    get_partial_buffer @132
+    get_strz @133
+    get_wav_header @134
+    gif_iformat @135 DATA
+    gif_image_format @136 DATA
+    gif_init @137
+    gif_write @138
+    guess_format @139
+    guess_image_format @140
+    guess_stream_format @141
+    h261_iformat @142 DATA
+    h263_iformat @143 DATA
+    h263_oformat @144 DATA
+    h264_iformat @145 DATA
+    h264_oformat @146 DATA
+    idcin_init @147
+    img2_init @148
+    img_init @149
+    inflate @150
+    inflateEnd @151
+    inflateInit2_ @152
+    inflateInit_ @153
+    inflateReset @154
+    inflateSetDictionary @155
+    inflateSync @156
+    inflateSyncPoint @157
+    inflate_blocks @158
+    inflate_blocks_free @159
+    inflate_blocks_new @160
+    inflate_blocks_reset @161
+    inflate_blocks_sync_point @162
+    inflate_codes @163
+    inflate_codes_free @164
+    inflate_codes_new @165
+    inflate_copyright @166 DATA
+    inflate_fast @167
+    inflate_flush @168
+    inflate_mask @169 DATA
+    inflate_set_dictionary @170
+    inflate_trees_bits @171
+    inflate_trees_dynamic @172
+    inflate_trees_fixed @173
+    init_checksum @174
+    init_put_byte @175
+    ipmovie_init @176
+    jpeg_image_format @177 DATA
+    jpeg_init @178
+    localtime_r @179
+    loop_input @180 DATA
+    m4v_iformat @181 DATA
+    m4v_oformat @182 DATA
+    match_ext @183
+    matroska_init @184
+    mjpeg_iformat @185 DATA
+    mjpeg_oformat @186 DATA
+    mktimegm @187
+    mov_init @188
+    mov_write_ftyp_tag @189
+    mov_write_mdat_tag @190
+    movenc_init @191
+    mp2_oformat @192 DATA
+    mp3_iformat @193 DATA
+    mp3_init @194
+    mpeg1video_oformat @195 DATA
+    mpegps_demux @196 DATA
+    mpegps_init @197
+    mpegts_close_filter @198
+    mpegts_crc32 @199
+    mpegts_demux @200 DATA
+    mpegts_init @201
+    mpegts_mux @202 DATA
+    mpegts_open_pes_filter @203
+    mpegts_open_section_filter @204
+    mpegts_parse_close @205
+    mpegts_parse_open @206
+    mpegts_parse_packet @207
+    mpegts_scan_pat @208
+    mpegts_scan_sdt @209
+    mpegts_set_service @210
+    mpegts_write_section @211
+    mpegts_write_section1 @212
+    mpegvideo_iformat @213 DATA
+    null_oformat @214 DATA
+    nut_init @215
+    pam_image_format @216 DATA
+    parse_date @217
+    parse_frame_rate @218
+    parse_image_size @219
+    pbm_image_format @220 DATA
+    pcm_alaw_iformat @221 DATA
+    pcm_alaw_oformat @222 DATA
+    pcm_mulaw_iformat @223 DATA
+    pcm_mulaw_oformat @224 DATA
+    pcm_read_seek @225
+    pcm_s16be_iformat @226 DATA
+    pcm_s16be_oformat @227 DATA
+    pcm_s16le_iformat @228 DATA
+    pcm_s16le_oformat @229 DATA
+    pcm_s8_iformat @230 DATA
+    pcm_s8_oformat @231 DATA
+    pcm_u16be_iformat @232 DATA
+    pcm_u16be_oformat @233 DATA
+    pcm_u16le_iformat @234 DATA
+    pcm_u16le_oformat @235 DATA
+    pcm_u8_iformat @236 DATA
+    pcm_u8_oformat @237 DATA
+    pgm_image_format @238 DATA
+    pgmyuv_image_format @239 DATA
+    pipe_protocol @240 DATA
+    png_image_format @241 DATA
+    pnm_image_format @242 DATA
+    ppm_image_format @243 DATA
+    pstrcat @244
+    pstrcpy @245
+    put_be16 @246
+    put_be32 @247
+    put_be64 @248
+    put_be64_double @249
+    put_bmp_header @250
+    put_buffer @251
+    put_byte @252
+    put_flush_packet @253
+    put_le16 @254
+    put_le32 @255
+    put_le64 @256
+    put_strz @257
+    put_tag @258
+    put_wav_header @259
+    raw_init @260
+    rawvideo_iformat @261 DATA
+    rawvideo_oformat @262 DATA
+    register_protocol @263
+    rm_init @264
+    roq_init @265
+    set_service_cb @266
+    sgi_image_format @267 DATA
+    small_strptime @268
+    start_tag @269
+    str_init @270
+    stristart @271
+    strstart @272
+    swf_init @273
+    uncompress @274
+    update_adler32 @275
+    url_close @276
+    url_close_buf @277
+    url_close_dyn_buf @278
+    url_exist @279
+    url_fclose @280
+    url_fdopen @281
+    url_feof @282
+    url_fget_max_packet_size @283
+    url_fgetc @284
+    url_fgets @285
+    url_fileno @286
+    url_filesize @287
+    url_fopen @288
+    url_fprintf @289
+    url_fseek @290
+    url_fskip @291
+    url_ftell @292
+    url_get_filename @293
+    url_get_max_packet_size @294
+    url_interrupt_cb @295 DATA
+    url_open @296
+    url_open_buf @297
+    url_open_dyn_buf @298
+    url_open_dyn_packet_buf @299
+    url_read @300
+    url_seek @301
+    url_set_interrupt_cb @302
+    url_setbufsize @303
+    url_split @304
+    url_write @305
+    vmd_init @306
+    wav_codec_get_id @307
+    wc3_init @308
+    westwood_init @309
+    yuv4mpeg_init @310
+    yuv4mpegpipe_iformat @311 DATA
+    yuv4mpegpipe_oformat @312 DATA
+    yuv_image_format @313 DATA
+    zError @314
+    z_errmsg @315 DATA
+    zcalloc @316
+    zcfree @317
+    zlibVersion @318
+
+IMPORTS
+
+    avcodec.dll.DCT_common_init
+    avcodec.dll.DCtab_chrom
+    avcodec.dll.DCtab_lum
+    avcodec.dll.MPV_common_end
+    avcodec.dll.MPV_common_init
+    avcodec.dll.MPV_common_init_mmx
+    avcodec.dll.MPV_decode_defaults
+    avcodec.dll.MPV_decode_mb
+    avcodec.dll.MPV_encode_end
+    avcodec.dll.MPV_encode_init
+    avcodec.dll.MPV_encode_picture
+    avcodec.dll.MPV_frame_end
+    avcodec.dll.MPV_frame_start
+    avcodec.dll._dist_code
+    avcodec.dll._length_code
+    avcodec.dll._tr_align
+    avcodec.dll._tr_flush_block
+    avcodec.dll._tr_init
+    avcodec.dll._tr_stored_block
+    avcodec.dll._tr_tally
+    avcodec.dll.ac3_common_init
+    avcodec.dll.ac3_encoder
+    avcodec.dll.ac3_parametric_bit_allocation
+    avcodec.dll.add_pixels_clamped_mmx
+    avcodec.dll.adler32
+    avcodec.dll.adpcm_4xm_decoder
+    avcodec.dll.adpcm_4xm_encoder
+    avcodec.dll.adpcm_adx_decoder
+    avcodec.dll.adpcm_adx_encoder
+    avcodec.dll.adpcm_ea_decoder
+    avcodec.dll.adpcm_ea_encoder
+    avcodec.dll.adpcm_g726_decoder
+    avcodec.dll.adpcm_g726_encoder
+    avcodec.dll.adpcm_ima_dk3_decoder
+    avcodec.dll.adpcm_ima_dk3_encoder
+    avcodec.dll.adpcm_ima_dk4_decoder
+    avcodec.dll.adpcm_ima_dk4_encoder
+    avcodec.dll.adpcm_ima_qt_decoder
+    avcodec.dll.adpcm_ima_qt_encoder
+    avcodec.dll.adpcm_ima_smjpeg_decoder
+    avcodec.dll.adpcm_ima_smjpeg_encoder
+    avcodec.dll.adpcm_ima_wav_decoder
+    avcodec.dll.adpcm_ima_wav_encoder
+    avcodec.dll.adpcm_ima_ws_decoder
+    avcodec.dll.adpcm_ima_ws_encoder
+    avcodec.dll.adpcm_ms_decoder
+    avcodec.dll.adpcm_ms_encoder
+    avcodec.dll.adpcm_xa_decoder
+    avcodec.dll.adpcm_xa_encoder
+    avcodec.dll.adx_adpcm_decoder
+    avcodec.dll.adx_adpcm_encoder
+    avcodec.dll.align_get_bits
+    avcodec.dll.align_put_bits
+    avcodec.dll.alloc_tables
+    avcodec.dll.asv1_decoder
+    avcodec.dll.asv1_encoder
+    avcodec.dll.asv2_decoder
+    avcodec.dll.asv2_encoder
+    avcodec.dll.audio_resample
+    avcodec.dll.audio_resample_close
+    avcodec.dll.audio_resample_init
+    avcodec.dll.av_add_i
+    avcodec.dll.av_add_q
+    avcodec.dll.av_build_filter
+    avcodec.dll.av_cmp_i
+    avcodec.dll.av_d2q
+    avcodec.dll.av_div_i
+    avcodec.dll.av_div_q
+    avcodec.dll.av_fast_realloc
+    avcodec.dll.av_first_parser
+    avcodec.dll.av_free
+    avcodec.dll.av_free_static
+    avcodec.dll.av_freep
+    avcodec.dll.av_get_pict_type_char
+    avcodec.dll.av_i2int
+    avcodec.dll.av_int2i
+    avcodec.dll.av_log
+    avcodec.dll.av_log2_i
+    avcodec.dll.av_log_get_level
+    avcodec.dll.av_log_set_callback
+    avcodec.dll.av_log_set_level
+    avcodec.dll.av_malloc
+    avcodec.dll.av_mallocz
+    avcodec.dll.av_mallocz_static
+    avcodec.dll.av_mod_i
+    avcodec.dll.av_mul_i
+    avcodec.dll.av_mul_q
+    avcodec.dll.av_parser_close
+    avcodec.dll.av_parser_init
+    avcodec.dll.av_parser_parse
+    avcodec.dll.av_realloc
+    avcodec.dll.av_reduce
+    avcodec.dll.av_register_codec_parser
+    avcodec.dll.av_resample
+    avcodec.dll.av_resample_close
+    avcodec.dll.av_resample_compensate
+    avcodec.dll.av_resample_init
+    avcodec.dll.av_rescale
+    avcodec.dll.av_rescale_rnd
+    avcodec.dll.av_shr_i
+    avcodec.dll.av_strdup
+    avcodec.dll.av_sub_i
+    avcodec.dll.av_sub_q
+    avcodec.dll.av_vlog
+    avcodec.dll.avcodec_align_dimensions
+    avcodec.dll.avcodec_alloc_context
+    avcodec.dll.avcodec_alloc_frame
+    avcodec.dll.avcodec_build
+    avcodec.dll.avcodec_close
+    avcodec.dll.avcodec_decode_audio
+    avcodec.dll.avcodec_decode_video
+    avcodec.dll.avcodec_default_execute
+    avcodec.dll.avcodec_default_free_buffers
+    avcodec.dll.avcodec_default_get_buffer
+    avcodec.dll.avcodec_default_get_format
+    avcodec.dll.avcodec_default_reget_buffer
+    avcodec.dll.avcodec_default_release_buffer
+    avcodec.dll.avcodec_encode_audio
+    avcodec.dll.avcodec_encode_video
+    avcodec.dll.avcodec_find_best_pix_fmt
+    avcodec.dll.avcodec_find_decoder
+    avcodec.dll.avcodec_find_decoder_by_name
+    avcodec.dll.avcodec_find_encoder
+    avcodec.dll.avcodec_find_encoder_by_name
+    avcodec.dll.avcodec_flush_buffers
+    avcodec.dll.avcodec_get_chroma_sub_sample
+    avcodec.dll.avcodec_get_context_defaults
+    avcodec.dll.avcodec_get_frame_defaults
+    avcodec.dll.avcodec_get_pix_fmt
+    avcodec.dll.avcodec_get_pix_fmt_loss
+    avcodec.dll.avcodec_get_pix_fmt_name
+    avcodec.dll.avcodec_init
+    avcodec.dll.avcodec_open
+    avcodec.dll.avcodec_register_all
+    avcodec.dll.avcodec_string
+    avcodec.dll.avcodec_thread_execute
+    avcodec.dll.avcodec_thread_free
+    avcodec.dll.avcodec_thread_init
+    avcodec.dll.avcodec_version
+    avcodec.dll.avoption_parse
+    avcodec.dll.avoptions_common
+    avcodec.dll.avoptions_workaround_bug
+    avcodec.dll.avpicture_alloc
+    avcodec.dll.avpicture_deinterlace
+    avcodec.dll.avpicture_fill
+    avcodec.dll.avpicture_free
+    avcodec.dll.avpicture_get_size
+    avcodec.dll.avpicture_layout
+    avcodec.dll.band_size_long
+    avcodec.dll.band_size_short
+    avcodec.dll.bessel
+    avcodec.dll.cbpc_b_tab
+    avcodec.dll.cbpy_tab
+    avcodec.dll.check_marker
+    avcodec.dll.ci_table
+    avcodec.dll.cinepak_decoder
+    avcodec.dll.cljr_decoder
+    avcodec.dll.cropTbl
+    avcodec.dll.cyuv_decoder
+    avcodec.dll.deflate
+    avcodec.dll.deflateCopy
+    avcodec.dll.deflateEnd
+    avcodec.dll.deflateInit2_
+    avcodec.dll.deflateInit_
+    avcodec.dll.deflateParams
+    avcodec.dll.deflateReset
+    avcodec.dll.deflateSetDictionary
+    avcodec.dll.deflate_copyright
+    avcodec.dll.draw_edges
+    avcodec.dll.dsputil_init
+    avcodec.dll.dsputil_init_mmx
+    avcodec.dll.dsputil_init_pix_mmx
+    avcodec.dll.dsputil_static_init
+    avcodec.dll.dvvideo_decoder
+    avcodec.dll.dvvideo_encoder
+    avcodec.dll.eightbps_decoder
+    avcodec.dll.fdct_ifast
+    avcodec.dll.fdct_ifast248
+    avcodec.dll.fdct_r_row_sse2
+    avcodec.dll.ff_aic_dc_scale_table
+    avcodec.dll.ff_alternate_horizontal_scan
+    avcodec.dll.ff_alternate_vertical_scan
+    avcodec.dll.ff_avg_qpel16_mc11_old_c
+    avcodec.dll.ff_avg_qpel16_mc12_old_c
+    avcodec.dll.ff_avg_qpel16_mc13_old_c
+    avcodec.dll.ff_avg_qpel16_mc31_old_c
+    avcodec.dll.ff_avg_qpel16_mc32_old_c
+    avcodec.dll.ff_avg_qpel16_mc33_old_c
+    avcodec.dll.ff_avg_qpel8_mc11_old_c
+    avcodec.dll.ff_avg_qpel8_mc12_old_c
+    avcodec.dll.ff_avg_qpel8_mc13_old_c
+    avcodec.dll.ff_avg_qpel8_mc31_old_c
+    avcodec.dll.ff_avg_qpel8_mc32_old_c
+    avcodec.dll.ff_avg_qpel8_mc33_old_c
+    avcodec.dll.ff_block_permute
+    avcodec.dll.ff_clean_h263_qscales
+    avcodec.dll.ff_clean_intra_table_entries
+    avcodec.dll.ff_clean_mpeg4_qscales
+    avcodec.dll.ff_combine_frame
+    avcodec.dll.ff_copy_bits
+    avcodec.dll.ff_draw_horiz_band
+    avcodec.dll.ff_emulated_edge_mc
+    avcodec.dll.ff_epzs_motion_search
+    avcodec.dll.ff_er_add_slice
+    avcodec.dll.ff_er_frame_end
+    avcodec.dll.ff_er_frame_start
+    avcodec.dll.ff_estimate_b_frame_motion
+    avcodec.dll.ff_estimate_p_frame_motion
+    avcodec.dll.ff_eval
+    avcodec.dll.ff_faandct
+    avcodec.dll.ff_faandct248
+    avcodec.dll.ff_fdct248_islow
+    avcodec.dll.ff_fdct_mmx
+    avcodec.dll.ff_fdct_mmx2
+    avcodec.dll.ff_fdct_sse2
+    avcodec.dll.ff_fft_calc_c
+    avcodec.dll.ff_fft_calc_sse
+    avcodec.dll.ff_fft_end
+    avcodec.dll.ff_fft_init
+    avcodec.dll.ff_fft_permute
+    avcodec.dll.ff_find_unused_picture
+    avcodec.dll.ff_fix_long_mvs
+    avcodec.dll.ff_fix_long_p_mvs
+    avcodec.dll.ff_flv_encode_picture_header
+    avcodec.dll.ff_gcd
+    avcodec.dll.ff_get_best_fcode
+    avcodec.dll.ff_get_mb_score
+    avcodec.dll.ff_golomb_vlc_len
+    avcodec.dll.ff_h261_loop_filter
+    avcodec.dll.ff_h263_chroma_qscale_table
+    avcodec.dll.ff_h263_decode_end
+    avcodec.dll.ff_h263_decode_frame
+    avcodec.dll.ff_h263_decode_init
+    avcodec.dll.ff_h263_decode_mb
+    avcodec.dll.ff_h263_decode_mba
+    avcodec.dll.ff_h263_encode_mba
+    avcodec.dll.ff_h263_encode_motion
+    avcodec.dll.ff_h263_get_gob_height
+    avcodec.dll.ff_h263_loop_filter
+    avcodec.dll.ff_h263_loop_filter_strength
+    avcodec.dll.ff_h263_resync
+    avcodec.dll.ff_h263_round_chroma
+    avcodec.dll.ff_h263_update_motion_val
+    avcodec.dll.ff_h264_lps_range
+    avcodec.dll.ff_h264_lps_state
+    avcodec.dll.ff_h264_mps_state
+    avcodec.dll.ff_imdct_calc
+    avcodec.dll.ff_init_block_index
+    avcodec.dll.ff_init_cabac_decoder
+    avcodec.dll.ff_init_cabac_encoder
+    avcodec.dll.ff_init_cabac_states
+    avcodec.dll.ff_init_me
+    avcodec.dll.ff_init_scantable
+    avcodec.dll.ff_interleaved_golomb_vlc_len
+    avcodec.dll.ff_interleaved_se_golomb_vlc_code
+    avcodec.dll.ff_interleaved_ue_golomb_vlc_code
+    avcodec.dll.ff_jpeg_fdct_islow
+    avcodec.dll.ff_log2_tab
+    avcodec.dll.ff_mba_length
+    avcodec.dll.ff_mba_max
+    avcodec.dll.ff_mdct_calc
+    avcodec.dll.ff_mdct_end
+    avcodec.dll.ff_mdct_init
+    avcodec.dll.ff_mjpeg_stuffing
+    avcodec.dll.ff_mmx_idct
+    avcodec.dll.ff_mmxext_idct
+    avcodec.dll.ff_mpeg1_clean_buffers
+    avcodec.dll.ff_mpeg1_dc_scale_table
+    avcodec.dll.ff_mpeg1_default_intra_matrix
+    avcodec.dll.ff_mpeg1_default_non_intra_matrix
+    avcodec.dll.ff_mpeg1_encode_init
+    avcodec.dll.ff_mpeg1_encode_slice_header
+    avcodec.dll.ff_mpeg1_find_frame_end
+    avcodec.dll.ff_mpeg4_c_dc_scale_table
+    avcodec.dll.ff_mpeg4_clean_buffers
+    avcodec.dll.ff_mpeg4_decode_mb
+    avcodec.dll.ff_mpeg4_decode_partitions
+    avcodec.dll.ff_mpeg4_decode_picture_header
+    avcodec.dll.ff_mpeg4_default_intra_matrix
+    avcodec.dll.ff_mpeg4_default_non_intra_matrix
+    avcodec.dll.ff_mpeg4_encode_video_packet_header
+    avcodec.dll.ff_mpeg4_find_frame_end
+    avcodec.dll.ff_mpeg4_get_video_packet_prefix_length
+    avcodec.dll.ff_mpeg4_init_partitions
+    avcodec.dll.ff_mpeg4_merge_partitions
+    avcodec.dll.ff_mpeg4_resync_prefix
+    avcodec.dll.ff_mpeg4_set_direct_mv
+    avcodec.dll.ff_mpeg4_stuffing
+    avcodec.dll.ff_mpeg4_y_dc_scale_table
+    avcodec.dll.ff_mpeg_flush
+    avcodec.dll.ff_msmpeg4_decode_init
+    avcodec.dll.ff_msmpeg4_encode_init
+    avcodec.dll.ff_mspel_motion
+    avcodec.dll.ff_parse_close
+    avcodec.dll.ff_pre_estimate_p_frame_motion
+    avcodec.dll.ff_print_debug_info
+    avcodec.dll.ff_put_no_rnd_qpel16_mc11_old_c
+    avcodec.dll.ff_put_no_rnd_qpel16_mc12_old_c
+    avcodec.dll.ff_put_no_rnd_qpel16_mc13_old_c
+    avcodec.dll.ff_put_no_rnd_qpel16_mc31_old_c
+    avcodec.dll.ff_put_no_rnd_qpel16_mc32_old_c
+    avcodec.dll.ff_put_no_rnd_qpel16_mc33_old_c
+    avcodec.dll.ff_put_no_rnd_qpel8_mc11_old_c
+    avcodec.dll.ff_put_no_rnd_qpel8_mc12_old_c
+    avcodec.dll.ff_put_no_rnd_qpel8_mc13_old_c
+    avcodec.dll.ff_put_no_rnd_qpel8_mc31_old_c
+    avcodec.dll.ff_put_no_rnd_qpel8_mc32_old_c
+    avcodec.dll.ff_put_no_rnd_qpel8_mc33_old_c
+    avcodec.dll.ff_put_qpel16_mc11_old_c
+    avcodec.dll.ff_put_qpel16_mc12_old_c
+    avcodec.dll.ff_put_qpel16_mc13_old_c
+    avcodec.dll.ff_put_qpel16_mc31_old_c
+    avcodec.dll.ff_put_qpel16_mc32_old_c
+    avcodec.dll.ff_put_qpel16_mc33_old_c
+    avcodec.dll.ff_put_qpel8_mc11_old_c
+    avcodec.dll.ff_put_qpel8_mc12_old_c
+    avcodec.dll.ff_put_qpel8_mc13_old_c
+    avcodec.dll.ff_put_qpel8_mc31_old_c
+    avcodec.dll.ff_put_qpel8_mc32_old_c
+    avcodec.dll.ff_put_qpel8_mc33_old_c
+    avcodec.dll.ff_rate_control_init
+    avcodec.dll.ff_rate_control_uninit
+    avcodec.dll.ff_rate_estimate_qscale
+    avcodec.dll.ff_se_golomb_vlc_code
+    avcodec.dll.ff_set_cmp
+    avcodec.dll.ff_set_mpeg4_time
+    avcodec.dll.ff_set_qscale
+    avcodec.dll.ff_simple_idct_add_mmx
+    avcodec.dll.ff_simple_idct_mmx
+    avcodec.dll.ff_simple_idct_put_mmx
+    avcodec.dll.ff_spatial_dwt
+    avcodec.dll.ff_spatial_idwt
+    avcodec.dll.ff_sqrt_tab
+    avcodec.dll.ff_ue_golomb_len
+    avcodec.dll.ff_ue_golomb_vlc_code
+    avcodec.dll.ff_update_duplicate_context
+    avcodec.dll.ff_vbv_update
+    avcodec.dll.ff_wmv2_add_mb
+    avcodec.dll.ff_wmv2_decode_picture_header
+    avcodec.dll.ff_wmv2_decode_secondary_picture_header
+    avcodec.dll.ff_wmv2_encode_mb
+    avcodec.dll.ff_wmv2_encode_picture_header
+    avcodec.dll.ff_write_pass1_stats
+    avcodec.dll.ff_write_quant_matrix
+    avcodec.dll.ff_yuv420p_list
+    avcodec.dll.ff_zigzag248_direct
+    avcodec.dll.ff_zigzag_direct
+    avcodec.dll.ffv1_decoder
+    avcodec.dll.ffv1_encoder
+    avcodec.dll.first_avcodec
+    avcodec.dll.flac_decoder
+    avcodec.dll.flic_decoder
+    avcodec.dll.flv_decoder
+    avcodec.dll.flv_encoder
+    avcodec.dll.flv_h263_decode_picture_header
+    avcodec.dll.fourxm_decoder
+    avcodec.dll.free_vlc
+    avcodec.dll.get_bits_long
+    avcodec.dll.h261_cbp_tab
+    avcodec.dll.h261_decode_picture_header
+    avcodec.dll.h261_decoder
+    avcodec.dll.h261_mba_bits
+    avcodec.dll.h261_mba_code
+    avcodec.dll.h261_mtype_bits
+    avcodec.dll.h261_mtype_code
+    avcodec.dll.h261_mv_tab
+    avcodec.dll.h261_parser
+    avcodec.dll.h261_tcoeff_level
+    avcodec.dll.h261_tcoeff_run
+    avcodec.dll.h261_tcoeff_vlc
+    avcodec.dll.h263_decode_init_vlc
+    avcodec.dll.h263_decode_picture_header
+    avcodec.dll.h263_decoder
+    avcodec.dll.h263_encode_gob_header
+    avcodec.dll.h263_encode_init
+    avcodec.dll.h263_encode_mb
+    avcodec.dll.h263_encode_picture_header
+    avcodec.dll.h263_encoder
+    avcodec.dll.h263_get_picture_format
+    avcodec.dll.h263_parser
+    avcodec.dll.h263_pred_motion
+    avcodec.dll.h263i_decoder
+    avcodec.dll.h263p_encoder
+    avcodec.dll.h264_decoder
+    avcodec.dll.h264_parser
+    avcodec.dll.huffyuv_decoder
+    avcodec.dll.huffyuv_encoder
+    avcodec.dll.idcin_decoder
+    avcodec.dll.img_convert
+    avcodec.dll.img_copy
+    avcodec.dll.img_get_alpha_info
+    avcodec.dll.img_resample
+    avcodec.dll.img_resample_close
+    avcodec.dll.img_resample_full_init
+    avcodec.dll.img_resample_init
+    avcodec.dll.indeo3_decoder
+    avcodec.dll.inflate
+    avcodec.dll.inflateEnd
+    avcodec.dll.inflateInit2_
+    avcodec.dll.inflateInit_
+    avcodec.dll.inflateReset
+    avcodec.dll.inflateSetDictionary
+    avcodec.dll.inflateSync
+    avcodec.dll.inflateSyncPoint
+    avcodec.dll.inflate_blocks
+    avcodec.dll.inflate_blocks_free
+    avcodec.dll.inflate_blocks_new
+    avcodec.dll.inflate_blocks_reset
+    avcodec.dll.inflate_blocks_sync_point
+    avcodec.dll.inflate_codes
+    avcodec.dll.inflate_codes_free
+    avcodec.dll.inflate_codes_new
+    avcodec.dll.inflate_copyright
+    avcodec.dll.inflate_fast
+    avcodec.dll.inflate_flush
+    avcodec.dll.inflate_mask
+    avcodec.dll.inflate_set_dictionary
+    avcodec.dll.inflate_trees_bits
+    avcodec.dll.inflate_trees_dynamic
+    avcodec.dll.inflate_trees_fixed
+    avcodec.dll.init_rl
+    avcodec.dll.init_vlc
+    avcodec.dll.init_vlc_rl
+    avcodec.dll.intel_h263_decode_picture_header
+    avcodec.dll.inter_MCBPC_bits
+    avcodec.dll.inter_MCBPC_code
+    avcodec.dll.inter_level
+    avcodec.dll.inter_run
+    avcodec.dll.inter_vlc
+    avcodec.dll.interplay_dpcm_decoder
+    avcodec.dll.interplay_video_decoder
+    avcodec.dll.intra_MCBPC_bits
+    avcodec.dll.intra_MCBPC_code
+    avcodec.dll.intra_level
+    avcodec.dll.intra_level_aic
+    avcodec.dll.intra_run
+    avcodec.dll.intra_run_aic
+    avcodec.dll.intra_vlc
+    avcodec.dll.intra_vlc_aic
+    avcodec.dll.inv_zigzag_direct16
+    avcodec.dll.inverse
+    avcodec.dll.is_adx
+    avcodec.dll.j_rev_dct
+    avcodec.dll.j_rev_dct1
+    avcodec.dll.j_rev_dct2
+    avcodec.dll.j_rev_dct4
+    avcodec.dll.l2_select_table
+    avcodec.dll.ljpeg_encoder
+    avcodec.dll.mace3_decoder
+    avcodec.dll.mace6_decoder
+    avcodec.dll.mdec_decoder
+    avcodec.dll.mjpeg_close
+    avcodec.dll.mjpeg_decoder
+    avcodec.dll.mjpeg_encode_mb
+    avcodec.dll.mjpeg_encoder
+    avcodec.dll.mjpeg_init
+    avcodec.dll.mjpeg_picture_header
+    avcodec.dll.mjpeg_picture_trailer
+    avcodec.dll.mjpegb_decoder
+    avcodec.dll.mm_flags
+    avcodec.dll.mm_support
+    avcodec.dll.mp2_decoder
+    avcodec.dll.mp2_encoder
+    avcodec.dll.mp3_decoder
+    avcodec.dll.mpa_bitrate_tab
+    avcodec.dll.mpa_decode_header
+    avcodec.dll.mpa_enwindow
+    avcodec.dll.mpa_freq_tab
+    avcodec.dll.mpa_huff_data
+    avcodec.dll.mpa_huff_tables
+    avcodec.dll.mpa_huffbits_1
+    avcodec.dll.mpa_huffbits_10
+    avcodec.dll.mpa_huffbits_11
+    avcodec.dll.mpa_huffbits_12
+    avcodec.dll.mpa_huffbits_13
+    avcodec.dll.mpa_huffbits_15
+    avcodec.dll.mpa_huffbits_16
+    avcodec.dll.mpa_huffbits_2
+    avcodec.dll.mpa_huffbits_24
+    avcodec.dll.mpa_huffbits_3
+    avcodec.dll.mpa_huffbits_5
+    avcodec.dll.mpa_huffbits_6
+    avcodec.dll.mpa_huffbits_7
+    avcodec.dll.mpa_huffbits_8
+    avcodec.dll.mpa_huffbits_9
+    avcodec.dll.mpa_huffcodes_1
+    avcodec.dll.mpa_huffcodes_10
+    avcodec.dll.mpa_huffcodes_11
+    avcodec.dll.mpa_huffcodes_12
+    avcodec.dll.mpa_huffcodes_13
+    avcodec.dll.mpa_huffcodes_15
+    avcodec.dll.mpa_huffcodes_16
+    avcodec.dll.mpa_huffcodes_2
+    avcodec.dll.mpa_huffcodes_24
+    avcodec.dll.mpa_huffcodes_3
+    avcodec.dll.mpa_huffcodes_5
+    avcodec.dll.mpa_huffcodes_6
+    avcodec.dll.mpa_huffcodes_7
+    avcodec.dll.mpa_huffcodes_8
+    avcodec.dll.mpa_huffcodes_9
+    avcodec.dll.mpa_pretab
+    avcodec.dll.mpeg1_encode_mb
+    avcodec.dll.mpeg1_encode_picture_header
+    avcodec.dll.mpeg1video_decoder
+    avcodec.dll.mpeg1video_encoder
+    avcodec.dll.mpeg2video_decoder
+    avcodec.dll.mpeg2video_encoder
+    avcodec.dll.mpeg4_decoder
+    avcodec.dll.mpeg4_encode_mb
+    avcodec.dll.mpeg4_encode_picture_header
+    avcodec.dll.mpeg4_encoder
+    avcodec.dll.mpeg4_pred_ac
+    avcodec.dll.mpeg4video_parser
+    avcodec.dll.mpegaudio_parser
+    avcodec.dll.mpegvideo_decoder
+    avcodec.dll.mpegvideo_parser
+    avcodec.dll.msmpeg4_decode_ext_header
+    avcodec.dll.msmpeg4_decode_picture_header
+    avcodec.dll.msmpeg4_encode_ext_header
+    avcodec.dll.msmpeg4_encode_mb
+    avcodec.dll.msmpeg4_encode_picture_header
+    avcodec.dll.msmpeg4v1_decoder
+    avcodec.dll.msmpeg4v1_encoder
+    avcodec.dll.msmpeg4v2_decoder
+    avcodec.dll.msmpeg4v2_encoder
+    avcodec.dll.msmpeg4v3_decoder
+    avcodec.dll.msmpeg4v3_encoder
+    avcodec.dll.msrle_decoder
+    avcodec.dll.msvideo1_decoder
+    avcodec.dll.mszh_decoder
+    avcodec.dll.mvtab
+    avcodec.dll.pcm_alaw_decoder
+    avcodec.dll.pcm_alaw_encoder
+    avcodec.dll.pcm_mulaw_decoder
+    avcodec.dll.pcm_mulaw_encoder
+    avcodec.dll.pcm_s16be_decoder
+    avcodec.dll.pcm_s16be_encoder
+    avcodec.dll.pcm_s16le_decoder
+    avcodec.dll.pcm_s16le_encoder
+    avcodec.dll.pcm_s8_decoder
+    avcodec.dll.pcm_s8_encoder
+    avcodec.dll.pcm_u16be_decoder
+    avcodec.dll.pcm_u16be_encoder
+    avcodec.dll.pcm_u16le_decoder
+    avcodec.dll.pcm_u16le_encoder
+    avcodec.dll.pcm_u8_decoder
+    avcodec.dll.pcm_u8_encoder
+    avcodec.dll.pixelFormatTags
+    avcodec.dll.pixfmt_rgb24
+    avcodec.dll.pixfmt_xvmc_mpg2_420
+    avcodec.dll.pixfmt_yuv_420
+    avcodec.dll.pixfmt_yuv_422
+    avcodec.dll.pixfmt_yuv_444
+    avcodec.dll.put_pixels_clamped_mmx
+    avcodec.dll.put_signed_pixels_clamped_mmx
+    avcodec.dll.put_string
+    avcodec.dll.qtrle_decoder
+    avcodec.dll.quant_bits
+    avcodec.dll.quant_steps
+    avcodec.dll.ra_144_decoder
+    avcodec.dll.ra_288_decoder
+    avcodec.dll.rawvideo_decoder
+    avcodec.dll.rawvideo_encoder
+    avcodec.dll.register_avcodec
+    avcodec.dll.roq_decoder
+    avcodec.dll.roq_dpcm_decoder
+    avcodec.dll.rpza_decoder
+    avcodec.dll.rv10_decoder
+    avcodec.dll.rv10_encode_picture_header
+    avcodec.dll.rv10_encoder
+    avcodec.dll.rv20_decoder
+    avcodec.dll.rv_decode_dc
+    avcodec.dll.sblimit_table
+    avcodec.dll.show_bits_long
+    avcodec.dll.simple_idct
+    avcodec.dll.simple_idct248_put
+    avcodec.dll.simple_idct48_add
+    avcodec.dll.simple_idct84_add
+    avcodec.dll.simple_idct_add
+    avcodec.dll.simple_idct_put
+    avcodec.dll.smc_decoder
+    avcodec.dll.snow_decoder
+    avcodec.dll.snow_encoder
+    avcodec.dll.sonic_decoder
+    avcodec.dll.sonic_encoder
+    avcodec.dll.sonic_ls_encoder
+    avcodec.dll.sp5x_decoder
+    avcodec.dll.squareTbl
+    avcodec.dll.svq1_decoder
+    avcodec.dll.svq1_encoder
+    avcodec.dll.svq3_decoder
+    avcodec.dll.tab_frw_01234567_sse2
+    avcodec.dll.theora_decoder
+    avcodec.dll.truemotion1_decoder
+    avcodec.dll.tscc_decoder
+    avcodec.dll.ulti_decoder
+    avcodec.dll.vcr1_decoder
+    avcodec.dll.vlc_dc_chroma_bits
+    avcodec.dll.vlc_dc_chroma_code
+    avcodec.dll.vmdaudio_decoder
+    avcodec.dll.vmdvideo_decoder
+    avcodec.dll.vp3_decoder
+    avcodec.dll.vp3_dsp_init_c
+    avcodec.dll.vp3_dsp_init_mmx
+    avcodec.dll.vp3_dsp_init_sse2
+    avcodec.dll.vp3_idct_c
+    avcodec.dll.vp3_idct_mmx
+    avcodec.dll.vp3_idct_sse2
+    avcodec.dll.vqa_decoder
+    avcodec.dll.wmav1_decoder
+    avcodec.dll.wmav2_decoder
+    avcodec.dll.wmv1_decoder
+    avcodec.dll.wmv1_encoder
+    avcodec.dll.wmv2_decoder
+    avcodec.dll.wmv2_encoder
+    avcodec.dll.xan_dpcm_decoder
+    avcodec.dll.xan_wc3_decoder
+    avcodec.dll.zError
+    avcodec.dll.z_errmsg
+    avcodec.dll.zcalloc
+    avcodec.dll.zcfree
+    avcodec.dll.zlibVersion
+    avcodec.dll.zlib_decoder
+    avcodec.dll.zlib_encoder

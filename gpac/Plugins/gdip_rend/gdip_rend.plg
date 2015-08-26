@@ -1,0 +1,561 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LASeR_dec - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+LASeR_dec.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LASeR_dec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+LASeR_dec.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: M4Systems_dll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+M4Systems.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SDL_out - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP351.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32Rel/SDL_out.pch" /YX /Fo"Obj/W32Rel/" /Fd"Obj/W32Rel/" /FD /c 
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_audio.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video2d.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SoftStretch.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP351.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP352.tmp" with contents
+[
+SDL.lib user32.lib /nologo /dll /incremental:no /pdb:"Obj/W32Rel/SDL_out.pdb" /machine:I386 /def:".\SDL_out.def" /out:"../../bin/Release/SDL_out.dll" /implib:"Obj/W32Rel/SDL_out.lib" 
+.\Obj\W32Rel\SDL_audio.obj
+.\Obj\W32Rel\SDL_out.obj
+.\Obj\W32Rel\SDL_video.obj
+.\Obj\W32Rel\SDL_video2d.obj
+.\Obj\W32Rel\SoftStretch.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP352.tmp"
+<h3>Output Window</h3>
+Compiling...
+SDL_audio.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_out.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video2d.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SoftStretch.c
+E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+MP42AVI.exe - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SDL_out - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP353.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Obj/W32Deb/SDL_out.pch" /YX /Fo"Obj/W32Deb/" /Fd"Obj/W32Deb/" /FD /GZ /c 
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_audio.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_out.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SDL_video2d.c"
+"E:\GPAC\gpac\PLUGINS\SDL_out\SoftStretch.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP353.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP354.tmp" with contents
+[
+SDL.lib user32.lib /nologo /dll /incremental:yes /pdb:"Obj/W32Deb/SDL_out.pdb" /debug /machine:I386 /def:".\SDL_out.def" /out:"../../bin/Debug/SDL_out.dll" /implib:"Obj/W32Deb/SDL_out.lib" /pdbtype:sept 
+.\Obj\W32Deb\SDL_audio.obj
+.\Obj\W32Deb\SDL_out.obj
+.\Obj\W32Deb\SDL_video.obj
+.\Obj\W32Deb\SDL_video2d.obj
+.\Obj\W32Deb\SoftStretch.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP354.tmp"
+<h3>Output Window</h3>
+Compiling...
+SDL_audio.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_out.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SDL_video2d.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+SoftStretch.c
+e:\gpac\gpac\plugins\sdl_out\sdl_out.h(29) : fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+MP42AVI.exe - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MP4Box - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+MP4Box.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MP4Box - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+MP4Box.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ffmpeg_in - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP355.tmp" with contents
+[
+avcodec.lib avformat.lib /nologo /dll /incremental:no /pdb:"Obj/W32Rel/ffmpeg_in.pdb" /machine:I386 /def:".\ffmpeg_in.def" /out:"../../bin/Release/ffmpeg_in.dll" /implib:"Obj/W32Rel/ffmpeg_in.lib" /libpath:"../../extra_lib/lib/w32_release" 
+.\Obj\W32Rel\ffmpeg_decode.obj
+.\Obj\W32Rel\ffmpeg_demux.obj
+.\Obj\W32Rel\ffmpeg_load.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP355.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : fatal error LNK1181: cannot open input file "avcodec.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+MP4Client.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ffmpeg_in - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP356.tmp" with contents
+[
+avcodec.lib avformat.lib /nologo /dll /incremental:yes /pdb:"Obj/W32Deb/ffmpeg_in.pdb" /debug /machine:I386 /def:".\ffmpeg_in.def" /out:"../../bin/Debug/ffmpeg_in.dll" /implib:"Obj/W32Deb/ffmpeg_in.lib" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Obj\W32Deb\ffmpeg_decode.obj
+.\Obj\W32Deb\ffmpeg_demux.obj
+.\Obj\W32Deb\ffmpeg_load.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP356.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : fatal error LNK1104: cannot open file "avcodec.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+MP4Client.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: svg_loader - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP357.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /I "../../M4Systems/SVG" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SVG_LOADER_EXPORTS" /Fp"Obj/Release/svg_loader.pch" /YX /Fo"Obj/Release/" /Fd"Obj/Release/" /FD /c 
+"E:\GPAC\gpac\PLUGINS\svg_loader\svg_loader.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP357.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP358.tmp" with contents
+[
+libxml2.lib iconv.lib zlib.lib /nologo /dll /incremental:no /pdb:"Obj/Release/svg_loader.pdb" /machine:I386 /def:".\svg_loader.def" /out:"../../bin/Release/svg_loader.dll" /implib:"Obj/Release/svg_loader.lib" /libpath:"../../extra_lib/lib/w32_release" 
+.\Obj\Release\svg_loader.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP358.tmp"
+<h3>Output Window</h3>
+Compiling...
+svg_loader.c
+E:\GPAC\gpac\PLUGINS\svg_loader\svg_loader.c(33) : fatal error C1083: Cannot open include file: 'libxml/tree.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Osmo4.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: svg_loader - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP359.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /I "../../extra_lib/include" /I "../../M4Systems/SVG" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Obj/Debug/svg_loader.pch" /YX /Fo"Obj/Debug/" /Fd"Obj/Debug/" /FD /GZ /c 
+"E:\GPAC\gpac\PLUGINS\svg_loader\svg_loader.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP359.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35A.tmp" with contents
+[
+js32.lib winmm.lib libxml2.lib zlib.lib libxml2.lib zlib.lib /nologo /dll /incremental:yes /pdb:"Obj/Debug/svg_loader.pdb" /debug /machine:I386 /def:".\svg_loader.def" /out:"../../bin/Debug/svg_loader.dll" /implib:"Obj/Debug/svg_loader.lib" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Obj\Debug\svg_loader.obj
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35A.tmp"
+<h3>Output Window</h3>
+Compiling...
+svg_loader.c
+e:\gpac\gpac\plugins\svg_loader\svg_loader.c(33) : fatal error C1083: Cannot open include file: 'libxml/tree.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Osmo4.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: V4Studio - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"Release/V4Studio.res" /i "E:\MesProjets\wxWindows\include" /i "rc" /d "NDEBUG" "E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc"" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "__WINDOWS__" /D "__WXMSW__" /D "__WXDEBUG__" /D WXDEBUG=1 /D "__WIN95__" /D "__WIN32__" /D WINVER=0x0400 /D "STRICT" /Fp"Release/V4Studio.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GPAC\gpac\Applications\V4Studio\V4FieldList.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4SceneGraph.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioApp.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioFrame.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioTree.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\wxGPACPanel.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35B.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35C.tmp" with contents
+[
+wxmsw25_html.lib wxbase25.lib wxmsw25_core.lib wxmsw25_adv.lib wxbase25_xml.lib wxexpat.lib wxmsw25_xrc.lib js32.lib ws2_32.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib ole32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib rpcrt4.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/V4Studio.pdb" /machine:I386 /out:"../../bin/Release/V4Studio.exe" /libpath:"../../extra_lib/lib/w32_release" 
+.\Release\V4FieldList.obj
+.\Release\V4SceneGraph.obj
+.\Release\V4StudioApp.obj
+.\Release\V4StudioFrame.obj
+.\Release\V4StudioTree.obj
+.\Release\wxGPACPanel.obj
+.\Release\V4Studio.res
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc(1) : fatal error RC1015: cannot open include file 'wx/msw/wx.rc'.
+Error executing rc.exe.
+
+
+
+<h3>Results</h3>
+V4Studio.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: V4Studio - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"rc\V4Studio.res" /i "C:\Projets\wxWindows\include" /i "rc" /d "_DEBUG" "E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc"" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /I "../../M4Systems/SceneGraph" /I "C:\Projets\wxWindows\include" /I "C:\Projets\wxWindows\contrib\include" /I "C:\Projets\wxWindows\lib\mswd" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "__WINDOWS__" /D "__WXMSW__" /D "__WXDEBUG__" /D WXDEBUG=1 /D "__WIN95__" /D "__WIN32__" /D WINVER=0x0400 /D "STRICT" /FR"Debug/" /Fp"Debug/V4Studio.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /GZ /c 
+"E:\GPAC\gpac\Applications\V4Studio\V4FieldList.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4SceneGraph.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioApp.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioFrame.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\V4StudioTree.cpp"
+"E:\GPAC\gpac\Applications\V4Studio\wxGPACPanel.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35D.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35E.tmp" with contents
+[
+wxmsw25d_html.lib wxbase25d.lib wxmsw25d_core.lib wxmsw25d_adv.lib wxbase25d_xml.lib wxexpatd.lib js32.lib ws2_32.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib ole32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib rpcrt4.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/V4Studio.pdb" /debug /machine:I386 /out:"../../bin/Debug/V4Studio.exe" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Debug\V4FieldList.obj
+.\Debug\V4SceneGraph.obj
+.\Debug\V4StudioApp.obj
+.\Debug\V4StudioFrame.obj
+.\Debug\V4StudioTree.obj
+.\Debug\wxGPACPanel.obj
+.\rc\V4Studio.res
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+E:\GPAC\gpac\Applications\V4Studio\rc\V4Studio.rc(1) : fatal error RC1015: cannot open include file 'wx/msw/wx.rc'.
+Error executing rc.exe.
+
+
+
+<h3>Results</h3>
+V4Studio.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: aac_in - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+aac_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: aac_in - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+aac_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: img_in - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+img_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: img_in - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+img_in.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ogg - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+ogg_xiph.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ogg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+ogg_xiph.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: timedtext - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+timedtext.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: timedtext - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+timedtext.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: wxOsmo4 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Obj/Release/wxOsmo4.pch" /YX /Fo"Obj/Release/" /Fd"Obj/Release/" /FD /c 
+"E:\GPAC\gpac\Applications\Osmo4_wx\fileprops.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\menubtn.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\Playlist.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\wxGPACControl.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\wxOsmo4.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP35F.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP360.tmp" with contents
+[
+wxbase25.lib wxmsw25_core.lib wxmsw25_adv.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib rpcrt4.lib /nologo /subsystem:windows /incremental:no /pdb:"Obj/Release/wxOsmo4.pdb" /machine:I386 /out:"../../bin/Release/wxOsmo4.exe" 
+.\Obj\Release\fileprops.obj
+.\Obj\Release\menubtn.obj
+.\Obj\Release\Playlist.obj
+.\Obj\Release\wxGPACControl.obj
+.\Obj\Release\wxOsmo4.obj
+.\Obj\Release\wxOsmo4.res
+\GPAC\gpac\plugins\dx_hw\Obj\W32Rel\dx_hw.lib
+\GPAC\gpac\Plugins\ffmpeg_in\Obj\W32Rel\ffmpeg_in.lib
+\GPAC\gpac\Plugins\file_dnload\Obj\W32Rel\file_dnload.lib
+\GPAC\gpac\PLUGINS\ft_font\Obj\W32Rel\ft_font.lib
+\GPAC\gpac\plugins\gdip_rend\Obj\W32Rel\gdip_rend.lib
+\GPAC\gpac\PLUGINS\m4_rend\Obj\W32Rel\m4_rend.lib
+\GPAC\gpac\PLUGINS\mp3_in\Obj\W32Rel\mp3_in.lib
+\GPAC\gpac\PLUGINS\mp4_io\Obj\W32Rel\mp4_io.lib
+\GPAC\gpac\Plugins\render2d\Obj\Release\render2d.lib
+\GPAC\gpac\Plugins\render3d\Obj\Release\render3d.lib
+\GPAC\gpac\Plugins\rtp_in\Obj\W32Rel\rtp_in.lib
+\GPAC\gpac\PLUGINS\SDL_out\Obj\W32Rel\SDL_out.lib
+\GPAC\gpac\PLUGINS\wav_audio\Obj\W32Rel\wav_audio.lib
+\GPAC\gpac\Plugins\dummy_in\Obj\Release\dummy_in.lib
+\GPAC\gpac\M4SYSTEMS\Obj\DLLRel\M4Systems.lib
+\GPAC\gpac\PLUGINS\bifs_dec\Obj\Release\bifs_dec.lib
+\GPAC\gpac\PLUGINS\ctx_load\Obj\Release\ctx_load.lib
+\GPAC\gpac\PLUGINS\od_dec\Obj\Release\od_dec.lib
+\GPAC\gpac\PLUGINS\ogg\Obj\Release\ogg_xiph.lib
+\GPAC\gpac\PLUGINS\svg_loader\Obj\Release\svg_loader.lib
+\GPAC\gpac\PLUGINS\aac_in\Obj\Release\aac_in.lib
+\GPAC\gpac\Plugins\timedtext\Obj\Release\timedtext.lib
+\GPAC\gpac\Plugins\amr_dec\Obj\W32Rel\amr_dec.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP360.tmp"
+<h3>Output Window</h3>
+Compiling...
+fileprops.cpp
+E:\GPAC\gpac\Applications\Osmo4_wx\fileprops.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+menubtn.cpp
+E:\GPAC\gpac\Applications\Osmo4_wx\menubtn.cpp(17) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+Playlist.cpp
+E:\GPAC\gpac\Applications\Osmo4_wx\wxOsmo4.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+wxGPACControl.cpp
+E:\GPAC\gpac\Applications\Osmo4_wx\wxOsmo4.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+wxOsmo4.cpp
+E:\GPAC\gpac\Applications\Osmo4_wx\wxOsmo4.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+wxOsmo4.exe - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: wxOsmo4 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP361.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Obj/Debug/wxOsmo4.pch" /YX /Fo"Obj/Debug/" /Fd"Obj/Debug/" /FD /GZ /c 
+"E:\GPAC\gpac\Applications\Osmo4_wx\fileprops.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\menubtn.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\Playlist.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\wxGPACControl.cpp"
+"E:\GPAC\gpac\Applications\Osmo4_wx\wxOsmo4.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP361.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP362.tmp" with contents
+[
+wxbase25d.lib wxmsw25d_core.lib wxmsw25d_adv.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib rpcrt4.lib /nologo /subsystem:windows /incremental:yes /pdb:"Obj/Debug/wxOsmo4.pdb" /debug /machine:I386 /out:"../../bin/Debug/wxOsmo4.exe" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Obj\Debug\fileprops.obj
+.\Obj\Debug\menubtn.obj
+.\Obj\Debug\Playlist.obj
+.\Obj\Debug\wxGPACControl.obj
+.\Obj\Debug\wxOsmo4.obj
+.\Obj\Debug\wxOsmo4.res
+\GPAC\gpac\plugins\dx_hw\Obj\W32Deb\dx_hw.lib
+\GPAC\gpac\Plugins\ffmpeg_in\Obj\W32Deb\ffmpeg_in.lib
+\GPAC\gpac\Plugins\file_dnload\Obj\W32Deb\file_dnload.lib
+\GPAC\gpac\PLUGINS\ft_font\Obj\W32Deb\ft_font.lib
+\GPAC\gpac\plugins\gdip_rend\Obj\W32Deb\gdip_rend.lib
+\GPAC\gpac\PLUGINS\m4_rend\Obj\W32Deb\m4_rend.lib
+\GPAC\gpac\PLUGINS\mp3_in\Obj\W32Deb\mp3_in.lib
+\GPAC\gpac\PLUGINS\mp4_io\Obj\W32Deb\mp4_io.lib
+\GPAC\gpac\Plugins\render2d\Obj\Debug\render2d.lib
+\GPAC\gpac\Plugins\render3d\Obj\Debug\render3d.lib
+\GPAC\gpac\Plugins\rtp_in\Obj\W32Deb\rtp_in.lib
+\GPAC\gpac\PLUGINS\SDL_out\Obj\W32Deb\SDL_out.lib
+\GPAC\gpac\PLUGINS\wav_audio\Obj\W32Deb\wav_audio.lib
+\GPAC\gpac\Plugins\dummy_in\Obj\Debug\dummy_in.lib
+\GPAC\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+\GPAC\gpac\PLUGINS\bifs_dec\Obj\Debug\bifs_dec.lib
+\GPAC\gpac\PLUGINS\ctx_load\Obj\Debug\ctx_load.lib
+\GPAC\gpac\PLUGINS\od_dec\Obj\Debug\od_dec.lib
+\GPAC\gpac\PLUGINS\ogg\Obj\Debug\ogg_xiph.lib
+\GPAC\gpac\PLUGINS\svg_loader\Obj\Debug\svg_loader.lib
+\GPAC\gpac\PLUGINS\aac_in\Obj\Debug\aac_in.lib
+\GPAC\gpac\Plugins\timedtext\Obj\Debug\timedtext.lib
+\GPAC\gpac\Plugins\amr_dec\Obj\W32Deb\amr_dec.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP362.tmp"
+<h3>Output Window</h3>
+Compiling...
+fileprops.cpp
+e:\gpac\gpac\applications\osmo4_wx\fileprops.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+menubtn.cpp
+e:\gpac\gpac\applications\osmo4_wx\menubtn.cpp(17) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+Playlist.cpp
+e:\gpac\gpac\applications\osmo4_wx\wxosmo4.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+wxGPACControl.cpp
+e:\gpac\gpac\applications\osmo4_wx\wxosmo4.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+wxOsmo4.cpp
+e:\gpac\gpac\applications\osmo4_wx\wxosmo4.h(31) : fatal error C1083: Cannot open include file: 'wx/wxprec.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+wxOsmo4.exe - 5 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: xvid_dec - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+xvid_dec.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: xvid_dec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+xvid_dec.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

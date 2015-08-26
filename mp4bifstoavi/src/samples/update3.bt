@@ -1,0 +1,79 @@
+DEF N2 OrderedGroup { 
+  children [
+    DEF N1 Shape { 
+      geometry Rectangle { 
+	size 50.0 40.0
+      }
+    }
+  ]
+}
+InitialObjectDescriptor {
+  objectDescriptorID 1
+  ODProfileLevelIndication 254
+  sceneProfileLevelIndication 254
+  audioProfileLevelIndication 254
+  visualProfileLevelIndication 254
+  graphicsProfileLevelIndication 254
+
+  esdescr [
+    ES_Descriptor {
+      es_id 1
+      decConfigDescr DecoderConfigDescriptor {
+				streamType 3
+				objectTypeIndication 1	#needed by MP4Tool
+				decSpecificInfo BIFSConfig {
+				  isCommandStream true
+				  pixelMetrics true
+				  pixelWidth 100
+				  pixelHeight 100
+				}
+      }
+      slConfigDescr SLConfigDescriptor {} #needed by MP4Tool
+    }
+  ]
+}
+
+AT 2000 {
+REPLACE N1 BY DEF N0 Shape { 
+  appearance Appearance { 
+    material Material2D { 
+      emissiveColor 1.0 0.0 0.0
+      filled true
+      lineProps LineProperties { 
+	lineColor 1.0 1.0 0.0
+	width 2.0
+      }
+    }
+  }
+  geometry Rectangle { 
+    size 50.0 40.0
+  }
+}
+}
+AT 5000 {
+APPEND TO N2.children Transform2D { 
+  translation 20.0 0.0
+  children [
+    Shape { 
+      appearance Appearance { 
+	material Material2D { 
+	  emissiveColor 1.0 0.0 0.0
+	  filled true
+	  lineProps LineProperties { 
+	    lineColor 1.0 1.0 0.0
+	    width 2.0
+	  }
+	}
+      }
+      geometry Circle { 
+	radius 10.0
+      }
+    }
+  ]
+}
+
+
+}
+AT 7000 {
+DELETE N0
+}

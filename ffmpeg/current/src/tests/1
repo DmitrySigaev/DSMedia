@@ -1,0 +1,158 @@
+ffmpeg version 0.4.9-pre1, build 4718, Copyright (c) 2000-2004 Fabrice Bellard
+  built on Mar  4 2005 13:52:35, using a non-gcc compiler
+usage: ffmpeg [[options] -i input_file]... {[options] outfile}...
+Hyper fast Audio and Video encoder
+
+Main options:
+-L                  show license
+-h                  show help
+-version            show version
+-formats            show available formats, codecs, protocols, ...
+-f fmt              force format
+-img img_fmt        force image format
+-i filename         input file name
+-y                  overwrite output files
+-t duration         set the recording time
+-ss time_off        set the start time offset
+-itsoffset time_off  set the input ts offset
+-title string       set the title
+-timestamp time     set the timestamp
+-author string      set the author
+-copyright string   set the copyright
+-comment string     set the comment
+-v verbose          control amount of logging
+-target type        specify target file type ("vcd", "svcd" or "dvd")
+-hq                 activate high quality settings
+
+Video options:
+-b bitrate          set video bitrate (in kbit/s)
+-r rate             set frame rate (Hz value, fraction or abbreviation)
+-s size             set frame size (WxH or abbreviation)
+-aspect aspect      set aspect ratio (4:3, 16:9 or 1.3333, 1.7777)
+-croptop size       set top crop band size (in pixels)
+-cropbottom size    set bottom crop band size (in pixels)
+-cropleft size      set left crop band size (in pixels)
+-cropright size     set right crop band size (in pixels)
+-padtop size        set top pad band size (in pixels)
+-padbottom size     set bottom pad band size (in pixels)
+-padleft size       set left pad band size (in pixels)
+-padright size      set right pad band size (in pixels)
+-padcolor color     set color of pad bands (Hex 000000 thru FFFFFF)
+-vn                 disable video
+-bt tolerance       set video bitrate tolerance (in kbit/s)
+-maxrate bitrate    set max video bitrate tolerance (in kbit/s)
+-minrate bitrate    set min video bitrate tolerance (in kbit/s)
+-bufsize size       set ratecontrol buffere size (in kByte)
+-vcodec codec       force video codec ('copy' to copy stream)
+-sameq              use same video quality as source (implies VBR)
+-pass n             select the pass number (1 or 2)
+-passlogfile file   select two pass log file name
+
+Advanced Video options:
+-pix_fmt format     set pixel format
+-g gop_size         set the group of picture size
+-intra              use only intra frames
+-qscale q           use fixed video quantiser scale (VBR)
+-qmin q             min video quantiser scale (VBR)
+-qmax q             max video quantiser scale (VBR)
+-lmin lambda        min video lagrange factor (VBR)
+-lmax lambda        max video lagrange factor (VBR)
+-mbqmin q           min macroblock quantiser scale (VBR)
+-mbqmax q           max macroblock quantiser scale (VBR)
+-qdiff q            max difference between the quantiser scale (VBR)
+-qblur blur         video quantiser scale blur (VBR)
+-qcomp compression  video quantiser scale compression (VBR)
+-rc_init_cplx complexity  initial complexity for 1-pass encoding
+-b_qfactor factor   qp factor between p and b frames
+-i_qfactor factor   qp factor between p and i frames
+-b_qoffset offset   qp offset between p and b frames
+-i_qoffset offset   qp offset between p and i frames
+-ibias bias         intra quant bias
+-pbias bias         inter quant bias
+-rc_eq equation     set rate control equation
+-rc_override override  rate control override for specific intervals
+-me method          set motion estimation method
+-dct_algo algo      set dct algo
+-idct_algo algo     set idct algo
+-me_threshold       motion estimaton threshold
+-mb_threshold       macroblock threshold
+-er n               set error resilience
+-ec bit_mask        set error concealment
+-bf frames          use 'frames' B frames
+-mbd mode           macroblock decision
+-mbcmp cmp function  macroblock compare function
+-ildctcmp cmp function  ildct compare function
+-subcmp cmp function  subpel compare function
+-cmp cmp function   fullpel compare function
+-precmp cmp function  pre motion estimation compare function
+-preme              pre motion estimation
+-lumi_mask          luminance masking
+-dark_mask          darkness masking
+-scplx_mask         spatial complexity masking
+-tcplx_mask         teporal complexity masking
+-p_mask             inter masking
+-4mv                use four motion vector by macroblock (MPEG4)
+-obmc               use overlapped block motion compensation (h263+)
+-lf                 use loop filter (h263+)
+-part               use data partitioning (MPEG4)
+-bug param          workaround not auto detected encoder bugs
+-strict strictness  how strictly to follow the standards
+-deinterlace        deinterlace pictures
+-ildct              force interlaced dct support in encoder (MPEG2/MPEG4)
+-ilme               force interlaced me support in encoder (MPEG2/MPEG4)
+-psnr               calculate PSNR of compressed frames
+-vstats             dump video coding statistics to file
+-vhook module       insert video processing module
+-aic                enable Advanced intra coding (h263+)
+-aiv                enable Alternative inter vlc (h263+)
+-umv                enable Unlimited Motion Vector (h263+)
+-ssm                enable Slice Structured mode (h263+)
+-alt                enable alternate scantable (MPEG2/MPEG4)
+-qprd               
+-cbp                
+-trell              enable trellis quantization
+-cgop               closed gop
+-scan_offset        enable SVCD Scan Offset placeholder
+-qpel               enable 1/4-pel
+-intra_matrix matrix  specify intra matrix coeffs
+-inter_matrix matrix  specify inter matrix coeffs
+-top                top=1/bottom=0/auto=-1 field first
+-nr                 noise reduction
+-qns                quantization noise shaping
+-sc_threshold threshold  scene change threshold
+-me_range range     limit motion vectors range (1023 for DivX player)
+-dc precision       intra_dc_precision
+-coder              coder type
+-context            context model
+-pred               prediction method
+
+Audio options:
+-ab bitrate         set audio bitrate (in kbit/s)
+-ar rate            set audio sampling rate (in Hz)
+-ac channels        set number of audio channels
+-an                 disable audio
+-acodec codec       force audio codec ('copy' to copy stream)
+
+Audio/Video grab options:
+-vd device          set video grab device
+-vc channel         set video grab channel (DV1394 only)
+-tvstd standard     set television standard (NTSC, PAL (SECAM))
+-dv1394             set DV1394 grab
+-ad device          set audio device
+
+Advanced options:
+-map file:stream    set input stream mapping
+-debug              print specific debug info
+-vismv              visualize motion vectors
+-benchmark          add timings for benchmarking
+-dump               dump each input packet
+-hex                when dumping packets, also dump the payload
+-bitexact           only use bit exact algorithms (for codec testing)
+-re                 read input at native frame rate
+-loop               loop (current only works with images)
+-threads count      thread count
+-vsync              video sync method
+-async              audio sync method
+-copyts             copy timestamps
+-ps size            set packet size in bits
+-error rate         error rate

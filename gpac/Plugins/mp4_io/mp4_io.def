@@ -1,0 +1,6 @@
+LIBRARY     mp4_io.dll
+
+EXPORTS
+	QueryInterface
+	LoadInterface
+	ShutdownInterface

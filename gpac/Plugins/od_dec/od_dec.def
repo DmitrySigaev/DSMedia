@@ -1,0 +1,6 @@
+LIBRARY     od_dec.dll
+
+EXPORTS
+	QueryInterface
+	LoadInterface
+	ShutdownInterface

@@ -1,0 +1,53 @@
+<XMT-A xmlns="http://www.enst.fr/MPEG-4/XMT-A"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.enst.fr/MPEG-4/XMT-A xmt-a.xsd">
+  <Header>
+    <InitialObjectDescriptor>
+      <Descr>
+	<esDescr>
+	  <ES_Descriptor ES_ID="BIFSStream" binaryID="1">
+	    <decConfigDescr>
+	      <DecoderConfigDescriptor objectTypeIndication="MPEG4Systems1" streamType="SceneDescription">
+		<decSpecificInfo>
+		  <BIFSConfig>
+		    <commandStream pixelMetric="true">
+		      <size pixelWidth="100" pixelHeight="100"/>
+		    </commandStream>
+                  </BIFSConfig>
+		</decSpecificInfo>
+	      </DecoderConfigDescriptor>
+	    </decConfigDescr>
+	    <slConfigDescr><SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor></slConfigDescr>
+	  </ES_Descriptor>
+	</esDescr>
+      </Descr>
+    </InitialObjectDescriptor>
+  </Header>
+  <Body>
+    <Replace>
+      <Scene>
+	<OrderedGroup>
+	<children>
+	<Background2D backColor="0 0 0.7"/>
+	<Shape>
+	<geometry>
+	<Curve2D type="2 3 0 1">
+	<point><Coordinate2D point="0 0 10 -10 20 +33 -30 -20 +45 -45 0 0 -30 -30 -30 20"/></point>
+	</Curve2D>
+	</geometry>
+	<appearance>
+		<Appearance>
+			<material>
+				<Material2D emissiveColor="0 1 0" filled="true">
+					<lineProps><LineProperties width="2"/></lineProps>
+				</Material2D>
+			</material>
+		</Appearance>
+	</appearance>
+	</Shape>
+	</children>
+	</OrderedGroup>
+      </Scene>
+    </Replace>
+  </Body>
+</XMT-A>

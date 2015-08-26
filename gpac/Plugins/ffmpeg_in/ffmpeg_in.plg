@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ffmpeg_in - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP33F0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../include" /I "../../extra_lib/include/" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fo"Obj/W32Deb/" /Fd"Obj/W32Deb/" /FD /GZ /c 
+"F:\GPTOCOR\gpac\Plugins\ffmpeg_in\ffmpeg_decode.c"
+"F:\GPTOCOR\gpac\Plugins\ffmpeg_in\ffmpeg_demux.c"
+"F:\GPTOCOR\gpac\Plugins\ffmpeg_in\ffmpeg_load.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP33F0.tmp" 
+Creating temporary file "C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP33F1.tmp" with contents
+[
+avcodec.lib avformat.lib /nologo /dll /incremental:yes /pdb:"Obj/W32Deb/ffmpeg_in.pdb" /debug /machine:I386 /def:".\ffmpeg_in.def" /out:"../../bin/Debug/ffmpeg_in.dll" /implib:"Obj/W32Deb/ffmpeg_in.lib" /pdbtype:sept /libpath:"../../extra_lib/lib/w32_debug" 
+.\Obj\W32Deb\ffmpeg_decode.obj
+.\Obj\W32Deb\ffmpeg_demux.obj
+.\Obj\W32Deb\ffmpeg_load.obj
+\GPTOCOR\gpac\M4SYSTEMS\Obj\DLLDeb\M4Systems.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Dmitry\LOCALS~1\Temp\RSP33F1.tmp"
+<h3>Output Window</h3>
+Compiling...
+ffmpeg_decode.c
+ffmpeg_demux.c
+ffmpeg_load.c
+Generating Code...
+Linking...
+   Creating library Obj/W32Deb/ffmpeg_in.lib and object Obj/W32Deb/ffmpeg_in.exp
+
+
+
+<h3>Results</h3>
+ffmpeg_in.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

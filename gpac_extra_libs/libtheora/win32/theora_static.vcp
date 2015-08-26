@@ -1,0 +1,351 @@
+# Microsoft eMbedded Visual Tools Project File - Name="theora_static" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARM) Static Library" 0x8504
+
+CFG=theora_static - Win32 (WCE ARM) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "theora_static.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "theora_static.vcn" CFG="theora_static - Win32 (WCE ARM) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "theora_static - Win32 (WCE ARM) Release" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE "theora_static - Win32 (WCE ARM) Debug" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+CPP=clarm.exe
+
+!IF  "$(CFG)" == "theora_static - Win32 (WCE ARM) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMRel"
+# PROP BASE Intermediate_Dir "ARMRel"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Obj/ARMRel"
+# PROP Intermediate_Dir "Obj/ARMRel"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /GX- /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Oxs /M$(CECrtMT)  /c
+# ADD CPP /nologo /W3 /GX- /I "../include" /I "../../libogg/include" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Oxs /M$(CECrtMT)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../lib/arm_release/theora_static.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "theora_static - Win32 (WCE ARM) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMDbg"
+# PROP BASE Intermediate_Dir "ARMDbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "Obj/ARMDbg"
+# PROP Intermediate_Dir "Obj/ARMDbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /GX- /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug)  /c
+# ADD CPP /nologo /W3 /GX- /Zi /Od /I "../include" /I "../../libogg/include" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../lib/arm_debug/theora_static_d.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "theora_static - Win32 (WCE ARM) Release"
+# Name "theora_static - Win32 (WCE ARM) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=..\lib\blockmap.c
+DEP_CPP_BLOCK=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\comment.c
+DEP_CPP_COMME=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\dct.c
+DEP_CPP_DCT_C=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\dct_decode.c
+DEP_CPP_DCT_D=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\dct_encode.c
+DEP_CPP_DCT_E=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\decode.c
+DEP_CPP_DECOD=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\block_inline.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\encode.c
+DEP_CPP_ENCOD=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\block_inline.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\encoder_lookup.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\frarray.c
+DEP_CPP_FRARR=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\block_inline.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\frinit.c
+DEP_CPP_FRINI=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\huffman.c
+DEP_CPP_HUFFM=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	"..\lib\hufftables.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\idct.c
+DEP_CPP_IDCT_=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	"..\lib\quant_lookup.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\mcomp.c
+DEP_CPP_MCOMP=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\misc_common.c
+DEP_CPP_MISC_=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\block_inline.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\pb.c
+DEP_CPP_PB_C1a=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\pp.c
+DEP_CPP_PP_C1c=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	"..\lib\pp.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\quant.c
+DEP_CPP_QUANT=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	"..\lib\quant_lookup.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\reconstruct.c
+DEP_CPP_RECON=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\scan.c
+DEP_CPP_SCAN_=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\toplevel.c
+DEP_CPP_TOPLE=\
+	"..\..\LIBOGG\include\ogg\ogg.h"\
+	"..\..\LIBOGG\include\ogg\os_types.h"\
+	"..\include\theora\theora.h"\
+	"..\lib\encoder_internal.h"\
+	"..\lib\huffman.h"\
+	"..\lib\toplevel_lookup.h"\
+	
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=..\lib\block_inline.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\encoder_internal.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\encoder_lookup.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\huffman.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\hufftables.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\mcomp.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\pp.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\quant_lookup.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\lib\toplevel_lookup.h
+# End Source File
+# End Group
+# End Target
+# End Project
