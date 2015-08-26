@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8e89657b-f635-4001-9bcd-644527bc0f88}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f96b52c0-fe27-454f-81d4-4cc2a3bc6b3c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a9c897b5-86bc-407d-a204-94d8adb0691d}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fdlibm\e_atan2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\e_pow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\e_sqrt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\k_standard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_atan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_copysign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_fabs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_finite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_isnan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_matherr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_rint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\s_scalbn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\w_atan2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\w_pow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdlibm\w_sqrt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fdlibm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

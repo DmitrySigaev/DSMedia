@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{5CA7B18E-BF0D-4687-B6BC-8E80825CBA28}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Obj/Debug\</OutDir>
+    <IntDir>.\Obj/Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Obj/Release\</OutDir>
+    <IntDir>.\Obj/Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;_WINDOWS;WIN32;XP_PC;JSFILE;EXPORT_JS_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Obj/Debug\js.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Obj/Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy Obj\Debug\js32.lib ..\lib\w32_debug
+copy Obj\Debug\js32.dll ..\lib\w32_debug</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Obj/Debug\js.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/Debug\js.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>Obj/Debug/js32.dll</OutputFile>
+      <ImportLibrary>.\Obj/Debug\js32.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;XP_PC;JSFILE;EXPORT_JS_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Obj/Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Obj/Release\js.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Obj/Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Obj/Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy Obj\Release\js32.dll ..\lib\w32_release
+copy Obj\Release\js32.lib ..\lib\w32_release</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Obj/Release\js.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Obj/Release\js.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>Obj/Release\js32.dll</OutputFile>
+      <ImportLibrary>.\Obj/Release\js32.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="jsapi.c" />
+    <ClCompile Include="jsarena.c" />
+    <ClCompile Include="jsarray.c" />
+    <ClCompile Include="jsatom.c" />
+    <ClCompile Include="jsbool.c" />
+    <ClCompile Include="jscntxt.c" />
+    <ClCompile Include="jsdate.c" />
+    <ClCompile Include="jsdbgapi.c" />
+    <ClCompile Include="jsdhash.c" />
+    <ClCompile Include="jsdtoa.c" />
+    <ClCompile Include="jsemit.c" />
+    <ClCompile Include="jsexn.c" />
+    <ClCompile Include="jsfun.c" />
+    <ClCompile Include="jsgc.c" />
+    <ClCompile Include="jshash.c" />
+    <ClCompile Include="jsinterp.c" />
+    <ClCompile Include="jslock.c" />
+    <ClCompile Include="jslog2.c" />
+    <ClCompile Include="jslong.c" />
+    <ClCompile Include="jsmath.c" />
+    <ClCompile Include="jsnum.c" />
+    <ClCompile Include="jsobj.c" />
+    <ClCompile Include="jsopcode.c" />
+    <ClCompile Include="jsparse.c" />
+    <ClCompile Include="jsprf.c" />
+    <ClCompile Include="jsregexp.c" />
+    <ClCompile Include="jsscan.c" />
+    <ClCompile Include="jsscope.c" />
+    <ClCompile Include="jsscript.c" />
+    <ClCompile Include="jsstr.c" />
+    <ClCompile Include="jsutil.c" />
+    <ClCompile Include="jsxdrapi.c" />
+    <ClCompile Include="prmjtime.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jsapi.h" />
+    <ClInclude Include="jsarena.h" />
+    <ClInclude Include="jsarray.h" />
+    <ClInclude Include="jsatom.h" />
+    <ClInclude Include="jsbit.h" />
+    <ClInclude Include="jsbool.h" />
+    <ClInclude Include="jsclist.h" />
+    <ClInclude Include="jscntxt.h" />
+    <ClInclude Include="jscompat.h" />
+    <ClInclude Include="jsconfig.h" />
+    <ClInclude Include="jscpucfg.h" />
+    <ClInclude Include="jsdate.h" />
+    <ClInclude Include="jsdbgapi.h" />
+    <ClInclude Include="jsdhash.h" />
+    <ClInclude Include="jsdtoa.h" />
+    <ClInclude Include="jsemit.h" />
+    <ClInclude Include="jsexn.h" />
+    <ClInclude Include="jsfile.h" />
+    <ClInclude Include="jsfun.h" />
+    <ClInclude Include="jsgc.h" />
+    <ClInclude Include="jshash.h" />
+    <ClInclude Include="jsinterp.h" />
+    <ClInclude Include="jslibmath.h" />
+    <ClInclude Include="jslock.h" />
+    <ClInclude Include="jslong.h" />
+    <ClInclude Include="jsmath.h" />
+    <ClInclude Include="jsnum.h" />
+    <ClInclude Include="jsobj.h" />
+    <ClInclude Include="jsopcode.h" />
+    <ClInclude Include="jsosdep.h" />
+    <ClInclude Include="jsotypes.h" />
+    <ClInclude Include="jsparse.h" />
+    <ClInclude Include="jsprf.h" />
+    <ClInclude Include="jsprvtd.h" />
+    <ClInclude Include="jspubtd.h" />
+    <ClInclude Include="jsregexp.h" />
+    <ClInclude Include="jsscan.h" />
+    <ClInclude Include="jsscope.h" />
+    <ClInclude Include="jsscript.h" />
+    <ClInclude Include="jsstddef.h" />
+    <ClInclude Include="jsstr.h" />
+    <ClInclude Include="jstypes.h" />
+    <ClInclude Include="jsutil.h" />
+    <ClInclude Include="jsxdrapi.h" />
+    <ClInclude Include="prmjtime.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="js.msg" />
+    <CustomBuild Include="jsopcode.tbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="fdlibm.vcxproj">
+      <Project>{36b8be60-8096-4815-8b52-32776da48612}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
