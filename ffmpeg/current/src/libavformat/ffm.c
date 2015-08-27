@@ -17,7 +17,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 #include "avformat.h"
+#if _MSC_VER < 1900
 #include <unistd.h>
+#endif
 
 /* The FFM file is made of blocks of fixed size */
 #define FFM_HEADER_SIZE 14

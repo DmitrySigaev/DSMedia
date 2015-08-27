@@ -32,7 +32,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#if _MSC_VER < 1900
 #include <unistd.h>
+#endif
 
 #include "common.h"
 #include "avcodec.h"
