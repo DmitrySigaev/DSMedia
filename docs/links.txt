@@ -5,3 +5,7 @@ One SDK
 Eight Media Platforms
 Connect SDK is 100% Open Source
 Connect SDK is an open source framework that connects your mobile apps with multiple media device platforms.
+
+
+http://www.operasoftware.com/products/tv/tv-emulator
+OPERA TV EMULATOR
