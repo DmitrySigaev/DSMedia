@@ -9,3 +9,6 @@ Connect SDK is an open source framework that connects your mobile apps with mult
 
 http://www.operasoftware.com/products/tv/tv-emulator
 OPERA TV EMULATOR
+
+http://habrahabr.ru/post/145867/
+Вещание онлайн-видео с помощью nginx
