@@ -12,3 +12,6 @@ OPERA TV EMULATOR
 
 http://habrahabr.ru/post/145867/
 Вещание онлайн-видео с помощью nginx
+
+http://habrahabr.ru/post/204666/
+MPEG-DASH в nginx-rtmp-module: живое видео в браузере без флеша
